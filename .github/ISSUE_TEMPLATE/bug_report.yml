@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible skill, documentation, or example problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use fictional data. Do not include credentials, cookies, tokens, .local files, or client information. Report sensitive findings through SECURITY.md."
+  - type: input
+    id: version
+    attributes:
+      label: Version and host
+      description: Include the project version, agent host, runtime, and operating system.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and actual result
+      description: Minimal authorized steps and sanitized evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true

@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checked_files": 207,
+  "runtime_secrets_scanned_without_values": 10,
+  "excluded": [
+    ".local",
+    "node_modules",
+    "dist",
+    ".git",
+    "release-artifacts"
+  ],
+  "media": [
+    {
+      "path": "docs/images/admin-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 90952,
+      "sha256": "54786ef7c269d94f77ac4461de7bc3ecac512884e635bb32f481b8e950ba26c7"
+    },
+    {
+      "path": "docs/images/admin-mobile.png",
+      "width": 390,
+      "height": 1100,
+      "bytes": 62437,
+      "sha256": "37c6b0873a73af625644e9b446c4683743bc5b83cf2233306b0760391877b374"
+    },
+    {
+      "path": "docs/images/inquiry-receipt.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 111262,
+      "sha256": "e072d80e53faa4f2017d14e4c431508c5ef6460058c0bf42700aefe4162982bb"
+    },
+    {
+      "path": "docs/images/website-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 140794,
+      "sha256": "1a0cbfd680d5fcde0cac4e02e1c6cbd1850fec87c58458b39cfccf15c1c6d996"
+    },
+    {
+      "path": "docs/images/website-mobile.png",
+      "width": 390,
+      "height": 1100,
+      "bytes": 77962,
+      "sha256": "e87afec25a8f2ad522ef2691fcd7cbcd5d88cbc384e5e12ddc58d8b25745327d"
+    }
+  ],
+  "license": "LicenseRef-KarmenLoop-Source-Available-No-Modification-1.0",
+  "copyright": "2026 KarmenLoop"
+}

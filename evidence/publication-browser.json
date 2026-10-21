@@ -1,0 +1,284 @@
+{
+  "version": "0.4.1",
+  "status": "PASS",
+  "scope": "Author browser verification of the English example; no independent runtime or physical-device claim.",
+  "viewportChecks": [
+    {
+      "path": "/",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/services",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/services/website",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 3,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/services/systems",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 3,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/services/automation",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 3,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/method",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/about",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/contact",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/privacy",
+      "requestedWidth": 1440,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 1440,
+      "steps": 0,
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "path": "/",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/services",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/services/website",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 3,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/services/systems",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 3,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/services/automation",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 3,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/method",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/about",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/contact",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    },
+    {
+      "path": "/privacy",
+      "requestedWidth": 390,
+      "brokenImages": 0,
+      "consent": null,
+      "h1": 1,
+      "language": "en",
+      "nonEnglish": false,
+      "scrollWidth": 390,
+      "steps": 0,
+      "width": 390,
+      "pass": true
+    }
+  ],
+  "inquiryId": "SX-6500EBF3BDED",
+  "successFocus": {
+    "tag": "H2",
+    "text": "Inquiry received"
+  },
+  "resetFocus": {
+    "company": "",
+    "name": "name"
+  },
+  "signInFailure": {
+    "focusRole": "alert",
+    "message": "The email or password is incorrect."
+  },
+  "viewer": {
+    "readOnly": true,
+    "sameReference": true,
+    "writeActionVisible": false
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "actions": [
+      {
+        "height": 44,
+        "right": 357
+      }
+    ],
+    "returnFocus": {
+      "id": "view-mobile-SX-6500EBF3BDED",
+      "label": "View inquiry SX-6500EBF3BDED"
+    }
+  },
+  "restartBrowserReload": true,
+  "consentText": "I have read the local demo privacy notice, and agree to save this test inquiry for functionality checks.",
+  "repairs": [
+    "Replaced a Chinese-specific title split in the English localization.",
+    "Prevented wrapped phone header CTA by using the compact wordmark.",
+    "Added consent punctuation and singular record copy."
+  ],
+  "automationNotes": [
+    "An alert wait timed out although diagnostics reported it visible; a fresh DOM read confirmed the active error alert.",
+    "The consent collector initially ran on Privacy after the route loop. It was retargeted to Contact before this read."
+  ]
+}

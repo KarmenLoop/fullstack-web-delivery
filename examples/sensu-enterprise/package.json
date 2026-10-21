@@ -1,0 +1,37 @@
+{
+  "name": "fullstack-web-delivery-sensu-example",
+  "version": "0.4.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0 <23"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node server/start.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist/server",
+    "start": "node server/start.mjs --production",
+    "test": "node --test tests/*.test.mjs",
+    "data:clear": "node scripts/clear-data.mjs",
+    "accounts:reset": "node scripts/setup.mjs --rotate",
+    "verify:http": "node scripts/verify-http.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.3.1",
+    "@radix-ui/react-icons": "1.3.2",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.1",
+    "express-session": "1.19.0",
+    "helmet": "8.3.0",
+    "motion": "14.5.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.4",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.5"
+  },
+  "license": "SEE LICENSE IN ../../LICENSE"
+}

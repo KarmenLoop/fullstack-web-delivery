@@ -1,0 +1,50 @@
+{
+  "origin": "http://127.0.0.1:4319",
+  "checks": [
+    {
+      "check": "anonymous admin read denied",
+      "status": 401,
+      "pass": true
+    },
+    {
+      "check": "missing CSRF write denied",
+      "status": 403,
+      "pass": true
+    },
+    {
+      "check": "viewer login",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "check": "viewer reads same persisted receipt",
+      "status": 200,
+      "id": "SX-6500EBF3BDED",
+      "pass": true
+    },
+    {
+      "check": "viewer direct write denied",
+      "status": 403,
+      "pass": true
+    },
+    {
+      "check": "viewer session denied after logout",
+      "status": 401,
+      "pass": true
+    },
+    {
+      "check": "admin login",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "check": "admin sees browser completion and audit",
+      "status": 200,
+      "id": "SX-6500EBF3BDED",
+      "version": 3,
+      "eventCount": 2,
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

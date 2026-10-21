@@ -1,0 +1,10 @@
+{
+  "mode": "production-to-production restart",
+  "startupNote": "The first read was attempted before the new listener became ready and received ECONNREFUSED. Process ownership and listener readiness were checked before this readback.",
+  "statusCode": 200,
+  "id": "SX-6500EBF3BDED",
+  "state": "done",
+  "version": 3,
+  "auditEvents": 2,
+  "status": "PASS"
+}

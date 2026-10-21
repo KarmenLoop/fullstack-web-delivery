@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title description">
+<title id="title">Fullstack Web Delivery workflow</title>
+<desc id="description">Discover, plan, design, build a complete flow, verify and repair, then deliver. Each flow is previewed before expansion.</desc>
+<metadata>Copyright (c) 2026 KarmenLoop. KarmenLoop Source-Available No-Modification License 1.0.</metadata>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#245b46"/></marker></defs>
+<rect width="1280" height="560" rx="20" fill="#f6f5ef"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#173d30">
+<text x="48" y="44" font-size="12" letter-spacing="2">KARMENLOOP / FULLSTACK WEB DELIVERY</text>
+<text x="48" y="96" font-size="36" font-weight="600">From a brief to verified delivery</text>
+<text x="48" y="128" font-size="16" fill="#58685f">A complete plan first. A working business flow next. Evidence at every step.</text>
+<rect x="48" y="164" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="70" y="196" font-size="12" fill="#58685f">01</text>
+<text x="70" y="228" font-size="20" font-weight="600">DISCOVER</text>
+<text x="70" y="260" font-size="14" fill="#58685f">Reuse answers. Inspect facts.</text>
+<rect x="462" y="164" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="484" y="196" font-size="12" fill="#58685f">02</text>
+<text x="484" y="228" font-size="20" font-weight="600">PLAN</text>
+<text x="484" y="260" font-size="14" fill="#58685f">Deliver the complete project plan.</text>
+<rect x="876" y="164" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="898" y="196" font-size="12" fill="#58685f">03</text>
+<text x="898" y="228" font-size="20" font-weight="600">DESIGN</text>
+<text x="898" y="260" font-size="14" fill="#58685f">Resolve the client’s visual and task needs.</text>
+<rect x="876" y="350" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="898" y="382" font-size="12" fill="#58685f">04</text>
+<text x="898" y="414" font-size="20" font-weight="600">BUILD</text>
+<text x="898" y="446" font-size="14" fill="#58685f">Connect one complete business flow.</text>
+<rect x="462" y="350" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="484" y="382" font-size="12" fill="#58685f">05</text>
+<text x="484" y="414" font-size="20" font-weight="600">VERIFY</text>
+<text x="484" y="446" font-size="14" fill="#58685f">Preview, repair, and regress.</text>
+<rect x="48" y="350" width="356" height="126" rx="12" fill="white" stroke="#dce2d5"/>
+<text x="70" y="382" font-size="12" fill="#58685f">06</text>
+<text x="70" y="414" font-size="20" font-weight="600">DELIVER</text>
+<text x="70" y="446" font-size="14" fill="#58685f">Source, entry points, and evidence.</text>
+<path d="M404 227H450" fill="none" stroke="#245b46" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M818 227H864" fill="none" stroke="#245b46" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1054 290V338" fill="none" stroke="#245b46" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M876 413H830" fill="none" stroke="#245b46" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M462 413H416" fill="none" stroke="#245b46" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M640 350V320H1054V338" fill="none" stroke="#8aa18f" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<rect x="714" y="305" width="265" height="25" rx="8" fill="#f6f5ef"/>
+<text x="728" y="322" font-size="12" fill="#58685f">Repair or select the next business flow</text>
+<text x="48" y="526" font-size="14" fill="#58685f">The host supplies tools and permissions. Acceptance follows actual source, actions, and results.</text>
+</g></svg>

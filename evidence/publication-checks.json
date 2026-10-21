@@ -1,0 +1,77 @@
+{
+  "version": "0.4.1",
+  "date": "2026-10-22",
+  "status": "PASS",
+  "environment": {
+    "os": "macOS",
+    "node": "22.23.2",
+    "npm": "10.9.8"
+  },
+  "commands": [
+    {
+      "cwd": "examples/sensu-enterprise",
+      "argv": [
+        "npm",
+        "ci"
+      ],
+      "exit_code": 0
+    },
+    {
+      "cwd": "examples/sensu-enterprise",
+      "argv": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "passed": 11,
+      "evidence": "example-tests.log"
+    },
+    {
+      "cwd": "examples/sensu-enterprise",
+      "argv": [
+        "npm",
+        "run",
+        "setup"
+      ],
+      "exit_code": 0
+    },
+    {
+      "cwd": "examples/sensu-enterprise",
+      "argv": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "evidence": "example-build.log"
+    },
+    {
+      "cwd": "examples/sensu-enterprise",
+      "argv": [
+        "npm",
+        "run",
+        "verify:http"
+      ],
+      "exit_code": 0,
+      "routes": 12,
+      "evidence": "example-http.log"
+    },
+    {
+      "tool": "skill-creator structural validator",
+      "exit_code": 0,
+      "evidence": "skill-validation.log"
+    }
+  ],
+  "browser_evidence": "publication-browser.json",
+  "live_api_evidence": "publication-api.json",
+  "restart_evidence": "publication-restart.json",
+  "scope_note": "English publication checks are separate from the earlier Chinese0.3.0 trial. Formal tests cover HTTP and isolated maintenance. Browser/viewport checks are author-operated. The final UI copy corrections were built and browser-rechecked; no independent runtime QA was performed.",
+  "not_run": [
+    "Other agent platforms",
+    "Physical phones",
+    "Independent complete runtime QA",
+    "Complete accessibility/performance audit",
+    "Real transactions/external messages",
+    "Public deployment of the website"
+  ]
+}

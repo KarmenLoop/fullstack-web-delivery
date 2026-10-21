@@ -1,0 +1,17 @@
+{
+  "examples/sensu-enterprise/src/App.jsx": "20d71c759b49beab00ebdc67f36108503bb4c4be8f6f1a268c70ec3fd61c042a",
+  "examples/sensu-enterprise/src/api.js": "15cd4d21c158763b358bfd33a39986dd4a66dbde1edd711c084031e1fa872056",
+  "examples/sensu-enterprise/src/content.js": "12a068043b467db9aa8c5f9219a897920efdda63990df2f61c3db19eb0d7d11c",
+  "examples/sensu-enterprise/src/entry-client.jsx": "887b763de67912804ae30e3a2c63cc50fb9fd6af712ce9f6c0b9bbc5b3d0b33d",
+  "examples/sensu-enterprise/src/entry-server.jsx": "5eec190d16e171ee815b563eea987823b0aabb5e0808f59e4987850d7d493f60",
+  "examples/sensu-enterprise/src/styles.css": "ae10de579b7ee312248c021e73f9fcd82147594574c2ce5c51ea4d1b392271bc",
+  "examples/sensu-enterprise/src/tokens.css": "99f16009746bd91c64ba8b7a67de2038bee64c429b5038e7b2fe73a178d83827",
+  "examples/sensu-enterprise/server/api.mjs": "e0ee49e5d4db7660d9775445c6cdb341b2f1ff87f4644437634807c018ead9a8",
+  "examples/sensu-enterprise/server/database.mjs": "668d9f0a7888bae0f9e063df9b1f2a1a619e871b974393a2c3ae9b3f05766c85",
+  "examples/sensu-enterprise/server/start.mjs": "1db96cff5778135cb0386e0993be21f4737adc65cff5082a5f1a04c462af3290",
+  "examples/sensu-enterprise/scripts/clear-data.mjs": "0ec6724e1551cc7912390748adad5104e3e3872b2146ad39cf9194b1ebd53bfa",
+  "examples/sensu-enterprise/scripts/setup.mjs": "f6d155beb357711d6f3e2dff6836b62bb70ba9f60ccfcbae63dfe351880f583d",
+  "examples/sensu-enterprise/scripts/verify-http.mjs": "ee63d46c351f08d0ce6fddf39cd3ba28de5b82c28c8fdb1b85491dc138659708",
+  "examples/sensu-enterprise/tests/api.test.mjs": "8a15ef1b5d192ebfa387c01ecc17275333c1e03618b1d934a242b600c9534a7d",
+  "examples/sensu-enterprise/tests/maintenance.test.mjs": "b7317a909bca426481f782730ac688d5f09ba668abce1d9aa7ee0a85a20cf477"
+}
