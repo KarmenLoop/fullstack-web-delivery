@@ -44,6 +44,8 @@ This helper renders English documents from supplied facts. The host agent remain
 
 ## Write a useful UI/UX prompt
 
+The 0.6.0 renderer includes the [three-layout review protocol](visual-decisions.md) in the implementation prompt. For new sites and substantial visual redesigns, the initial design contracts provide shared constraints while the layout choice remains pending. After a real selection or explicit delegation, update composition, page/action/motion contracts and the existing decision record. Preserve specifically chosen designs and targeted-fix scope. The helper writes instructions; it does not build prototypes, open a browser or claim user feedback occurred.
+
 A useful prompt names the page's reader and decision, actual content, primary action, success/failure states, brand tokens, composition, data/API dependencies and acceptance. Describe the reference principle and rejection decision: for example, use Apple-like continuity and clear feedback while preserving the client's existing brand. Do not ask for "premium, modern, award-winning" and expect those adjectives to substitute for decisions.
 
 The implementation prompt should link each action to its contract and require real navigation. Specify immediate press feedback, pending versus confirmed result, preserved input on failure, linked-state ownership, interrupted/repeated operation, keyboard/touch and reduced motion. Choose advanced patterns by task. An operational workspace needs readable records and recoverable actions; marketing composition guidance does not replace those responsibilities.

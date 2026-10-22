@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.0 - 2026-10-22
+
+- Compare three structurally distinct representative layouts before expanding new sites or substantial visual redesigns.
+- Open the working comparison in the user-facing browser and present matched views, direct option links and concise tradeoffs.
+- Use visual decision packets for consequential layout, navigation and interaction questions; retain real feedback, pending choices and explicit delegation.
+- Preserve specifically chosen layouts and targeted-fix scope; continue independent authorized work while a visual preference is pending.
+- Update the generated implementation prompt, portable instructions, workflow diagrams and public tutorial. Existing application evidence remains scoped to its original version.
+
 ## 0.5.0 - 2026-10-22
 
 - Turn answered requirements into a project-specific UI/UX prompt, page/action/motion contracts and seven module specifications before implementation.

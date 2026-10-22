@@ -22,6 +22,8 @@ Marketing explains value and trust; administration helps people find, judge, and
 
 ## Two representative-page checks
 
+For new sites and substantial visual redesigns, use [the three-layout comparison](visual-decisions.md) before expanding templates. Reuse a specifically selected layout and keep targeted changes within their existing scope. Later material choices should also have a concrete visual comparison where useful.
+
 Visual: clear proposition and next step; intentional hierarchy, spacing, imagery, readable content, and phone line wrapping. Compare the adopted principles, not arbitrary imitation percentages.
 
 Task: operate the primary flow. Phone users must discover status and action. A horizontally scrollable table with no page overflow may still hide its useful columns. Use priority columns or a dedicated record list when appropriate. Required-field guidance belongs before input.

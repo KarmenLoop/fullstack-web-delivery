@@ -5,11 +5,12 @@
 | The user already supplied the decision or authorization | Reuse it; resolve only a material conflict |
 | Startup, API existence, tool availability, or runtime is unknown | Inspect current source and actual tools |
 | A business rule, fact, or material preference is missing | Ask a focused decision question |
+| A material layout, navigation or interaction choice is missing | Prepare the relevant visual comparison, open the preview, then ask |
 | A low-impact choice is reversible and delegated | Record a reasoned default and continue |
 | A necessary credential, fact, or permission is absent | Mark the affected branch and its recovery condition; continue independent work |
 | New evidence invalidates the route | Revise affected plans/contracts; explain scope or commitment changes |
 
-Deliver the complete plan before implementation. Establish a runnable baseline and representative page, then select the next complete business flow by satisfied dependencies, value, and uncertainty. Verify it immediately. Preserve failure evidence, repair affected scope, and continue after it passes.
+Deliver the complete plan before implementation. For new sites or substantial visual redesigns, establish three comparable representative layouts and open them for feedback under [visual decisions](visual-decisions.md). Resolve the dependent design choice through real feedback or explicit delegation, then select the next complete business flow by satisfied dependencies, value, and uncertainty. Verify it immediately. Preserve failure evidence, repair affected scope, and continue after it passes.
 
 For an inquiry site: representative page -> visitor submission and durable receipt -> employee sign-in and same-record reading -> administrator transition and audit -> page/interaction expansion -> production regression and restart. An account product or transaction sandbox may need a different dependency order.
 

@@ -1,5 +1,13 @@
 # Verification and evidence boundaries
 
+## Visual decision workflow 0.6.0
+
+This release adds the owner's three-layout and visual-question workflow to the portable skill, generated UI/UX prompt, public tutorial and workflow graphic. It preserves already chosen layouts, targets independent work while feedback is pending, and distinguishes actual user selection from explicitly delegated agent choice. The owned generated example is refreshed from the same answered input after verifying its previous manifest; this updates instructions, not business facts or approval history.
+
+The specification renderer's six existing behavior tests are rerun for the changed helper, alongside repository/link/English/legal-copy checks and skill structure validation. See the [versioned command and scope record](../evidence/v0.6-workflow-checks.json). No application source changed in this release, so the previous local application/browser evidence retains its 0.5.0 scope. Hosted CI independently reruns its configured automated checks for the final commit.
+
+The new three-layout browser presentation, human selection, delegated-choice continuation and later visual-decision packets remain runtime NOT_RUN in this update. They are maintained instruction/evaluation scenarios, not a claimed new SENSU trial, design approval or cross-platform acceptance.
+
 ## Specification and interaction extension 0.5.0
 
 This extension reuses the owner's answered brief and local-development/publication authority. It adds project-specific specifications and a separate interaction workbench; the existing business APIs remain the same. The generated pack is an implementation contract, not an acceptance result.

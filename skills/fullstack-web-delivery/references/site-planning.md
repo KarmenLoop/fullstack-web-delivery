@@ -31,3 +31,5 @@ Document method/path, caller, authentication, roles/resources, input/output, err
 Record public company facts, narrative evidence, claims, media permission, pricing, and applicable policies. Include transactions only where required. Map requirement -> user scenario -> component/API -> data/admin -> implementation -> verification/evidence.
 
 Give recommended/alternative routes, milestones, dependencies, local preview, account strategy, reviewer responsibility, defects, production preparation, and rollback. Unknowns need an owner, blocked scope, and recovery condition. Use the repository's [full planning template](https://github.com/KarmenLoop/fullstack-web-delivery/blob/main/docs/project-plan.md) when available; this reference specifies the portable requirements.
+
+For new sites or substantial visual redesigns, include the representative page/task, shared constraints, three-layout comparison, browser review and selection dependency in those milestones. Follow [visual decisions](visual-decisions.md). Mark composition provisional until actual feedback or explicit delegation resolves it; preserve specifically selected layouts and targeted-fix scope.

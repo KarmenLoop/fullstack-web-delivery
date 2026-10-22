@@ -11,8 +11,16 @@ flowchart TD
   D --> E{Agreed continuation}
   E -->|Planning only| P[Deliver implementation handover]
   E -->|Explicit review gate| Q[Wait for the requested decision]
-  E -->|Development authorized| F[Runnable representative page; visual and task checks]
-  Q -->|Approved| F
+  E -->|Development authorized| V{Visual scope}
+  Q -->|Approved| V
+  V -->|New site or substantial visual redesign| T[Build three comparable representative layouts]
+  T --> O[Operate and open browser comparison; matched views and tradeoffs]
+  O --> R{Selection or explicit delegation}
+  R -->|Revision| T
+  R -->|Resolved| F[Update design contracts; visual and task checks]
+  R -->|Pending| W[Retain choice; continue independent authorized work]
+  W -->|Feedback arrives| R
+  V -->|Chosen layout or targeted fix| F
   F --> G[Select the next dependency-ready business flow]
   G --> H[Preview; check success, failure, permission, data, and phone task]
   H --> I{Flow passes?}
@@ -29,6 +37,12 @@ flowchart TD
 ## Specification handoff
 
 The plan includes a project-specific [UI/UX prompt and module specifications](specifications.md). Audience, actual content, primary action, target, state, recovery and motion are written before page expansion. Stable IDs connect each action to its acceptance scenario. Reuse existing answers; technical facts are inspected, not converted into interview questions. Scope and authority remain project-specific.
+
+## Visual review before expansion
+
+For new sites and substantial visual redesigns, follow [the visual review tutorial](visual-decisions.md): three materially different layouts share the brief, real content and core task. Operate the representative interaction, open the working comparison, and provide identifiable option links, matched desktop/phone views and tradeoffs. Record actual feedback or explicit delegation before expanding dependent templates. A selected palette is not a selected layout. Preserve specifically chosen designs and targeted-fix scope.
+
+Use working previews, annotated views or flow diagrams for later consequential design questions. Keep a required choice pending while independent authorized work continues. Selection, development authority and acceptance are distinct facts.
 
 ## Information routing
 

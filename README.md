@@ -2,7 +2,7 @@
 
 A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
 
-**Version 0.5.0 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.6.0 · English publication · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
@@ -26,7 +26,8 @@ It is a set of instructions and references, not a model, framework, hosting serv
 | Research | Relevant industry references, design principles, and GitHub candidates with adoption/rejection reasons |
 | Complete plan | Sitemap, menus, page templates, content, architecture, roles, states, APIs, data, delivery, and acceptance |
 | Project specification pack | Filled UI/UX prompt, page audiences/content/actions, linked states, motion and relevant module contracts with traceability |
-| Client-specific design | One coherent visual system and representative page checked for both visual quality and task usability |
+| Three-layout review | Comparable working A/B/C layouts, browser presentation, matched views and real selection or delegated choice |
+| Client-specific design | One coherent selected system checked for both visual quality and task usability |
 | Business increments | A complete flow through UI, API boundaries, permissions, storage, and feedback |
 | Continuous preview | An actual reachable preview and checks immediately after each increment |
 | Repair and acceptance | Reproductions, corrections, affected-scope rechecks, production regression, and agreed persistence checks |
@@ -55,7 +56,9 @@ Use $fullstack-web-delivery to build our company website.
 Reuse the requirements and brand material already in this project.
 We need service pages, an inquiry form, staff sign-in, and an admin workspace.
 Deliver the complete plan before implementation, then continue authorized
-local development, preview, repair, and acceptance without another approval gate.
+local development, preview, repair, and acceptance.
+For a new design, open three representative layouts for my feedback before
+expanding the selected direction. Continue independent authorized work meanwhile.
 Use fictional data and keep the preview local.
 ```
 
@@ -69,7 +72,7 @@ The forty-question discovery pool is not a forty-question obligation. The agent 
 2. Separate business decisions from facts it can inspect and reversible choices it can make.
 3. Research the client's industry and actual user tasks before choosing a visual direction or dependency.
 4. Deliver the complete plan and project-specific specification pack before implementation. Continue when development is already authorized; wait only at a review gate the user requested.
-5. Establish a running representative page. Check appearance and the primary task separately.
+5. For new sites or substantial visual redesigns, build three distinct representative layouts and open the comparison for feedback. Reuse a specifically chosen layout or targeted-fix scope. Record the actual selection or explicit delegation before expanding dependent templates; check appearance and the primary task separately.
 6. Select the next flow with satisfied dependencies, high business value, or a consequential uncertainty to resolve.
 7. Operate it, inspect its data and access boundaries, repair observed defects, and verify affected scope.
 8. Regress the agreed site, production build, and persistence before handover.
@@ -87,6 +90,12 @@ The resulting interface uses a cream/forest palette, an explicit business propos
 ![Phone inquiry workspace with visible state and a complete detail action on each record](docs/images/admin-mobile.png)
 
 *Phone usability is checked by finding and completing the task, not merely by eliminating page overflow.*
+
+## Compare before expanding the site
+
+Version 0.6.0 adds a visual review stage. A new site or substantial visual redesign starts with three representative layouts that differ in information order, composition, hierarchy or navigation while sharing the real brief, core content and brand constraints. The agent operates the important controls, opens the local comparison in the user-facing browser, and presents matched desktop/phone views with identifiable links and tradeoffs.
+
+Users can select, combine, revise or reject the options. A pending preference blocks its dependent visual expansion while independent authorized work can continue. An explicitly delegated choice is recorded as the agent's decision. A selected layout or narrow repair is preserved. Later consequential design choices also use working previews, annotated views or flow diagrams when useful. Read [the visual review tutorial](docs/visual-decisions.md). This is a workflow update; the existing SENSU captures are not a new three-layout trial.
 
 ## From answers to concrete design instructions
 

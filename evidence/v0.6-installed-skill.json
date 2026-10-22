@@ -1,0 +1,89 @@
+{
+  "version": "0.6.0",
+  "status": "PASS",
+  "official_files": 20,
+  "previous_installation_verified_against": "HEAD before 0.6.0 commit",
+  "previous_installation_preserved": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "766ddcc28af256c520d87321e633ce3780bc0e227a08d737a2544f1364d7082c"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "04a9808e01d05ead68468081c22d21769485e2795efad0145295572db7e44753"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "f98aff2aba794ef8e685c1e20fef9ae9b9ff4d81a827dae3fd8fb9aa2d24cc1d"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "f4ebbfc38bd7a00d286aa6f69a11d10ffc6bf8cb6d8f47ac8628b0f552330103"
+    },
+    {
+      "path": "references/behavior-evals.md",
+      "sha256": "2326b362a2ecc3e8366969e78c9ed7ce26217f323d4c1dc944e33b59843c5198"
+    },
+    {
+      "path": "references/content-commerce.md",
+      "sha256": "3d6f328f03f84b97cad027c2c9dce563a7dc138532b6806be3c6ccfc50ecfb92"
+    },
+    {
+      "path": "references/custom-design.md",
+      "sha256": "b7cbbf66f20295f15122d7e3931f51e2219c9677bdd0b31aa1b26142955ce812"
+    },
+    {
+      "path": "references/delivery.md",
+      "sha256": "6d10e8540e4bd4e8b12668781fc11b9dc171a9d63e4e717781c4fe17e9fca557"
+    },
+    {
+      "path": "references/design-motion.md",
+      "sha256": "7609ef4fa2d218f1395e65800ba37c2525c1d7b16bec58a2afc115761da395a5"
+    },
+    {
+      "path": "references/development-workflow.md",
+      "sha256": "44f289ff9bb57d55cf2a07727cb006bffd482e686ad1755feb68f025c83ba04e"
+    },
+    {
+      "path": "references/discovery.md",
+      "sha256": "c154733b69fe9dbf87cef6d138f1caf1ac18919bb80953cfc96e75ccbbc5af6b"
+    },
+    {
+      "path": "references/field-trial.md",
+      "sha256": "6f10ad1555fa90e1b5ec0dac5f54245123fc781993e19941e87b069abffeda70"
+    },
+    {
+      "path": "references/implementation.md",
+      "sha256": "c5024f2a3d2da1ee05f743f560be614a2ec9ec27e48c5000ef883605b1334c86"
+    },
+    {
+      "path": "references/interaction-patterns.md",
+      "sha256": "206ee193e38e88939ebb93fd4fc58774ff1cecd84085b3af5b338996a111baa3"
+    },
+    {
+      "path": "references/platforms.md",
+      "sha256": "1a4d248df67d2b750f531987e528e72452ff11e92956908d7990df41ee7cdc7c"
+    },
+    {
+      "path": "references/research.md",
+      "sha256": "910724e97d282945f96f869c9266d6fe2f7048d96f4f80d36010e215c6653ff8"
+    },
+    {
+      "path": "references/site-planning.md",
+      "sha256": "aad70a1ecdfe95f6a999d7efbacdacd2712c77bc412e66c0800c7a79b7c87fa0"
+    },
+    {
+      "path": "references/specification-pack.md",
+      "sha256": "c3fa485547936704481acb3e97550ac4584f2be7aa8d34cdccd8a512ef73597a"
+    },
+    {
+      "path": "references/visual-decisions.md",
+      "sha256": "c3a73bf17ead1d0d6d3995763aa401bd5e5f4aaa76770180279e4a346777267b"
+    },
+    {
+      "path": "scripts/generate_project_specs.py",
+      "sha256": "c320844ad7247b8953258b0c326a9e517b1b38e4e5b59454646a09fe1e7b32e0"
+    }
+  ]
+}

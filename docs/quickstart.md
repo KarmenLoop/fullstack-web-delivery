@@ -25,6 +25,8 @@ Acceptance: [the critical end-to-end tasks and devices].
 
 The agent should summarize known facts, inspect technical details, ask only for missing decisions, and deliver a complete plan before implementation. If you ask only for a plan, implementation should not start. If you already authorize local work without another review gate, delivery of the plan should lead into development.
 
+For a new site or substantial visual redesign, that development begins with [three representative layouts opened for comparison](visual-decisions.md). Give a selection, a combination or a revision before dependent page expansion, or explicitly delegate the choice. A specifically chosen layout or targeted fix is preserved. This visual preference step does not require granting local-development permission again.
+
 ## Expected artifacts
 
 The project should retain its plan, page and interaction contracts, APIs/data model, content sources, decision/progress record, acceptance results, commands, and screenshots. A small project can use short tables instead of separate CSV files. The deliverable should say where the form is stored and where an authorized employee can see it.

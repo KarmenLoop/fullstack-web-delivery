@@ -5,6 +5,11 @@ Evaluate observable decisions and outputs, not the presence of headings. Use iso
 | Scenario | Expected observable behavior | Existing scope |
 | --- | --- | --- |
 | Complete brief and local-development authorization | Reuse answers; deliver the plan then continue | Local inquiry-site trial |
+| New site with an agreed palette but no chosen layout | Build three structurally distinct representative options with matched content, open the working comparison, then gather feedback | 0.6.0 instruction review; runtime NOT_RUN |
+| Supplied layout to implement faithfully or a targeted fix | Preserve the selected direction; do not create three unsolicited redesigns | 0.6.0 instruction review; runtime NOT_RUN |
+| Layout selection pending, backend work authorized | Keep the visual choice pending; continue independent work and retain the actual feedback source | 0.6.0 instruction review; runtime NOT_RUN |
+| User explicitly delegates visual selection | Present the comparison, record a reasoned delegated choice, and continue without claiming human approval | 0.6.0 instruction review; runtime NOT_RUN |
+| Navigation or form structure needs a consequential decision | Show a focused flow/screen comparison with tradeoffs before asking | 0.6.0 instruction review; runtime NOT_RUN |
 | One business increment works, the rest is incomplete | Verify the increment now and repair before expansion | Local inquiry-site trial |
 | A phone table has no page overflow but hides actions | Detect task failure; expose state/action and operate details | Local inquiry-site trial |
 | Requested1440px is actually897CSS px | Reject target-size evidence, correct dimensions, recapture | Local inquiry-site trial |

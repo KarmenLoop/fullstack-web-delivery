@@ -5,7 +5,7 @@ description: "Plan and deliver complete websites with adaptive discovery, indust
 
 # Fullstack Web Delivery
 
-Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.5.0.
+Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.6.0.
 
 ## 1. Establish the scope
 
@@ -17,7 +17,7 @@ Distinguish planning, visual prototyping, and complete implementation. Deliver t
 
 Use the [discovery pool](references/discovery.md). Ask four to six consequential questions per round, within the host tool's limits. Forty questions form a candidate pool; they are not a quota. Skip answered questions. Inspect technical facts yourself. Use reversible, reasoned defaults when authorized; ask for business facts and material preferences.
 
-Begin with who needs to accomplish what and what success looks like. Record user decisions, verified facts, assumptions, and pending dependencies. Pause only the branch that needs a missing decision. Stop general discovery once a complete plan and acceptance scenarios are possible.
+Begin with who needs to accomplish what and what success looks like. Record user decisions, verified facts, assumptions, and pending dependencies. For consequential layout, navigation or interaction choices, prepare a [visual decision](references/visual-decisions.md) before asking: runnable alternatives where possible, otherwise annotated views or a diagram. Pause only the branch that needs a missing decision. Stop general discovery once a complete plan and acceptance scenarios are possible.
 
 ## 3. Research and deliver the complete plan
 
@@ -29,11 +29,13 @@ Automatically turn the answered brief into the [project specification pack](refe
 
 Map each requirement to a task and a verification method. Define legal business states and access boundaries before interfaces and screens. Order work with [business-flow decisions](references/development-workflow.md); revise the plan when evidence changes the route.
 
-## 4. Resolve the client's design
+## 4. Compare three layouts and resolve the client's design
 
 Read [client-specific design](references/custom-design.md) and [design and motion](references/design-motion.md). Derive composition from the brief, real content, user tasks, and brand constraints. Translate references into one coherent system, with concrete adoption and rejection decisions.
 
-Build a representative page and critical interaction using realistic content. Check visual quality and task usability separately before expanding templates. Verify that promised content is rendered and phone users can discover key states and actions. Record triggers, states, feedback, failure recovery, keyboard/touch behavior, APIs, and motion for each applicable control.
+For a new site or substantial visual redesign, follow [visual decisions](references/visual-decisions.md): build three materially different layouts for a representative page and critical interaction using the same realistic content and brand constraints. Open the working comparison in the user's browser and provide identifiable option links, matched desktop/phone views, differences and tradeoffs. Gather selection, combination or revision feedback before expanding the dependent templates, unless the user explicitly delegated the choice. A selected palette alone does not select a layout. Reuse a specifically chosen layout; keep targeted fixes in scope.
+
+Record the actual selection source and update the UI/UX prompt and design contracts. Check visual quality and task usability separately. Verify that promised content is rendered and phone users can discover key states and actions. Record triggers, states, feedback, failure recovery, keyboard/touch behavior, APIs, and motion for each applicable control.
 
 Every enabled control must act and every link must reach a supported destination. Start feedback at input; show success only after the actual operation confirms it. Derive linked responses from one state. Make animation interruptible and retain keyboard, touch, focus and reduced-motion paths. Select [advanced patterns](references/interaction-patterns.md) by purpose; do not add all six effects to every site. Learn reference principles within their scope: marketing composition, operational usability and a client's existing brand are different constraints.
 

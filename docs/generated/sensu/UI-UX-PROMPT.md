@@ -399,6 +399,14 @@ Research and reference decisions: Use industry leaders for task architecture bef
 
 **Verify:** Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.
 
+## Layout comparison and visual decisions
+
+For a new website or substantial visual redesign, use these contracts as the shared brief for three materially different representative layouts. Compare information order, composition, hierarchy or navigation using the same truthful content, core action and brand constraints; color swaps alone are insufficient. Build and operate the primary interaction in each option, verify actual desktop and phone widths, then open a reachable A/B/C comparison in the user-facing browser. Provide direct option links, matched labeled views and concise tradeoffs before asking for selection, combination or revision feedback.
+
+Reuse a specifically chosen layout or supplied design and keep targeted fixes in scope. An agreed palette alone does not choose a layout. Preserve pending decisions and continue independent authorized work; wait for required feedback before expanding dependent templates. When visual choice is explicitly delegated, record the reasoned agent selection and show its basis without calling it human approval. Update this prompt, the design contracts and the existing decision ledger after selection.
+
+For later consequential layout, navigation or interaction choices, show a focused working comparison, annotated views or a flow diagram before asking. Mark unavailable browser operation NOT_RUN and distinguish wireframes or mockups from working pages.
+
 ## Build and inspect
 
 Read DESIGN-SPEC.md, MOTION-SPECS.md and the module specifications linked in README.md. Every enabled control must navigate to its declared destination or perform its stated action. Start feedback at input, distinguish pending from success, preserve input on failure, prevent duplicate submissions, and retain visible keyboard focus. Specify empty, loading, error, disabled, success and interrupted states where applicable. Use content-driven layouts and real copy. Preserve native links, controls, browser history and touch scrolling.

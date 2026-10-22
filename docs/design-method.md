@@ -22,6 +22,8 @@ The example uses an explicit business proposition above a labeled service canvas
 
 ## Accept the representative page twice
 
+For a new site or substantial visual redesign, first [compare three representative layouts in the browser](visual-decisions.md). Match the content, task and device widths, then record actual selection, a requested combination or explicit delegated choice. Preserve an already chosen layout and a targeted repair. Later consequential choices should also have focused visual comparisons where useful.
+
 Visual acceptance checks reading order, recognizable business, typography, spacing, imagery, responsiveness, and the next action. Task acceptance operates the key flow and inspects feedback, errors, data, and recovery. A page with no overflow can still make a phone user hunt for a hidden action.
 
 Measure actual CSS viewport and screenshot scale. Use realistic content and wait for content readiness. Required-field clarity, pending statistics, error/success/reset focus, and settled drawer focus are part of the interface. Screenshot inspection cannot establish motion smoothness or frame rate. Technical scans do not certify visual quality.

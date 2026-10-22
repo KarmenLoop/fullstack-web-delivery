@@ -1,0 +1,62 @@
+{
+  "version": "0.6.0",
+  "scope": "Skill workflow, renderer instructions, generated prompt and documentation update; no application source changes.",
+  "status": "PASS",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/test_specifications.py",
+        "-v"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.6-specification-tests.log"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_repository.py"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.6-repository.log"
+    },
+    {
+      "command": [
+        "python",
+        "quick_validate.py",
+        "skills/fullstack-web-delivery"
+      ],
+      "validator_source_sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.6-skill-validation.log"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "cwd": ".",
+      "exit_code": 0
+    }
+  ],
+  "generated_pack": {
+    "prior_manifest_verified": true,
+    "input_unchanged": true,
+    "documents": 16,
+    "changed": [
+      "UI-UX-PROMPT.md",
+      "spec-manifest.json"
+    ]
+  },
+  "runtime_limits": [
+    "Three-layout browser comparison NOT_RUN in this update.",
+    "Human design selection and delegated-choice continuation NOT_RUN.",
+    "Later visual-decision packet runtime NOT_RUN.",
+    "Existing 0.5.0 browser/application evidence retains its original scope."
+  ],
+  "workflow_svg_xml": "PASS"
+}
