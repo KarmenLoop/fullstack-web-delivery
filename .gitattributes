@@ -1,4 +1,6 @@
 * text=auto eol=lf
-*.csv -text
+*.csv -text whitespace=cr-at-eol
 *.png binary
 *.jpg binary
+# Keep raw command evidence byte-for-byte.
+evidence/*.log -whitespace

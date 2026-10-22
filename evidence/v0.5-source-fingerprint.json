@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 57,
-      "sha256": "dcfeb9388363f51d3f27a4019d4dfdaa256e29c0818c42f797e0ed235223c3a9"
+      "bytes": 148,
+      "sha256": "c42c148525929837a98bcf60856735e8c4f2d91aac1a376f8e2675b27c24c5a5"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
@@ -424,13 +424,13 @@
     },
     {
       "path": "evidence/interaction-finish-review.md",
-      "bytes": 7608,
-      "sha256": "a536cd52a9e2013a261576b81ccc67766dc133cb3880d1c72ab203f883665567"
+      "bytes": 7607,
+      "sha256": "7b9399a508c8f76d82e9d0fb4275bd5ef2ebe559334e8c9d68abd8b8bd86955a"
     },
     {
       "path": "evidence/interaction-finish-verdict.md",
-      "bytes": 2926,
-      "sha256": "ce182c1bf67f91526c3d6aa82f729407415d11f51ed02c58de282d5356045b79"
+      "bytes": 2925,
+      "sha256": "bf4c352f393783f0a24fb859d21ff74d20330f31bfe91b43f70c63247d8dcc21"
     },
     {
       "path": "evidence/publication-api.json",

@@ -17,4 +17,3 @@ Clear for the five scored corrections at the source-and-screenshot scope. The ea
 This ship covers the scored fixes, not the whole surface.
 
 disposition: ship
-

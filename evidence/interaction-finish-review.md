@@ -47,4 +47,3 @@ The inherited editorial devices are already present: ruled structure, restrained
 ## keep
 
 Keep the inherited cream/forest field, single active canvas, explicit local/synthetic truth, clear recovery controls, native alternatives, and quiet editorial hierarchy while correcting the five findings.
-
