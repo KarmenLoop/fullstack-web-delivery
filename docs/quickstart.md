@@ -43,3 +43,10 @@ Use a fictional inquiry, match its returned reference in the workspace, inspect 
 After answered discovery, request the complete plan and the project-specific UI/UX, design, page, action, motion and module specifications together. The skill now does this before implementation. See [the specification tutorial](specifications.md) and [populated example](generated/sensu/README.md). The optional Python renderer uses no third-party runtime packages and protects existing outputs.
 
 The complete example also includes [six operable interaction studies](interaction-studies.md) at `/interaction-lab`. They are alternatives to select by task; installing the skill does not add six effects to every project.
+
+
+## Explore motion, materials, and lighting
+
+Open `/motion-atlas` for connected state feedback and six distinct scroll mechanisms. Open `/motion-atlas#material` for the actual WebGL2 specimen: environment processing, bevel/grain reflection, pointer spring, adjustable light, and projected shadow. The [material tutorial](metal-material-study.md) explains the controls and context recovery; the [motion guide](motion-guide.md) covers the atlas.
+
+Use a browser that exposes WebGL2 for the material renderer. Native Chrome supplied the local trial; the embedded browser showed readable static fallback. The actual captures, GPU checks, test counts, and remaining device/performance limits are recorded in [verification](verification.md).

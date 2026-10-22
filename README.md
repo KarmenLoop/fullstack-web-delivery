@@ -1,151 +1,146 @@
 # Fullstack Web Delivery
 
-A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
+A reusable agent skill for taking a website from its first brief to a working, reviewable delivery. It brings discovery, project planning, content, UI/UX, frontend, backend, authentication, administration, motion, local preview, and acceptance into one workflow.
 
-**Version 0.9.0 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.9.0 · English documentation · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
-**License:** [Source-available, no modification](LICENSE). You may install and use the unchanged skill, including for commercial project work. Modifying or redistributing modified project materials requires written permission. Independently created project outputs have a separate exception. This is a custom license, not an OSI-approved open-source license.
+[Download](https://github.com/KarmenLoop/fullstack-web-delivery/releases/latest) · [Quickstart](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Example walkthrough](docs/example-guide.md) · [Motion and light](docs/metal-material-study.md) · [Verification](docs/verification.md)
 
-![English SENSU website: a cream-and-forest business proposition above an interactive service demonstration](docs/images/website-desktop.png)
+![Actual SENSU enterprise website with a cream-and-forest identity and interactive service explanations](docs/images/website-desktop.png)
 
-*An actual browser capture of the included fictional enterprise example. The interface and documentation are in English. This is an illustrative project, not a customer case or a hosted business service.*
+*The included SENSU Digital example is a fictional services business with real local inquiry, sign-in, permission, and storage flows. These are browser captures of the running example, not design mockups or customer case studies.*
 
-[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Motion guide](docs/motion-guide.md) · [UI matching](docs/ui-matching.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
+## What this project includes
 
-## What it delivers
+The repository contains two useful entry points:
 
-The skill helps an agent build brand websites, administration interfaces, and web applications according to the actual project. It covers discovery, research, architecture, content, UI/UX, frontend, APIs, authentication, persistent data, administration, preview, repair, and handover. It selects the relevant modules; a three-page portfolio does not automatically receive an account system.
+- **A portable skill** for agents building company websites, administration interfaces, and web applications. It reuses known requirements, plans the whole project, and selects the modules the business actually needs.
+- **A runnable reference project** with React server rendering, Express APIs, SQLite storage, staff sign-in, an inquiry workspace, six interaction studies, a motion atlas, and a WebGL material and lighting study.
 
-It is a set of instructions and references, not a model, framework, hosting service, or background runtime. The host agent supplies file access, terminal, search, browser, permissions, and any external services. Read the [capability and platform limits](docs/platforms.md).
+The skill supplies instructions, references, and an optional specification renderer. The host agent supplies its model, tools, permissions, browser, and services. Installing the skill does not start a server or grant access to a client's systems. The SENSU design illustrates the method; it is not a visual template for every client.
 
-| Stage | Concrete result |
+## From requirements to delivery
+
+![Workflow: reuse answers, plan and specify, compare layouts, build complete business flows, preview, repair, and deliver](docs/images/workflow.svg)
+
+| Step | Work and resulting artifacts |
 | --- | --- |
-| Adaptive discovery | Existing answers reused; four to six consequential questions per round only where decisions are missing |
-| Research | Relevant industry references, design principles, and GitHub candidates with adoption/rejection reasons |
-| Complete plan | Sitemap, menus, page templates, content, architecture, roles, states, APIs, data, delivery, and acceptance |
-| Project specification pack | Filled UI/UX prompt, page audiences/content/actions, linked states, motion and relevant module contracts with traceability |
-| Three-layout review | Comparable working A/B/C layouts, browser presentation, matched views and real selection or delegated choice |
-| Client-specific design | One coherent selected system checked for both visual quality and task usability |
-| Business increments | A complete flow through UI, API boundaries, permissions, storage, and feedback |
-| Continuous preview | An actual reachable preview and checks immediately after each increment |
-| Repair and acceptance | Reproductions, corrections, affected-scope rechecks, production regression, and agreed persistence checks |
-| Handover | Runnable source, commands, entry points, records, known limits, and release conditions |
+| Understand the project | Identify audience, core tasks, brand, functionality, content, constraints, and existing authorization. Reuse answers; inspect technical facts. |
+| Resolve missing decisions | Ask four to six consequential questions per round. The forty-question discovery pool is a resource, not a required questionnaire. |
+| Research the field | Study relevant industry leaders, design principles, and GitHub candidates. Record sources, licenses, adoption, rejection, and integration cost. |
+| Plan before implementation | Deliver architecture, sitemap, page templates, menu hierarchy, copy logic, roles, business states, APIs, storage, milestones, and acceptance. |
+| Define the design | Produce a project-specific UI/UX prompt and page, action, state, content, motion, and engineering specifications. |
+| Compare the layout | For new sites and substantial redesigns, open three materially different representative layouts with matched views and working controls. Record the user's choice or explicit delegation. |
+| Build the next complete flow | Choose work by dependencies, business value, and uncertainty. Connect the interface, API, permissions, storage, and feedback. |
+| Preview and repair | Operate each flow locally, check failure and permission paths, inspect narrow screens, fix observed defects, and recheck affected behavior. |
+| Accept and hand over | Regress agreed flows, production builds, and restart persistence. Deliver source, commands, entry points, documents, evidence, and remaining release conditions. |
 
-## Install the skill
+A plan-only request ends with a plan and implementation handoff. Previously authorized local development continues after the plan unless the user required a review gate. A missing integration credential blocks its dependent branch while independent work can continue. A selected visual direction or targeted repair keeps its existing scope.
 
-Release downloads provide a standalone skill archive and a complete source/documentation/example archive. You can also clone the repository into a location you control:
+Read [the workflow](docs/workflow.md), [complete project plan](docs/project-plan.md), and [visual decision tutorial](docs/visual-decisions.md).
+
+## Project-specific design and specifications
+
+Design starts with the client's field, audience, real content, and primary task. Relevant mature businesses inform hierarchy, service organization, navigation, and interaction. Their principles are translated into the client's own system rather than combining unrelated branded skins.
+
+The method draws on industry references, Apple interface principles, and the Taste and Impeccable design approaches. Those references inform deliberate composition, continuity, feedback, and bounded review; their text is not bundled or relicensed. The skill does not require those third-party skills to be installed. See [reference research](docs/reference-research.md) and [UI matching](docs/ui-matching.md).
+
+The populated [SENSU specification pack](docs/generated/sensu/README.md) contains 18 documents:
+
+| Area | What the documents make explicit |
+| --- | --- |
+| UI/UX and design | Reader, task, brand, composition, typography, spacing, surfaces, assets, responsive behavior, accessibility, and a copyable implementation prompt |
+| Pages and navigation | Who sees each page, its content and hierarchy, primary action, destination, menu placement, and phone behavior |
+| Actions and motion | Trigger, state owner, immediate feedback, pending and confirmed results, linked responses, interruption, failure, recovery, and reduced motion |
+| Frontend and backend | Rendering, routing, components, API methods and callers, validation, errors, idempotency, and integration boundaries |
+| Authentication and data | Session lifecycle, server-side roles, entities, legal transitions, audit, retention, and isolated test data |
+| Content and business | Voice, factual claims, company information, brand narrative, sourced trust evidence, media rights, and applicable commercial terms |
+| Preview and acceptance | Setup, commands, actual entry points, process ownership, end-to-end scenarios, evidence, defects, and rechecks |
+| Decisions and traceability | Reused answers, assumptions, research, authority, requirement mapping, and exact document hashes |
+
+The optional Python renderer writes these contracts from a populated JSON brief. It validates references and protects existing output directories. Generated execution results start at `NOT_RUN`; an intact manifest establishes reproducible documents, not completed implementation.
+
+```sh
+python3 skills/fullstack-web-delivery/scripts/generate_project_specs.py   --brief docs/specification-inputs/sensu.json   --out /tmp/sensu-specs-v1
+```
+
+Use a new output directory for a revision. See [the specification tutorial](docs/specifications.md), [filled UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), and [UI matching decisions](docs/generated/sensu/UI-MATCH-SPEC.md). The 0.8 specification snapshot records an earlier material deferral; the later [material implementation brief](docs/metal-card-brief.md) records its adoption as a separate atlas study.
+
+## Interaction, motion, and light
+
+Motion is assigned to a task and state before implementation. Buttons respond at input, pending work stays distinct from success, and linked elements share one source of state. Keyboard, touch alternatives, reduced motion, interruption, and recovery belong to the contract.
+
+| Included study | Working mechanisms |
+| --- | --- |
+| Completion feedback | Button-to-circle morph, drawn check, bounded particles, and a labeled local success/failure simulation |
+| Linked response | Checklist, progress ring, rolling count, and surface change driven by the same state |
+| Expand and settle | Reversible stacked cards; native snapping cards with a settled timeline; a bounded inertial wheel |
+| Navigation continuity | Click-origin circular transition with real URL/history state and reversible card transfer |
+| Operational feedback | Actual login orb/check confirmation, a bounded Command+K policy query, department paths, illustrative activity, inline detail, and yielding neighbors |
+| Scroll behavior | Separate reveal, scroll-linked progress, parallax, sticky context, proximity snap, and local horizontal overflow |
+| UI craft | Tabular numeric ranges, concentric radii, grouped entrances, balanced headings, layered elevation, and light/dark appearance |
+| Reflective material | Authored environment texture, horizontal/vertical GPU blur, bevel/grain normals, reflected sampling, and shared pointer springs |
+| Light and shadow | Adjustable direction/intensity, face and bevel highlights, a light-only diagnostic view, and a soft pose-dependent CSS shadow projection |
+
+![Actual dark motion atlas with coordinated department paths, activity, counts, and details](docs/images/motion-atlas-dark.jpg)
+
+The atlas's permission policy is explicitly fictional and read-only. Staff authentication and the inquiry workflow use real local APIs and persistent data. A successful animation never substitutes for a saved result.
+
+![Actual WebGL metallic card with bevel highlights and material/light controls](docs/images/metal-card-desktop.png)
+
+The material study exposes surface, normal, reflection, and light views, actual GPU pixel comparisons, and context loss/restoration. Reflection and highlights run on the GPU; the cast shadow is an identified CSS projection, not a ray-traced shadow. Unsupported contexts retain readable static content. Native Chrome rendered the local trial; the embedded browser exposed its static fallback.
+
+Explore [the six interaction studies](docs/interaction-studies.md), [motion atlas](docs/motion-guide.md), and [material and lighting tutorial](docs/metal-material-study.md). Effects are selected by purpose, not added as a checklist to every site. Original reference videos, private captures, and extracted frames are excluded from distribution.
+
+## Install and use the skill
+
+Choose the **standalone skill archive** for installation, or the **complete archive** for the skill, runnable example, tutorials, images, and scoped evidence. Releases include SHA-256 checksums and integrity records.
+
+To work from source:
 
 ```sh
 git clone https://github.com/KarmenLoop/fullstack-web-delivery.git
 cd fullstack-web-delivery
 ```
 
-Copy `skills/fullstack-web-delivery` into your agent's supported skill directory. Preserve the entire folder, including references and legal notices. Avoid replacing an existing installation without checking it. For a fresh Codex user-level installation:
+For a fresh Codex user-level installation, copy the entire skill folder and preserve its relative references and legal notices:
 
 ```sh
 mkdir -p ~/.agents/skills
 cp -R skills/fullstack-web-delivery ~/.agents/skills/
 ```
 
-Invoke it with a real brief:
+Inspect an existing installation's version and origin before replacing it. Invoke the skill with a real project brief:
 
 ```text
 Use $fullstack-web-delivery to build our company website.
-Reuse the requirements and brand material already in this project.
+Reuse the requirements and brand material already supplied.
 We need service pages, an inquiry form, staff sign-in, and an admin workspace.
-Deliver the complete plan before implementation, then continue authorized
+Deliver the complete plan and filled specifications first, then continue
 local development, preview, repair, and acceptance.
 For a new design, open three representative layouts for my feedback before
-expanding the selected direction. Continue independent authorized work meanwhile.
-Use fictional data and keep the preview local.
+expanding the selected direction. Keep the trial local with fictional data.
 ```
 
-The forty-question discovery pool is not a forty-question obligation. The agent should inspect technical facts itself, reuse supplied answers, and ask only for consequential decisions. See [installation and invocation](docs/quickstart.md) for fresh versus existing installations and a manual file-reading route.
+Setup documentation covers Codex, Claude Code, Cursor, Qoder, WorkBuddy, Koder, and Koder CLI. Native discovery, tool capabilities, and runtime acceptance differ by host; only the Codex desktop field trial is recorded as executed. A file-capable agent can read the actual `SKILL.md` and relevant references manually. Cloud sessions require their own accessible files and supported preview forwarding.
 
-## How the agent chooses the next step
+Read [the quickstart](docs/quickstart.md) and [platform evidence matrix](docs/platforms.md) before choosing an installation route.
 
-![Workflow: inspect the brief, plan the project, resolve design, build a complete flow, preview and repair, then regress and hand over](docs/images/workflow.svg)
+## Run the complete SENSU example
 
-1. Read project rules, source, existing decisions, and authorization.
-2. Separate business decisions from facts it can inspect and reversible choices it can make.
-3. Research the client's industry and actual user tasks before choosing a visual direction or dependency.
-4. Deliver the complete plan and project-specific specification pack before implementation. Continue when development is already authorized; wait only at a review gate the user requested.
-5. For new sites or substantial visual redesigns, build three distinct representative layouts and open the comparison for feedback. Reuse a specifically chosen layout or targeted-fix scope. Record the actual selection or explicit delegation before expanding dependent templates; check appearance and the primary task separately.
-6. Select the next flow with satisfied dependencies, high business value, or a consequential uncertainty to resolve.
-7. Operate it, inspect its data and access boundaries, repair observed defects, and verify affected scope.
-8. Regress the agreed site, production build, and persistence before handover.
+SENSU Digital is a fictional SME services company. The example contains nine public content pages, visitor consultation, staff sign-in, an inquiry workspace, and the interaction/atlas routes. Visitors submit without an account. Read-only staff inspect records; administrators advance `New → In progress → Done` with version checks and transactional audit history.
 
-An unavailable credential blocks its integration branch, not unrelated public content. A failed probe is inspected before blaming the product. An uncertain save is not automatically repeated. A screenshot, build, or author statement is not a complete end-to-end result. The [workflow guide](docs/workflow.md) explains these decisions and recovery rules.
-
-## Design for the client, not the template
-
-The design process starts with the client's field, audience, content, and task. It studies relevant mature businesses, extracts specific principles, and translates them into a project-specific composition. GitHub libraries supply implementation mechanisms, not a reason to mix several branded skins.
-
-For the services example, research included Thoughtworks and Work & Co for service organization, Stripe for explaining mechanisms, Linear for task hierarchy, Apple HIG for layout and purposeful motion, and Primer Brand/Carbon for component responsibilities. Radix Dialog and Motion were already in use and retained; reference code and customer material were not copied.
-
-The resulting interface uses a cream/forest palette, an explicit business proposition, three distinct service demonstrations, consistent detail pages, clear inquiry feedback, and a separate phone record list. Apple principles inform hierarchy, grouping, feedback, and interruptible motion; they do not prescribe a universal glass treatment. Sources and decisions are in [reference research](docs/reference-research.md).
-
-![Phone inquiry workspace with visible state and a complete detail action on each record](docs/images/admin-mobile.png)
-
-*Phone usability is checked by finding and completing the task, not merely by eliminating page overflow.*
-
-## Compare before expanding the site
-
-Version 0.6.0 adds a visual review stage. A new site or substantial visual redesign starts with three representative layouts that differ in information order, composition, hierarchy or navigation while sharing the real brief, core content and brand constraints. The agent operates the important controls, opens the local comparison in the user-facing browser, and presents matched desktop/phone views with identifiable links and tradeoffs.
-
-Users can select, combine, revise or reject the options. A pending preference blocks its dependent visual expansion while independent authorized work can continue. An explicitly delegated choice is recorded as the agent's decision. A selected layout or narrow repair is preserved. Later consequential design choices also use working previews, annotated views or flow diagrams when useful. Read [the visual review tutorial](docs/visual-decisions.md). This is a workflow update; the existing SENSU captures are not a new three-layout trial.
-
-## From answers to concrete design instructions
-
-After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 18 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, UI matching decisions, a placement map, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
-
-The optional standard-library renderer consumes a populated JSON brief. It does not invent business facts, interview the user or grant authority. The host agent can write the same contracts directly in the client's language. The bundled renderer is English. Existing output directories are protected; revised designs go into a new directory for comparison.
-
-```sh
-python3 skills/fullstack-web-delivery/scripts/generate_project_specs.py \
-  --brief docs/specification-inputs/sensu.json --out /tmp/sensu-specs-v1
-python3 scripts/test_specifications.py -v
+```mermaid
+flowchart LR
+    A[Public React SSR pages] --> B[Same-origin Express API]
+    C[Administrator / read-only workspace] --> B
+    B --> D[SQLite inquiries and audit events]
+    B --> E[Persistent sessions and server-side roles]
 ```
 
-See [the specification tutorial](docs/specifications.md) for input structure, module selection and safe revision. Generated traceability starts at NOT_RUN, because generation does not prove implementation.
-
-## Six interaction studies
-
-The example adds `/interaction-lab`, an isolated workbench with one live study at a time: a completion morph/check/particle sequence; linked checklist/ring/count/surface; reversible stacked cards; native snapping cards with a settled timeline; a bounded inertial wheel; and click-origin circular navigation with real URL/history state. These are optional patterns selected by task, not effects to scatter across a client's website.
-
-![Actual desktop interaction workbench](docs/images/interaction-lab-desktop.jpg)
-
-The studies include explicit state feedback, failure/retry where applicable, keyboard paths and reduced-motion behavior. Completion is labeled as a local simulation; the real inquiry API is separate. [Operate the studies](docs/interaction-studies.md) and inspect their [portable contracts](skills/fullstack-web-delivery/references/interaction-patterns.md).
-
-## Match the finish to the task
-
-Version 0.8.0 adds page-specific UI matching: tabular numeric ranges, concentric radii, bounded grouped entrances, balanced headings and layered elevation. The agent records adopt/defer/omit decisions with reasons, states, implementation, fallbacks and verification in UI-MATCH-SPEC.md and directly in the filled UI/UX prompt. Reflective cards have a conditional CSS/WebGL/PBR route, including environment source, blur, bevel/grain normals, coupled spring motion and lifecycle acceptance. They are not a default for every client or operational surface.
-
-Read [the matching tutorial](docs/ui-matching.md) and [filled decisions](docs/generated/sensu/UI-MATCH-SPEC.md). The 0.8.0 specification snapshot records the earlier deferral. Version 0.9.0 implements the separately requested specimen in the atlas; its [material tutorial](docs/metal-material-study.md) and scoped evidence supersede that deferral for this study.
-
-## A working reflective material
-
-Version 0.9.0 adds an actual WebGL2 card at `/motion-atlas#material`: a locally authored environment texture, separate horizontal and vertical blur targets, bevel and grain normals, reflected sampling, shared pointer springs, directional highlights and a soft pose-dependent shadow. Surface, normal, reflection and light views expose the mechanism. Ordinary controls remain usable with keyboard and static motion paths; context loss has an explicit fallback and restoration action.
-
-![Actual GPU metallic card with bevel light and material controls](docs/images/metal-card-desktop.png)
-
-Read [the implementation and operating tutorial](docs/metal-material-study.md). Actual GPU pixel readbacks are separate from physical-device and frame-time acceptance.
-
-## Connected motion, with a source and a recovery path
-
-Version 0.7.0 adds a working motion atlas: real-login orb/check feedback, rolling digits, a bounded Command+K permission query, selected department paths, illustrative activity waves, inline disclosure, yielding neighbors, reversible card continuity, light/dark appearance and six distinct scroll mechanisms. These are task-specific capabilities; the skill maps them to pages/actions before implementation rather than applying every effect everywhere.
-
-![Actual dark motion atlas: one selected department connects its path, activity, count and detail](docs/images/motion-atlas-dark.jpg)
-
-[Operate the atlas and read the tutorial](docs/motion-guide.md). The permission model is explicitly fictional and read-only, while staff authentication and the inquiry workflow remain real local API/database flows. A supplied video informed the mechanisms; its clip, extracted frames and reference branding are not redistributed. The new [MOTION-MAP](docs/generated/sensu/MOTION-MAP.md) records 16 placements, actual drivers, interruption, alternatives and verification.
-
-## Run the complete example
-
-The included example is **SENSU Digital**, a fictional SME services company. It contains nine public content pages, staff sign-in, and an inquiry workspace. Visitors submit without an account. Read-only staff can inspect; administrators advance New -> In progress -> Done with version checks and an audit history.
-
-Use Node 22.13 or newer within the Node 22 line:
+Use Node 22.13 or newer within the Node 22 release line. From the repository root:
 
 ```sh
 cd examples/sensu-enterprise
@@ -155,50 +150,62 @@ npm run build
 npm start
 ```
 
-Open `http://127.0.0.1:4319/`, `http://127.0.0.1:4319/login`, `http://127.0.0.1:4319/interaction-lab`, and `http://127.0.0.1:4319/motion-atlas`. Read `.local/demo-access.json` on your own machine for freshly generated administrator and read-only passwords. No universal demo password is published. The server binds loopback, and no email is sent.
+| Local entry | Purpose |
+| --- | --- |
+| `http://127.0.0.1:4319/` | Public company website |
+| `http://127.0.0.1:4319/contact` | Visitor inquiry and saved reference |
+| `http://127.0.0.1:4319/login` | Staff sign-in and role-based workspace |
+| `http://127.0.0.1:4319/interaction-lab` | Six interaction studies |
+| `http://127.0.0.1:4319/motion-atlas` | Connected motion and scroll mechanisms |
+| `http://127.0.0.1:4319/motion-atlas#material` | WebGL material, light, and shadow study |
+
+Setup generates random administrator and read-only credentials in `.local/demo-access.json` on the operator's machine. No universal password is published. The server binds loopback; no email, payment, external CRM, or real customer contact is included. Private data, credentials, dependencies, and generated build output are excluded from the release archives.
 
 ```sh
 npm test
 npm run verify:http
 ```
 
-The HTTP check requires the production server. For a different free port, set `PORT` for startup and `SITE_ORIGIN` for verification. The [example guide](docs/example-guide.md) covers the same-record walkthrough, APIs, data, recovery, cleanup, and stopping. The license permits running this example unchanged; adapting its source requires written permission. Independently authored websites created using the skill are addressed separately in [the license guide](docs/licensing.md).
+The HTTP check requires the production server. For a different free port, set `PORT` at startup and `SITE_ORIGIN` for verification. Follow [the example walkthrough](docs/example-guide.md) for receipt-to-admin matching, API boundaries, data, restart, stopping, and explicit cleanup.
 
-![Administrator workspace showing real local demonstration inquiries and their processing states](docs/images/admin-desktop.png)
+![Actual local administrator workspace with inquiry states and complete record actions](docs/images/admin-desktop.png)
 
-## Verification and honest limits
+## Verification and limits
 
-Versioned bodies of evidence are kept separate:
+The [versioned verification record](docs/verification.md) separates source review, automated checks, actual browser operation, screenshots, independent review, and device acceptance. The recorded 0.9.0 results include:
 
-- The earlier 0.3.0 local rerun recorded 11 formal tests,8 live API checks,18 public viewport checks,12 production routes, and session/data persistence across restarts. Its independent design verdict covered five screenshot/source corrections only.
-- The 0.4.1 English publication has fresh source, documentation, test, build, route, and browser checks in [the verification record](docs/verification.md). Historic counts are not silently reassigned to a localized interface. Hosted CI reports its own actual status above.
+| Check | Recorded result | Scope |
+| --- | --- | --- |
+| Application tests | 19 passed | Business/API/maintenance checks and spring/hit-area math |
+| Specification tests | 9 passed | Reference validation, output protection, and reproducibility |
+| Production build and routes | Client/SSR builds; 14 routes passed | Rendering, metadata, status, landmarks, and CSP |
+| GPU execution | Native Chrome WebGL2 checks passed | Real blur-stage pixels and changed output under tilt, bevel, grain, and light fixtures |
+| Browser operation | Pointer, keyboard light changes, diagnostic modes, context loss/restoration | Author observations, separate from controlled GPU fixtures |
+| Independent finish review | Source and desktop/phone/fallback captures passed | Composition and sampled source; no independent temporal or physical-device certification |
+| Restart readback | Original completed record and two audit events retained | Read-only check after the owned production restart |
+| Hosted CI | Linked workflow runs against the published commit | Automated repository and example jobs |
 
-The 0.7.0 extension records 17 passing application tests, seven specification tests, client/SSR production builds, 14 HTTP routes, same-record/session restart readback and scoped browser checks. Independent review resolved two source-level findings; its ship verdict covers those fixes, not independent whole-product runtime acceptance. See [versioned evidence](docs/verification.md).
+Earlier versions retain their own evidence rather than inheriting current results. Real-phone gestures, GPU timing/FPS, full accessibility/security audits, other agent-host runtimes, and public deployment of the example remain unverified where not explicitly recorded. Source guards and still images do not establish those outcomes.
 
-The 0.5.0 extension has its own [verification scope](docs/verification.md), including specification tests and interaction observations.
+## Documentation and repository map
 
-Other agent platforms, physical phones, independent complete runtime QA, a full accessibility/performance audit, transaction flows, external messaging, and public deployment of the website remain unverified unless the evidence explicitly says otherwise. No production-readiness or certification claim is made.
+| Directory | Contents |
+| --- | --- |
+| `skills/fullstack-web-delivery/` | Portable instructions, conditional references, optional renderer, and legal notices |
+| `examples/sensu-enterprise/` | Public pages, inquiry, sign-in, administration, APIs, storage, studies, and tests |
+| `docs/` | Planning, design, installation, operating tutorials, generated contracts, and actual images |
+| `evidence/` | Versioned check results, source fingerprints, capture provenance, and bounded reviews |
+| `scripts/` | Repository validation, specification tests, and release packaging |
+| `.github/` | Hosted verification and issue forms |
 
-## Repository map
+Start with [installation](docs/quickstart.md), [project planning](docs/project-plan.md), [specifications](docs/specifications.md), or [verification](docs/verification.md). [The changelog](CHANGELOG.md) preserves the release history.
 
-```text
-skills/fullstack-web-delivery/  Portable skill and conditional references
-examples/sensu-enterprise/     Complete English local example
-  src/                        Public pages, form, login, and administration
-  server/                     APIs, SQLite, sessions, and page serving
-  scripts/                    Setup, cleanup, and HTTP verification
-  tests/                      HTTP and isolated maintenance checks
-docs/                         Tutorials, workflow, design, planning, and media
-evidence/                     Scoped public verification records
-scripts/                      Repository checks and release packaging
-.github/                      CI and issue forms
-LICENSE                       Custom source-available terms
-NOTICE                        Copyright, attribution, and affiliation boundaries
-THIRD_PARTY_NOTICES.md         Dependency and research distinctions
-```
+## License and support
 
-## Reporting an issue and licensing
+This project uses the [KarmenLoop Source-Available No-Modification License](LICENSE), not an OSI-approved open-source license. You may install and use the unchanged skill, including for commercial project work, and run the unchanged example locally. Modified instructions, example source, translations, rebranding, patches, or derivative distributions require prior written permission. Permitted copies must retain copyright and legal notices.
 
-Use [the issue guidance](CONTRIBUTING.md) for reproducible reports. See [SECURITY.md](SECURITY.md) for sensitive findings and [SUPPORT.md](SUPPORT.md) for scope. Modified forks, translations, patches, rebranding, and derivative distributions require prior written permission. GitHub's own viewing/forking rights and third-party licenses remain intact. Contact `info@karmenloop.com` for additional rights.
+Independently created website or application outputs have a separate exception; copying or adapting the included example source does not qualify automatically. Third-party licenses and GitHub platform rights remain intact. Read [the license guide](docs/licensing.md), [NOTICE](NOTICE), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-Copyright (c)2026 KarmenLoop. Preserve copyright and license notices in permitted copies.
+For reproducible issues, follow [CONTRIBUTING.md](CONTRIBUTING.md). Use [SECURITY.md](SECURITY.md) for sensitive findings and [SUPPORT.md](SUPPORT.md) for scope. Contact `info@karmenloop.com` for additional rights.
+
+Copyright (c) 2026 KarmenLoop. All rights reserved except as granted in LICENSE.
