@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Read-only storage after the owned production restart; no repeated business submission",
+  "record": {
+    "id": "SX-6500EBF3BDED",
+    "status": "done",
+    "version": 3
+  },
+  "audit_events": 2
+}

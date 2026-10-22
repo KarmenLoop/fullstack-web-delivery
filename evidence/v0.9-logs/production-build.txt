@@ -1,0 +1,27 @@
+
+> fullstack-web-delivery-sensu-example@0.9.0 build
+> vite build && vite build --ssr src/entry-server.jsx --outDir dist/server
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 511 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.59 kB │ gzip:   0.34 kB
+dist/assets/index-C8ogPbKo.css   79.79 kB │ gzip:  16.11 kB
+dist/assets/index-DNIxW0vH.js   587.15 kB │ gzip: 186.97 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 347ms
+vite v8.3.5 building ssr environment for production...
+transforming...
+✓ 21 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/server/entry-server.js  196.31 kB │ gzip: 48.73 kB
+
+✓ built in 58ms

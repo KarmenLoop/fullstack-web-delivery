@@ -15,6 +15,7 @@ import {
 } from "@radix-ui/react-icons";
 import { motion, LayoutGroup, useScroll, useTransform } from "motion/react";
 import { Odometer } from "./MotionPrimitives.jsx";
+import MetalCard from "./MetalCard.jsx";
 import { useMotionPreference } from "./useMotionPreference.js";
 import "./motion-atlas.css";
 
@@ -582,6 +583,7 @@ export default function MotionAtlas() {
         <nav aria-label="Motion atlas navigation">
           <a href="#workspace">Access map</a>
           <a href="#scroll-study">Scroll</a>
+          <a href="#material">Material</a>
           <a href="#continuity">Continuity</a>
           <Link to="/interaction-lab">Six studies</Link>
         </nav>
@@ -733,6 +735,7 @@ export default function MotionAtlas() {
           )}
         </section>
         <ScrollStudy />
+        <MetalCard />
         <CardTransfer />
         <footer className="ma-footer">
           <p>

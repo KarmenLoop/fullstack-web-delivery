@@ -2,7 +2,7 @@
 
 A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
 
-**Version 0.8.0 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.9.0 · English publication · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
@@ -123,7 +123,15 @@ The studies include explicit state feedback, failure/retry where applicable, key
 
 Version 0.8.0 adds page-specific UI matching: tabular numeric ranges, concentric radii, bounded grouped entrances, balanced headings and layered elevation. The agent records adopt/defer/omit decisions with reasons, states, implementation, fallbacks and verification in UI-MATCH-SPEC.md and directly in the filled UI/UX prompt. Reflective cards have a conditional CSS/WebGL/PBR route, including environment source, blur, bevel/grain normals, coupled spring motion and lifecycle acceptance. They are not a default for every client or operational surface.
 
-Read [the matching tutorial](docs/ui-matching.md) and [filled decisions](docs/generated/sensu/UI-MATCH-SPEC.md). This is a skill/document-renderer update. The existing running example remains at 0.7.0; no new compiled WebGL component or browser acceptance is claimed.
+Read [the matching tutorial](docs/ui-matching.md) and [filled decisions](docs/generated/sensu/UI-MATCH-SPEC.md). The 0.8.0 specification snapshot records the earlier deferral. Version 0.9.0 implements the separately requested specimen in the atlas; its [material tutorial](docs/metal-material-study.md) and scoped evidence supersede that deferral for this study.
+
+## A working reflective material
+
+Version 0.9.0 adds an actual WebGL2 card at `/motion-atlas#material`: a locally authored environment texture, separate horizontal and vertical blur targets, bevel and grain normals, reflected sampling, shared pointer springs, directional highlights and a soft pose-dependent shadow. Surface, normal, reflection and light views expose the mechanism. Ordinary controls remain usable with keyboard and static motion paths; context loss has an explicit fallback and restoration action.
+
+![Actual GPU metallic card with bevel light and material controls](docs/images/metal-card-desktop.png)
+
+Read [the implementation and operating tutorial](docs/metal-material-study.md). Actual GPU pixel readbacks are separate from physical-device and frame-time acceptance.
 
 ## Connected motion, with a source and a recovery path
 

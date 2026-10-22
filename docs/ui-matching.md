@@ -45,3 +45,7 @@ The original video's source implementation was not supplied. The user's metallic
 ## Verify and adapt
 
 Run the specification tests and repository checks, then inspect the generated decisions and prompt together. The [0.8 evidence](../evidence/v0.8-ui-matching-checks.json) separates this instruction/renderer work from the prior [running application evidence](verification.md). A future selected GPU implementation needs its own actual browser/device acceptance; a recipe or intact document manifest does not supply it.
+
+## Later implementation
+
+Version 0.9.0 adopts the separately requested reflective specimen in the motion atlas, including light/shadow controls and actual WebGL execution. Read [the material tutorial](metal-material-study.md) and [versioned verification](verification.md). The 0.8 generated design snapshot and its NOT_RUN traceability remain historical contracts; they are not silently rewritten as completed tests.

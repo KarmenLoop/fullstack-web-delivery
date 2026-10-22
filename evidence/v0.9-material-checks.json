@@ -1,0 +1,105 @@
+{
+  "version": "0.9.0",
+  "status": "PASS",
+  "scope": "Requested material implementation, local browser observations, bounded independent source/capture review and distribution checks",
+  "baseline_commit": "aec4233865af34caf745c413bb19e99169fe3eb9",
+  "environment": {
+    "os": "macOS",
+    "node": "22.23.2",
+    "npm": "10.9.8",
+    "runtime": "Local production SSR and same-origin API; native Chrome WebGL2"
+  },
+  "checks": [
+    {
+      "command": "npm test",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "tests": 19,
+      "log": "evidence/v0.9-logs/node-tests.txt"
+    },
+    {
+      "command": "npm run build",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "log": "evidence/v0.9-logs/production-build.txt",
+      "final_artifacts_byte_identical_to_previewed_build": true
+    },
+    {
+      "command": "npm run verify:http",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "routes": 14,
+      "log": "evidence/v0.9-logs/production-routes.txt"
+    },
+    {
+      "command": "python3 scripts/test_specifications.py -v",
+      "cwd": ".",
+      "exit_code": 0,
+      "tests": 9,
+      "log": "evidence/v0.9-logs/specification-tests.txt"
+    },
+    {
+      "command": "official quick_validate.py skills/fullstack-web-delivery",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.9-logs/skill-validation.txt"
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.9-logs/repository.txt"
+    },
+    {
+      "command": "git diff --quiet HEAD -- examples/sensu-enterprise/server",
+      "cwd": ".",
+      "exit_code": 0,
+      "scope": "Existing server/API/storage source unchanged from baseline"
+    }
+  ],
+  "gpu": {
+    "desktop_production": "evidence/metal-gpu-desktop.json",
+    "phone_early_development": "evidence/metal-gpu-mobile.json",
+    "phone_note": "Early full JSON precedes final light-intensity formula correction; final production phone check was separately observed passing, not substituted into that JSON.",
+    "observed": [
+      "Two linked programs and two complete 512x256 blur targets",
+      "Actual horizontal and vertical/desaturated pixels differ",
+      "Tilt, bevel, grain and opposite light fixtures change actual material pixels",
+      "Actual native pointer drag changed shared angles; leave settled to neutral",
+      "Keyboard changed light direction; normal/reflection/light views operated",
+      "Injected context loss showed static content; restore returned to selected view",
+      "Final desktop1512x772 and phone390x844 captures plus embedded-browser390 fallback"
+    ],
+    "gl_error": 0
+  },
+  "independent_finish": {
+    "disposition": "ship",
+    "report": "evidence/metal-finish-review.md",
+    "scope": "Source and three valid captures; no independent runtime, temporal or physical-device QA",
+    "initial_recapture": "Cropped phone evidence rejected; corrected full-card capture reviewed"
+  },
+  "documentation": "evidence/metal-design-documentation.md",
+  "restart": "evidence/metal-restart-readback.json",
+  "installation": {
+    "files": 24,
+    "previous_install_verified_against_baseline": true,
+    "new_files_exact": true
+  },
+  "limits": [
+    "Physical phones and GPU timing/FPS NOT_RUN",
+    "Full accessibility/security audit NOT_RUN",
+    "Forced-colors and hidden/offscreen lifecycle source reviewed, not runtime certified",
+    "Exceptional restoration-failure path not injected",
+    "No repeat of full business submission/admin flow this turn; original completed record retained",
+    "Native Safari stalled; embedded browser has no WebGL2 context",
+    "Other agent-host behavior and public website deployment NOT_RUN"
+  ],
+  "retained_observations": [
+    "Unsupported embedded WebGL uses readable fallback",
+    "Native browser provider unavailable; actual native Chrome supplied GPU execution",
+    "Translation popup produced a stale reference; fresh state used",
+    "Browser translation stylesheet blocked by existing CSP; policy retained",
+    "A different active-window capture and cropped phone capture were rejected",
+    "Client chunk size advisory retained"
+  ]
+}

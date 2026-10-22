@@ -61,6 +61,7 @@ Fill these fields from the current project, then include them in the UI/UX promp
     Trigger and state owner: [input, scroll or confirmed data]
     Motion: [parts, order, maximum delay, interruption]
     Material route: [ordinary CSS / translucent CSS / optional WebGL]
+    Light and shadow: [direction, intensity, face/bevel highlight, shadow mechanism, pose response]
     Fallback: [readable static content, reduced motion, coarse pointer, forced colors]
     Verification: [actual copy, numeric range, widths, fonts and recovery scenario]
 

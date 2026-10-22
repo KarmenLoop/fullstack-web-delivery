@@ -5,7 +5,7 @@ description: "Plan and deliver complete websites with adaptive discovery, indust
 
 # Fullstack Web Delivery
 
-Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.8.0.
+Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.9.0.
 
 ## 1. Establish the scope
 
@@ -37,7 +37,7 @@ For a new site or substantial visual redesign, follow [visual decisions](referen
 
 Record the actual selection source and update the UI/UX prompt and design contracts. Check visual quality and task usability separately. Verify that promised content is rendered and phone users can discover key states and actions. Record triggers, states, feedback, failure recovery, keyboard/touch behavior, APIs, and motion for each applicable control.
 
-Match typography, nested radii, grouped entrances, heading wrapping and elevation to actual page elements with [UI fit and finish](references/ui-fit-and-finish.md). After the brief, generate UI-MATCH-SPEC.md with adopt/defer/omit decisions, task-specific reasons, implementation, states, fallbacks and verification; include it in the UI/UX prompt. For requested reflective cards, read [metallic surfaces](references/metallic-surfaces.md) and choose CSS or a justified GPU route with an explicit environment source, coupled motion and a readable fallback.
+Match typography, nested radii, grouped entrances, heading wrapping and elevation to actual page elements with [UI fit and finish](references/ui-fit-and-finish.md). After the brief, generate UI-MATCH-SPEC.md with adopt/defer/omit decisions, task-specific reasons, implementation, states, fallbacks and verification; include it in the UI/UX prompt. For requested reflective cards, read [metallic surfaces](references/metallic-surfaces.md) and choose CSS or a justified GPU route with an explicit environment source, coupled motion and a readable fallback. Specify light direction/intensity, face and bevel highlights, shadow mechanism, and how each responds to pose; distinguish GPU lighting from a CSS shadow approximation. Verify actual stage pixels and context recovery before claiming a working GPU material.
 
 Every enabled control must act and every link must reach a supported destination. Start feedback at input; show success only after the actual operation confirms it. Derive linked responses from one state. Make animation interruptible and retain keyboard, touch, focus and reduced-motion paths. Select [advanced patterns](references/interaction-patterns.md) by purpose; do not add all six effects to every site. Learn reference principles within their scope: marketing composition, operational usability and a client's existing brand are different constraints.
 

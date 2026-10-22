@@ -1,0 +1,5 @@
+
+> fullstack-web-delivery-sensu-example@0.9.0 verify:http
+> node scripts/verify-http.mjs
+
+PASS: 14 HTTP routes, rendered landmarks, metadata, status codes, and CSP.

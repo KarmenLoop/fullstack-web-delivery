@@ -1,0 +1,84 @@
+{
+  "api": "WebGL2",
+  "runtime": {
+    "visible": false,
+    "documentHidden": false,
+    "pointerEvents": 0,
+    "motionEnabled": false
+  },
+  "springAngles": [
+    0,
+    0
+  ],
+  "targetAngles": [
+    0,
+    0
+  ],
+  "environment": "Authored studio panorama, 512x256",
+  "programsLinked": 2,
+  "framebuffersComplete": 2,
+  "blurAxes": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "stagePixels": {
+    "horizontal": "c6d492f0",
+    "verticalDesaturated": "f5867942",
+    "different": true
+  },
+  "materialPixels": {
+    "base": "92ab9c50",
+    "tilted": "598b78a5",
+    "flat": "055c41d0",
+    "grained": "bbe1dc11",
+    "lightA": "d860518a",
+    "lightB": "18139827",
+    "tiltChangesPixels": true,
+    "bevelChangesPixels": true,
+    "grainChangesPixels": true,
+    "lightChangesPixels": true
+  },
+  "lighting": {
+    "angle": 135,
+    "power": 0.75,
+    "shadow": "Layered CSS projection driven by light direction and spring pose"
+  },
+  "drawingBuffer": [
+    495,
+    312
+  ],
+  "cssCard": [
+    330,
+    208.0703125
+  ],
+  "viewport": [
+    390,
+    844
+  ],
+  "pageWidth": 390,
+  "devicePixelRatio": 2,
+  "spring": {
+    "current": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "velocity": [
+      0,
+      0
+    ],
+    "motionEnabled": false
+  },
+  "glError": 0,
+  "drawCount": 40,
+  "passed": true
+}

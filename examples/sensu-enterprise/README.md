@@ -20,3 +20,5 @@ The workflow is visitor submission -> saved reference -> staff lookup -> adminis
 The explicit command npm run data:clear -- --confirm-local removes this project's local inquiries, history, and sessions while preserving accounts. Use it only for disposable trial data. npm run accounts:reset rotates local passwords and invalidates sessions.
 
 See [the complete example guide](../../docs/example-guide.md), [verification](../../docs/verification.md), and [license guide](../../docs/licensing.md). Source archives exclude .local, node_modules, and generated dist. Initialization after extraction creates fresh credentials and empty inquiry data.
+
+The optional reflective specimen is at `/motion-atlas#material`. Use a browser that exposes WebGL2; semantic static content remains available without it. Inspect [the material tutorial](../../docs/metal-material-study.md) for controls, GPU readback, restoration and actual validation limits.

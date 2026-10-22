@@ -1,0 +1,134 @@
+
+> fullstack-web-delivery-sensu-example@0.9.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# (node:7206) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: permission answers come from the declared fictional rule in English and Chinese
+ok 1 - permission answers come from the declared fictional rule in English and Chinese
+  ---
+  duration_ms: 1221.720875
+  type: 'test'
+  ...
+# Subtest: unsupported permission subjects never inherit the user-access answer
+ok 2 - unsupported permission subjects never inherit the user-access answer
+  ---
+  duration_ms: 1737.770375
+  type: 'test'
+  ...
+# Subtest: bounded query validation and unsupported writes preserve business data
+ok 3 - bounded query validation and unsupported writes preserve business data
+  ---
+  duration_ms: 760.577583
+  type: 'test'
+  ...
+# Subtest: search and empty results do not invent a permission answer
+ok 4 - search and empty results do not invent a permission answer
+  ---
+  duration_ms: 407.296833
+  type: 'test'
+  ...
+# (node:7208) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: anonymous access, login failure, session rotation and logout are enforced
+ok 5 - anonymous access, login failure, session rotation and logout are enforced
+  ---
+  duration_ms: 4044.441458
+  type: 'test'
+  ...
+# Subtest: form validation, consent, honeypot and strict fields reject invalid input
+ok 6 - form validation, consent, honeypot and strict fields reject invalid input
+  ---
+  duration_ms: 1179.668375
+  type: 'test'
+  ...
+# Subtest: a submitted inquiry is durable and idempotency detects changed payloads
+ok 7 - a submitted inquiry is durable and idempotency detects changed payloads
+  ---
+  duration_ms: 1687.3745
+  type: 'test'
+  ...
+# Subtest: same-origin and CSRF checks reject untrusted mutations
+ok 8 - same-origin and CSRF checks reject untrusted mutations
+  ---
+  duration_ms: 993.691875
+  type: 'test'
+  ...
+# Subtest: viewer can read a real inquiry but cannot change its status
+ok 9 - viewer can read a real inquiry but cannot change its status
+  ---
+  duration_ms: 1581.784041
+  type: 'test'
+  ...
+# Subtest: state changes, optimistic conflict and actor audit are consistent
+ok 10 - state changes, optimistic conflict and actor audit are consistent
+  ---
+  duration_ms: 3198.832083
+  type: 'test'
+  ...
+# Subtest: search, filters, pagination and special characters use real stored data
+ok 11 - search, filters, pagination and special characters use real stored data
+  ---
+  duration_ms: 2161.393417
+  type: 'test'
+  ...
+# Subtest: sessions survive server restart, expire, and carry HttpOnly and SameSite cookies
+ok 12 - sessions survive server restart, expire, and carry HttpOnly and SameSite cookies
+  ---
+  duration_ms: 1365.356042
+  type: 'test'
+  ...
+# Subtest: login and form rate limits return explicit recoverable errors
+ok 13 - login and form rate limits return explicit recoverable errors
+  ---
+  duration_ms: 1853.78875
+  type: 'test'
+  ...
+# Subtest: wheel projects velocity, rounds to a tick and contains overshoot at both bounds
+ok 14 - wheel projects velocity, rounds to a tick and contains overshoot at both bounds
+  ---
+  duration_ms: 0.528959
+  type: 'test'
+  ...
+# Subtest: radial reveal covers the farthest corner from edge and center origins
+ok 15 - radial reveal covers the farthest corner from edge and center origins
+  ---
+  duration_ms: 10.245417
+  type: 'test'
+  ...
+# (node:7211) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: the cleanup command requires an explicit scope and preserves staff accounts
+ok 16 - the cleanup command requires an explicit scope and preserves staff accounts
+  ---
+  duration_ms: 968.965959
+  type: 'test'
+  ...
+# Subtest: setup creates local random credentials and preserves them until explicit rotation
+ok 17 - setup creates local random credentials and preserves them until explicit rotation
+  ---
+  duration_ms: 4318.47525
+  type: 'test'
+  ...
+# Subtest: spring settles, retargets with velocity and bounds long frame gaps
+ok 18 - spring settles, retargets with velocity and bounds long frame gaps
+  ---
+  duration_ms: 11.930333
+  type: 'test'
+  ...
+# Subtest: pointer mapping uses the stable hit area and clamps external coordinates
+ok 19 - pointer mapping uses the stable hit area and clamps external coordinates
+  ---
+  duration_ms: 0.204167
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 20703.901

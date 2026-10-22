@@ -1,0 +1,48 @@
+[
+  {
+    "file": "docs/images/metal-card-desktop.png",
+    "source": "Native Chrome production browser capture",
+    "source_pixels": [
+      3024,
+      1718
+    ],
+    "css_viewport": [
+      1512,
+      772
+    ],
+    "crop_pixels": [
+      0,
+      350,
+      3024,
+      1718
+    ],
+    "output_pixels": [
+      3024,
+      1368
+    ],
+    "edits": "Crop only; no reconstructed pixels, filtering or content changes"
+  },
+  {
+    "file": "docs/images/metal-card-mobile.png",
+    "source": "Native Chrome production browser capture",
+    "source_pixels": [
+      3024,
+      1718
+    ],
+    "css_viewport": [
+      390,
+      844
+    ],
+    "crop_pixels": [
+      642,
+      308,
+      1274,
+      1676
+    ],
+    "output_pixels": [
+      632,
+      1368
+    ],
+    "edits": "Crop only; no reconstructed pixels, filtering or content changes"
+  }
+]

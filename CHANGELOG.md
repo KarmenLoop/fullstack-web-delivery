@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0 - 2026-10-23
+
+- Implement the requested reflective card in the existing motion atlas with authored environment upload, two GPU blur passes, rounded-distance-field bevel normals and stable surface grain.
+- Couple CSS pose, reflected sampling and layered cast shadow to one bounded pointer spring; add directional light/intensity and surface/normal/reflection/light views.
+- Add actual pixel comparisons, resource teardown, unsupported/lost-context fallback and explicit restoration; preserve semantic labels, keyboard controls and reduced-motion/coarse-pointer paths.
+- Extend the portable material contract with light/shadow placement, implementation distinctions, working source and bounded acceptance evidence.
+
 ## 0.8.0 - 2026-10-22
 
 - Match tabular numerals, concentric radii, grouped arrivals, balanced headings and layered elevation to specific readers, tasks and elements.

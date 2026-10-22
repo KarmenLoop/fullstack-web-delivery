@@ -1,0 +1,250 @@
+/* Copyright (c) 2026 KarmenLoop. All rights reserved. */
+.metal-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(230px, 0.8fr);
+  gap: 40px;
+  align-items: start;
+}
+.metal-light-note {
+  max-width: 76ch;
+  margin-top: 24px;
+}
+.metal-experience {
+  min-width: 0;
+  padding: 32px 20px 20px;
+  background: var(--ma-soft);
+  border-radius: 16px;
+}
+.metal-hitbox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.586;
+  perspective: 1000px;
+}
+.metal-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  transform-style: preserve-3d;
+  box-shadow:
+    0 2px 4px rgb(12 24 18 / 0.08),
+    0 24px 40px -16px rgb(12 24 18 / 0.28);
+}
+.metal-canvas,
+.metal-static-surface {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.metal-static-surface {
+  background: #c5cec8;
+}
+.metal-canvas {
+  display: block;
+}
+.metal-fallback .metal-canvas {
+  visibility: hidden;
+}
+.metal-content {
+  position: absolute;
+  inset: 0;
+  padding: clamp(20px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #16251d;
+  pointer-events: none;
+}
+.metal-wordmark {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+.metal-wordmark span {
+  font-weight: 450;
+}
+.metal-title {
+  font-size: clamp(32px, 4.3vw, 60px);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 550;
+}
+.metal-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+}
+.metal-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 26px;
+  font-size: 13px;
+  color: var(--ma-ink);
+}
+.metal-angles,
+.metal-controls output {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.metal-controls {
+  min-width: 0;
+}
+.metal-study .metal-status {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: var(--ma-ink);
+}
+.metal-controls fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  min-width: 0;
+}
+.metal-controls legend {
+  font-size: 18px;
+  font-weight: 550;
+  margin-bottom: 18px;
+  color: var(--ma-ink);
+}
+.metal-controls label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  margin: 16px 0 8px;
+  color: var(--ma-ink);
+}
+.metal-controls select {
+  width: 100%;
+  min-height: 44px;
+  background: var(--ma-panel);
+  color: var(--ma-ink);
+  border: 1px solid var(--ma-line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 16px;
+}
+.metal-controls input[type="range"] {
+  width: 100%;
+  min-height: 28px;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--ma-accent);
+  cursor: pointer;
+}
+.metal-controls .metal-motion-check {
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+.metal-motion-check input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-height: 0;
+  margin: 0;
+  accent-color: var(--ma-accent);
+}
+.metal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.metal-pipeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+.metal-pipeline figure {
+  min-width: 0;
+  margin: 0;
+}
+.metal-pipeline canvas {
+  width: 100%;
+  aspect-ratio: 2;
+  display: block;
+  border-radius: 8px;
+  background: var(--ma-soft);
+}
+.metal-pipeline figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ma-ink);
+}
+.metal-pipeline figcaption span {
+  color: var(--ma-muted);
+  font-size: 12px;
+}
+.metal-report {
+  margin-top: 20px;
+}
+.metal-report summary {
+  min-height: 44px;
+  cursor: pointer;
+  color: var(--ma-ink);
+}
+.metal-report pre {
+  max-height: 300px;
+  overflow: auto;
+  padding: 16px;
+  background: var(--ma-soft);
+  color: var(--ma-ink);
+  border-radius: 8px;
+  font-size: 12px;
+}
+@media (max-width: 760px) {
+  .metal-workspace {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .metal-experience {
+    padding: 22px 12px 14px;
+  }
+  .metal-content {
+    padding: 22px;
+  }
+  .metal-title {
+    font-size: clamp(30px, 8vw, 48px);
+  }
+  .metal-wordmark {
+    font-size: 11px;
+  }
+  .metal-card-bottom {
+    font-size: 10px;
+  }
+  .metal-pipeline {
+    gap: 12px;
+  }
+  .metal-pipeline figcaption {
+    font-size: 12px;
+  }
+}
+@media (forced-colors: active) {
+  .metal-canvas,
+  .metal-static-surface {
+    display: none;
+  }
+  .metal-card {
+    border: 1px solid CanvasText;
+    box-shadow: none;
+  }
+  .metal-content {
+    color: CanvasText;
+  }
+}

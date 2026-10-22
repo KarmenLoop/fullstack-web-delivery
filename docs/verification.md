@@ -1,5 +1,21 @@
 # Verification and evidence boundaries
 
+## Reflective material and lighting 0.9.0
+
+The requested GPU specimen now runs in the existing motion atlas. It follows the [implementation brief](metal-card-brief.md) and [operating tutorial](metal-material-study.md). The earlier 0.8 generated pack remains a historical planning snapshot; the later request adopts this separate study. Authentication, inquiries, permissions and live local data are preserved.
+
+- Application suite: 19/19, exit 0, including spring settling/retargeting/long-frame bounds and stable hit-area clamping. [Raw output](../evidence/v0.9-logs/node-tests.txt).
+- Client and SSR build: exit 0; the 587.15 kB / 186.97 kB gzip client chunk retains a size advisory. [Build](../evidence/v0.9-logs/production-build.txt).
+- Production HTTP: 14 routes, landmarks, metadata, statuses and CSP. [Output](../evidence/v0.9-logs/production-routes.txt).
+- Specification renderer: 9/9, exit 0. [Output](../evidence/v0.9-logs/specification-tests.txt).
+- Native Chrome WebGL2: two linked programs, two complete targets, actual H/V pixel readback and changed material output under tilt, bevel, grain and opposite light fixtures. [Production desktop readback](../evidence/metal-gpu-desktop.json); [earlier development phone readback](../evidence/metal-gpu-mobile.json), captured before a small final light-intensity formula correction. Final production phone checks were separately observed passing; the saved early JSON is not relabeled as the final source.
+- Actual pointer drag changed shared spring angles; leaving settled to neutral. Keyboard changed light direction. Normal, reflection and light diagnostic views were operated. Injected context loss displayed fallback and disabled controls; restoration rebuilt resources and returned to the selected view. These are author browser observations, separate from fixture tilt.
+- Final captures inspect actual GPU desktop/phone and embedded-browser phone fallback. The local embedded browser did not expose WebGL2, so its static result is not called GPU execution. A native Safari attempt stalled; the usable demonstration runs in native Chrome.
+
+The [structured record](../evidence/v0.9-material-checks.json) links commands, observations and limits. The independent [finish review](../evidence/metal-finish-review.md) passed its source/three-capture scope after rejecting and replacing the cropped phone evidence. [Design documentation](../evidence/metal-design-documentation.md) records the incumbent tokens and material relationships. The detector ran once on changed UI targets and returned no findings. Browser controls sometimes focused/scrolled before activation, a translation popup invalidated an old element reference, and one phone recapture targeted a different active window; those results were rejected and a dedicated preview window supplied replacement evidence. Chrome translation also attempted a third-party stylesheet blocked by the existing CSP; that diagnostic does not justify weakening the policy. The original failure distinctions are retained.
+
+Real phones, GPU timing/FPS, forced colors, comprehensive accessibility/security, hidden-page/offscreen scheduling and exceptional restoration-failure execution remain unverified beyond the reviewed source guards. Unit tests and screenshots do not certify them. The preview was restarted against the existing local database; [read-only storage](../evidence/metal-restart-readback.json) confirmed the original Done/version3 record and two audit events. This turn did not repeat the full business submission/admin workflow or change it.
+
 ## UI matching and material guidance 0.8.0
 
 This version changes portable instructions, the specification renderer, populated design contracts and documentation. It adds UI-MATCH-SPEC.md and embeds seven page-specific adopt/defer/omit decisions in the filled UI/UX prompt. The example runtime source is unchanged from 0.7.0; new application/browser or GPU performance acceptance is not inferred from previous results.
