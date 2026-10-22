@@ -2,7 +2,7 @@
 
 A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
 
-**Version 0.7.0 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.8.0 · English publication · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
@@ -12,7 +12,7 @@ A workflow skill for turning a website brief into a complete plan, a running imp
 
 *An actual browser capture of the included fictional enterprise example. The interface and documentation are in English. This is an illustrative project, not a customer case or a hosted business service.*
 
-[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Motion guide](docs/motion-guide.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
+[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Motion guide](docs/motion-guide.md) · [UI matching](docs/ui-matching.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
 
 ## What it delivers
 
@@ -99,7 +99,7 @@ Users can select, combine, revise or reject the options. A pending preference bl
 
 ## From answers to concrete design instructions
 
-After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 17 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, a placement map, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
+After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 18 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, UI matching decisions, a placement map, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
 
 The optional standard-library renderer consumes a populated JSON brief. It does not invent business facts, interview the user or grant authority. The host agent can write the same contracts directly in the client's language. The bundled renderer is English. Existing output directories are protected; revised designs go into a new directory for comparison.
 
@@ -118,6 +118,12 @@ The example adds `/interaction-lab`, an isolated workbench with one live study a
 ![Actual desktop interaction workbench](docs/images/interaction-lab-desktop.jpg)
 
 The studies include explicit state feedback, failure/retry where applicable, keyboard paths and reduced-motion behavior. Completion is labeled as a local simulation; the real inquiry API is separate. [Operate the studies](docs/interaction-studies.md) and inspect their [portable contracts](skills/fullstack-web-delivery/references/interaction-patterns.md).
+
+## Match the finish to the task
+
+Version 0.8.0 adds page-specific UI matching: tabular numeric ranges, concentric radii, bounded grouped entrances, balanced headings and layered elevation. The agent records adopt/defer/omit decisions with reasons, states, implementation, fallbacks and verification in UI-MATCH-SPEC.md and directly in the filled UI/UX prompt. Reflective cards have a conditional CSS/WebGL/PBR route, including environment source, blur, bevel/grain normals, coupled spring motion and lifecycle acceptance. They are not a default for every client or operational surface.
+
+Read [the matching tutorial](docs/ui-matching.md) and [filled decisions](docs/generated/sensu/UI-MATCH-SPEC.md). This is a skill/document-renderer update. The existing running example remains at 0.7.0; no new compiled WebGL component or browser acceptance is claimed.
 
 ## Connected motion, with a source and a recovery path
 

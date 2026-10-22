@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 - 2026-10-22
+
+- Match tabular numerals, concentric radii, grouped arrivals, balanced headings and layered elevation to specific readers, tasks and elements.
+- Add an optional reflective-material route covering texture source, separable blur, bevel/grain normals, reflected sampling, coupled spring transforms, static alternatives and GPU lifecycle acceptance.
+- Generate UI-MATCH-SPEC.md and embed filled adopt/defer/omit decisions in the UI/UX prompt; validate page/action relationships, reasons and fallbacks before writes.
+- Expand the populated specification pack to 18 files with seven UI matches and nine meaningful renderer tests.
+- Document the inspected video observations separately from inferred implementation; preserve the original clip privately and keep existing 0.7 runtime evidence scoped to that version.
+
 ## 0.7.0 - 2026-10-22
 
 - Assign motion terminology to page/action/task contracts with a 16-placement map, two portable implementation references and 17 generated specification files.

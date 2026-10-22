@@ -6,6 +6,7 @@ Generated from the supplied answered brief. Generation is not proof that impleme
 
 - [UI/UX implementation prompt](UI-UX-PROMPT.md)
 - [Design specification](DESIGN-SPEC.md)
+- [UI matching and finish decisions](UI-MATCH-SPEC.md)
 - [Page contracts](PAGE-SPECS.md)
 - [Action and state contracts](INTERACTION-SPECS.md)
 - [Motion choreography](MOTION-SPECS.md)

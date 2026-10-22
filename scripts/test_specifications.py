@@ -30,7 +30,7 @@ class SpecificationTests(unittest.TestCase):
 
     def test_static_project_does_not_receive_an_account_or_api_system(self):
         brief=copy.deepcopy(self.brief)
-        brief.update(project='Three-page studio',roles=['visitor'],pages=self.brief['pages'][:2],interactions=self.brief['interactions'][:1],motion=[],motion_map=[])
+        brief.update(project='Three-page studio',roles=['visitor'],pages=self.brief['pages'][:2],interactions=self.brief['interactions'][:1],motion=[],motion_map=[],ui_matches=[])
         for key in ('backend','auth','data'):
             brief['modules'][key]={'status':'not_applicable','spec':'Static content and ordinary links; no submitted data or accounts in scope.'}
         files=renderer.render(brief)
@@ -75,5 +75,28 @@ class SpecificationTests(unittest.TestCase):
         files=renderer.render(self.brief)
         self.assertIn('POST /api/login starts',files['MOTION-MAP.md'])
         self.assertIn('Confirmed response only',files['MOTION-MAP.md'])
+
+    def test_ui_matches_preserve_task_reasons_static_elements_and_omissions(self):
+        files=renderer.render(self.brief)
+        decisions=files['UI-MATCH-SPEC.md']
+        self.assertIn('Tabular numerals and reserved numeric width', decisions)
+        self.assertIn('None; static presentation.', decisions)
+        self.assertIn('**Choice:** defer', decisions)
+        self.assertIn('**Choice:** omit', decisions)
+        self.assertIn('already legible', decisions)
+        self.assertEqual(len(self.brief['ui_matches']), decisions.count('**Execution:** NOT_RUN'))
+        self.assertIn('Required UI matching decisions', files['UI-UX-PROMPT.md'])
+        self.assertIn('no GPU dependency', files['UI-UX-PROMPT.md'])
+
+    def test_ui_match_scope_and_reason_are_validated_before_output(self):
+        cases=[('page','P99'),('action','I04'),('choice','always'),('reason',''),('fallback','')]
+        for key,value in cases:
+            with self.subTest(key=key),tempfile.TemporaryDirectory() as folder:
+                brief=copy.deepcopy(self.brief);brief['ui_matches'][0][key]=value
+                output=Path(folder)/'specs'
+                with self.assertRaises(ValueError):renderer.generate(brief,output)
+                self.assertFalse(output.exists())
+        self.brief['ui_matches'].append(copy.deepcopy(self.brief['ui_matches'][0]))
+        with self.assertRaisesRegex(ValueError,'unique ID'):renderer.render(self.brief)
 
 if __name__=='__main__':unittest.main()

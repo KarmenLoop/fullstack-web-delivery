@@ -15,6 +15,7 @@ Project: SENSU Digital — enterprise site, interaction studies and motion atlas
 - Owner: add six named advanced patterns and automatically generated UI/UX plus module specifications.
 - Later publication instruction: English public materials, retained copyright and no-modification source-available terms.
 - Owner: inspect the supplied reference clip locally; implement purposeful scroll mechanisms, real login feedback, a read-only sourced permission query, linked graph/activity/inline detail, card transfer and dark appearance; update the full skill package.
+- Owner requested five UI craft rules and a metallic-card implementation route in the skill. The 0.8 update records page-specific matching decisions; the existing 0.7 runtime and its evidence remain unchanged. Original reference video and frames stay private.
 
 ## Assumptions and pending facts
 

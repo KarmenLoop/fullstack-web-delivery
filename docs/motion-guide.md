@@ -20,7 +20,7 @@ The appearance button switches the atlas and its portaled command dialog between
 
 ## Allocate effects before building
 
-The answered brief now generates 17 specification files, including [MOTION-MAP.md](generated/sensu/MOTION-MAP.md). The populated example has 16 placements tied to real page/action IDs. Each names its task purpose, trigger, actual driver, timing, interruption, reduced-motion behavior, fallback and verification. The [UI/UX prompt](generated/sensu/UI-UX-PROMPT.md) points implementers to that map. The generator checks page/action references and required driver fields; an invalid relationship is rejected before output writes.
+Version 0.7 introduced 17 specification files; the current pack also adds UI matching decisions. The [MOTION-MAP.md](generated/sensu/MOTION-MAP.md) records their placement. The populated example has 16 placements tied to real page/action IDs. Each names its task purpose, trigger, actual driver, timing, interruption, reduced-motion behavior, fallback and verification. The [UI/UX prompt](generated/sensu/UI-UX-PROMPT.md) points implementers to that map. The generator checks page/action references and required driver fields; an invalid relationship is rejected before output writes.
 
 | Task or element | Mechanism | State or source |
 | --- | --- | --- |

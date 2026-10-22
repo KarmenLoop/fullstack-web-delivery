@@ -2,13 +2,14 @@
 
 Discovery is complete when the agent can explain the audience, core task, content, roles, data, visual direction, scope and acceptance. Forty questions are a pool, not a quota. Existing answers remain authoritative until corrected. Inspect source and tools for technical facts; ask only for business decisions that change the outcome.
 
-The next handoff is a complete plan plus concrete implementation contracts. The [SENSU input](specification-inputs/sensu.json) and [17-file output](generated/sensu/README.md) show this using the owner's existing answers. The original Chinese trial and later English-publication instruction are both retained as decisions; the renderer does not silently change the client's language.
+The next handoff is a complete plan plus concrete implementation contracts. The [SENSU input](specification-inputs/sensu.json) and [18-file output](generated/sensu/README.md) show this using the owner's existing answers. The original Chinese trial and later English-publication instruction are both retained as decisions; the renderer does not silently change the client's language.
 
 ## What gets written
 
 | Document | What an implementer can decide from it |
 | --- | --- |
 | UI-UX-PROMPT.md | Copyable, populated brief with actual audiences, pages, actions, brand, authority and acceptance |
+| UI-MATCH-SPEC.md | Page-specific adopt/defer/omit decisions, reader/task, implementation, states, motion, fallback and verification |
 | DESIGN-SPEC.md | Typography, colors, composition, spacing, components, navigation, feedback, assets and accessibility |
 | PAGE-SPECS.md | Who sees each route, their task, section content, action, hierarchy and phone behavior |
 | INTERACTION-SPECS.md | Actor, trigger, destination, state, feedback, motion, recovery and verification |
@@ -39,7 +40,7 @@ python3 scripts/test_specifications.py -v
 
 Choose a new output directory. A second run to an existing directory stops with exit 2, preserving authored changes. Compare revisions rather than replacing edited documents. Validation and complete rendering precede output writes. Unique routes/page IDs, non-empty tasks, declared actors, valid page references and declared route targets are checked. API/local targets remain explicit contracts; the helper does not inspect or execute them.
 
-The input object contains project, purpose, audience, language, brand, research, authorization, decisions, assumptions, pages, roles, design, interactions, motion, optional motion_map and modules. Motion placements validate their page/action relationship and non-empty driver/recovery fields. Each module has `status: required` or `not_applicable` plus a concrete specification or omission reason. A static site should not acquire login, storage or API scaffolding. The tests exercise that difference. Extend a relevant module specification for commerce, files or integrations only when those are actually in scope.
+The input object contains project, purpose, audience, language, brand, research, authorization, decisions, assumptions, pages, roles, design, interactions, motion, optional motion_map, optional ui_matches and modules. Motion placements validate their page/action relationship and non-empty driver/recovery fields. Each module has `status: required` or `not_applicable` plus a concrete specification or omission reason. A static site should not acquire login, storage or API scaffolding. The tests exercise that difference. Extend a relevant module specification for commerce, files or integrations only when those are actually in scope.
 
 This helper renders English documents from supplied facts. The host agent remains responsible for discovery, source research, project decisions, requested-language writing, implementation and actual acceptance. Hosts without Python can write the same contracts directly. The example's authorization is a historical project fact, never portable permission to publish or alter another project.
 
@@ -52,3 +53,5 @@ A useful prompt names the page's reader and decision, actual content, primary ac
 The implementation prompt should link each action to its contract and require real navigation. Specify immediate press feedback, pending versus confirmed result, preserved input on failure, linked-state ownership, interrupted/repeated operation, keyboard/touch and reduced motion. Choose advanced patterns by task. An operational workspace needs readable records and recoverable actions; marketing composition guidance does not replace those responsibilities.
 
 Update the documents when a verified implementation fact changes the plan. Keep actual results in a separate execution ledger; an intact generated manifest proves the example was generated reproducibly, not that every scenario passed.
+
+The [UI matching tutorial](ui-matching.md) explains the five craft rules and optional material route. Each ui_matches entry needs a unique ID, declared page, element, audience, task, technique, choice, reason, implementation, states, motion, fallback and verify. An optional action must belong to the same page. Choices are adopt, defer or omit; they remain design contracts until executed.

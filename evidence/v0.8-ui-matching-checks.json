@@ -1,0 +1,87 @@
+{
+  "version": "0.8.0",
+  "status": "PASS",
+  "scope": "Skill instructions, renderer contracts and documentation; no application runtime change",
+  "specification_tests": {
+    "count": 9,
+    "exit_code": 0,
+    "log": "evidence/v0.8-logs/specification-tests.txt"
+  },
+  "generated": {
+    "files": 18,
+    "ui_matches": 7,
+    "motion_placements": 16,
+    "prior_17_file_manifest_and_input_verified": true,
+    "execution": "NOT_RUN until separately implemented and operated"
+  },
+  "video_inspection": {
+    "duration_seconds": 31.323,
+    "coarse_samples": 16,
+    "dense_samples_seconds": [
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      5,
+      7,
+      13,
+      14,
+      15,
+      17,
+      20,
+      28
+    ],
+    "method": "Local AVFoundation frame extraction; private contact sheets inspected",
+    "observed": [
+      "Capsule/arrow feedback and growing circular stroke",
+      "Perspective changes on translucent cards and grouped composition",
+      "Expanding/compressing photo strip",
+      "Linked clock/map scenes and background palette change"
+    ],
+    "not_established": [
+      "Original shader/library or source implementation",
+      "Exact easing, frame rate, latency or physical-device performance"
+    ],
+    "original_and_frames_distributed": false,
+    "notes": "Local AVFoundation synchronous extraction completed with deprecation warnings; original read-only clip was preserved."
+  },
+  "material_route": "Requested mechanism documented with implementation and acceptance contracts; not a newly compiled GPU specimen",
+  "runtime": "Existing 0.7 application source/evidence retained at its original scope",
+  "limits": [
+    "New UI matching decisions are unexecuted design contracts",
+    "No new WebGL compile/browser/device/performance acceptance",
+    "Other host behavior remains unverified"
+  ],
+  "checks": [
+    {
+      "command": "python3 scripts/test_specifications.py -v",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.8-logs/specification-tests.txt"
+    },
+    {
+      "command": "isolated Python / official quick_validate.py skills/fullstack-web-delivery",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.8-logs/skill-validation.txt"
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.8-logs/repository.txt"
+    },
+    {
+      "command": "git diff --quiet HEAD -- examples/sensu-enterprise",
+      "cwd": ".",
+      "exit_code": 0,
+      "scope": "Application source and runtime metadata unchanged from 0.7.0"
+    }
+  ],
+  "installed_files": 24,
+  "runtime_source_unchanged": true
+}

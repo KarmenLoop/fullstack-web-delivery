@@ -2,6 +2,8 @@
 
 Define region responsibilities, hierarchy, primary path, supporting information, feedback, and recovery. Components need applicable default, hover, focus, pressed, disabled, loading, success, and error states. Empty states explain why and offer a next step. Test realistic long names, mixed text, missing images, zero records, and large values.
 
+Use [UI matching](ui-fit-and-finish.md) to allocate numeric typography, nested geometry, grouped entrances, balanced headings and surface elevation. Record adoption and rejection by page/task rather than making every site share the same treatment. A requested reflective material follows the conditional [material route](metallic-surfaces.md).
+
 Choose breakpoints from content. Inspect menus, local table scroll, drawers, sticky regions, touch targets, and keyboard behavior. Measure actual CSS widths. No page overflow is necessary but insufficient: primary phone state and action must be discoverable. Required fields need guidance and stable accessible labels; descriptions should not pollute field names.
 
 Maintain an interaction contract for each applicable entrance: trigger, preconditions, pending state, success, failure, retry/cancel, keyboard/focus, touch, API/data, motion, and evidence. Define open/close, Escape, backdrop policy, focus entry/return, and replaced triggers. Check error/success/reset focus and wait for exit completion before asserting return focus.

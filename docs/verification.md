@@ -1,5 +1,13 @@
 # Verification and evidence boundaries
 
+## UI matching and material guidance 0.8.0
+
+This version changes portable instructions, the specification renderer, populated design contracts and documentation. It adds UI-MATCH-SPEC.md and embeds seven page-specific adopt/defer/omit decisions in the filled UI/UX prompt. The example runtime source is unchanged from 0.7.0; new application/browser or GPU performance acceptance is not inferred from previous results.
+
+Nine renderer tests pass, including same-page action matching, static presentation without an action, required reasons/fallbacks, duplicate IDs, invalid choices, authored-output protection and deterministic integrity. The previous 17-file owned pack and its input fingerprint were verified before regenerating 18 files. Skill structure, English/local links/legal-copy parity and installed-byte checks have their own results in the [0.8 evidence record](../evidence/v0.8-ui-matching-checks.json), [raw renderer tests](../evidence/v0.8-logs/specification-tests.txt), [validator](../evidence/v0.8-logs/skill-validation.txt) and [repository check](../evidence/v0.8-logs/repository.txt).
+
+The supplied 31.323-second video was inspected using coarse and dense local frames. Visible appearance/sequence is recorded separately from the owner's requested shader implementation route. Original media and frames remain private. The custom material recipe supplies the pipeline, math, lifecycle and acceptance requirements; a new compiled WebGL specimen, physical-device test, measured FPS and comprehensive accessibility/performance audit remain NOT_RUN. Hosted CI independently runs its configured checks for the final commit.
+
 ## Motion placement and connected feedback 0.7.0
 
 The owner's existing answers and local-development/publication authority were reused. The extension follows a complete [upgrade plan](upgrade-v0.7-plan.md), [scoped design brief](motion-atlas-brief.md) and [motion tutorial](motion-guide.md). It preserves the earlier business site and six studies; real authentication feedback is extended and a separate fictional read-only policy route is added. The original video was inspected locally, with coarse and dense frame samples. It and its frames are excluded from distribution.
