@@ -58,6 +58,11 @@
       "result": "NOT_RUN",
       "reason": "PyYAML absent before isolated dependency setup; import failed before validation",
       "log": "evidence/v0.7-logs/skill-validation-dependency.txt"
+    },
+    {
+      "stage": "staged diff whitespace check",
+      "result": "FAIL",
+      "reason": "One trailing space in captured Vite reporter output; normalized log line and rechecked affected diff. No source/runtime defect."
     }
   ],
   "manual_detector": {
@@ -76,5 +81,8 @@
     "results_remain": "NOT_RUN until separately operated"
   },
   "review_scope": "Independent source/capture reviewer resolved two material findings; no independent whole-product runtime acceptance",
-  "runtime_boundaries": "See v0.7-browser.json and docs/verification.md"
+  "runtime_boundaries": "See v0.7-browser.json and docs/verification.md",
+  "log_normalization": {
+    "production-build.txt": "Trailing line whitespace trimmed; diagnostic text unchanged."
+  }
 }
