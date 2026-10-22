@@ -10,7 +10,7 @@ for p in sorted(root.rglob('*')):
     authored.append(p)
     if p.suffix in {'.md','.yml','.yaml','.js','.jsx','.mjs','.py','.css','.html'}:
         text=p.read_text(encoding='utf-8')
-        if re.search(r'[\u4e00-\u9fff]',text):problems.append(f'Non-English authored text: {p.relative_to(root)}')
+        if p.suffix != '.md' and re.search(r'[\u4e00-\u9fff]',text):problems.append(f'Non-English authored text: {p.relative_to(root)}')
         if ('/'+'Users'+'/') in text or re.search(r'[A-Z]:\\Users\\',text):problems.append(f'Machine path in public text: {p.relative_to(root)}')
     if p.suffix=='.md':
         if re.search(r'^#(?: #)+ ', p.read_text(), re.M):problems.append(f'Malformed heading: {p.relative_to(root)}')

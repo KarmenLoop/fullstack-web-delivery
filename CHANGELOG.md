@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1 — 2026-10-23
+
+- Add selectable English and Simplified Chinese project and user guides.
+- Align download names and workflow illustrations with this release; retain historical evidence at its original version.
+
+
 ## 0.9.0 - 2026-10-23
 
 - Implement the requested reflective card in the existing motion atlas with authored environment upload, two GPU blur passes, rounded-distance-field bevel normals and stable surface grain.
