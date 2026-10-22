@@ -1,6 +1,6 @@
 # Project-specific UI/UX implementation prompt
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 Implement the following project in its existing context. Reuse these answers; do not restart discovery.
 
@@ -46,6 +46,7 @@ Research and reference decisions: Use industry leaders for task architecture bef
 - Owner: desktop, phone, keyboard and reduced motion; fine springs and progressive presentation.
 - Owner: add six named advanced patterns and automatically generated UI/UX plus module specifications.
 - Later publication instruction: English public materials, retained copyright and no-modification source-available terms.
+- Owner: inspect the supplied reference clip locally; implement purposeful scroll mechanisms, real login feedback, a read-only sourced permission query, linked graph/activity/inline detail, card transfer and dark appearance; update the full skill package.
 
 ## Required page contracts
 
@@ -217,6 +218,20 @@ Research and reference decisions: Use industry leaders for task architecture bef
 
 **Responsive:** Two-column compact study index then one canvas on phones; no hidden primary actions or page overflow.
 
+### P13 · /motion-atlas
+
+**Audience:** Developers and operators exploring the declared demonstration policy and motion mechanisms.
+
+**Task:** Ask an access question, inspect its source, trace a department and compare purposeful scroll/continuity mechanisms.
+
+**Content:** Field-guide title; read-only policy workspace with command search, relationship paths, illustrative heatmap, role count and expanding department cards; scroll story with sticky context and native comparison rail; reversible card transfer; link to actual staff login.
+
+**Primary Action:** Ask about access, follow a sourced result to a department, then operate the motion studies.
+
+**Hierarchy:** Workspace first; named scroll mechanisms and continuity lessons below; appearance and route navigation remain available.
+
+**Responsive:** Stack graph/activity and cards at phone width; retain 44px department controls, native horizontal rail, input text at 16px, in-flow detail and a bounded command dialog. Sticky context returns to normal flow on narrow screens.
+
 ## Required interaction contracts
 
 ### I01 · P01
@@ -267,7 +282,7 @@ Research and reference decisions: Use industry leaders for task architecture bef
 
 **Feedback:** Disable duplicate submission; show specific recovery; navigate only after session acknowledgment.
 
-**Motion:** Restrained button press; error appears without layout jump; reduced-motion instant.
+**Motion:** Pending real login morphs the surface into a bounded orb; nodes form a check only after the server confirms. Reduced motion keeps immediate written feedback and removes the transition wait. Invalid credentials restore the full button and focus the error.
 
 **Recovery:** Keep email; do not expose secret or stack trace; allow retry after limit.
 
@@ -399,6 +414,96 @@ Research and reference decisions: Use industry leaders for task architecture bef
 
 **Verify:** Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.
 
+### I11 · P13
+
+**Role:** visitor
+
+**Trigger:** Open Command+K or the visible command control, then submit a question or team.
+
+**Target:** api:GET /api/demo/access-map
+
+**States:** Idle, pending, sourced matches, no match, unsupported question, error/retry, closed.
+
+**Feedback:** Return matching role IDs and the policy version/rule. Focus input on open, source department on selection, and the prior valid control on Escape.
+
+**Motion:** Command opening is immediate. Source selection triggers the map sequence separately.
+
+**Recovery:** Abort replaced queries, preserve entered text on error, bound input and never turn a lookup into an access mutation. Publish a successful result into the workspace model, clear its prior load error and invalidate older initial responses before offering department navigation.
+
+**Verify:** Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department.
+
+### I12 · P13
+
+**Role:** visitor
+
+**Trigger:** Select a department node or expand its role card.
+
+**Target:** local:department-selection
+
+**States:** Operations, Security or Delivery; one optional expanded detail; trace revision.
+
+**Feedback:** One selected department drives the path, trace, sample activity, role count and inline detail.
+
+**Motion:** Bounded path drawing and a single root-to-node trace; local heatmap stagger; layout transforms let neighboring cards move.
+
+**Recovery:** Rapid selection replaces the prior trace; reduced motion resolves directly; stable native buttons retain focus.
+
+**Verify:** Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents.
+
+### I13 · P13
+
+**Role:** visitor
+
+**Trigger:** Assign or return the same example card.
+
+**Target:** local:card-transfer
+
+**States:** Available or assigned; stable DEMO-01 identity.
+
+**Feedback:** The same card and reference appear at the destination; status states the local demonstration boundary.
+
+**Motion:** Shared layout identity with bounded spring; immediate placement with reduced motion.
+
+**Recovery:** Reverse during movement; retain the logical target and keep the action operable.
+
+**Verify:** Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status.
+
+### I14 · P13
+
+**Role:** visitor
+
+**Trigger:** Activate the appearance control.
+
+**Target:** local:appearance
+
+**States:** Light or dark; local preference if storage is available.
+
+**Feedback:** All atlas and command surfaces use semantic theme tokens and a visible toggle label.
+
+**Motion:** Immediate color/surface update, no required sweeping transition.
+
+**Recovery:** Storage unavailable keeps the selected appearance for the current visit; no credentials or query content are persisted.
+
+**Verify:** Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast.
+
+### I15 · P13
+
+**Role:** visitor
+
+**Trigger:** Scroll the lesson or operate the comparison rail controls/keys.
+
+**Target:** local:scroll-study
+
+**States:** Section progress, one-time reveals, bounded decorative offset, native sticky range and actual rail position.
+
+**Feedback:** Different mechanisms use distinct triggers; native scrolling and written content remain usable.
+
+**Motion:** Threshold reveal differs from position-linked progress. Small decorative parallax; native sticky and proximity snap; no vertical-wheel hijacking.
+
+**Recovery:** Resize/reduced motion retains readability, stops active reveal transforms and removes parallax; final rail item remains reachable.
+
+**Verify:** Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths.
+
 ## Layout comparison and visual decisions
 
 For a new website or substantial visual redesign, use these contracts as the shared brief for three materially different representative layouts. Compare information order, composition, hierarchy or navigation using the same truthful content, core action and brand constraints; color swaps alone are insufficient. Build and operate the primary interaction in each option, verify actual desktop and phone widths, then open a reachable A/B/C comparison in the user-facing browser. Provide direct option links, matched labeled views and concise tradeoffs before asking for selection, combination or revision feedback.
@@ -409,7 +514,7 @@ For later consequential layout, navigation or interaction choices, show a focuse
 
 ## Build and inspect
 
-Read DESIGN-SPEC.md, MOTION-SPECS.md and the module specifications linked in README.md. Every enabled control must navigate to its declared destination or perform its stated action. Start feedback at input, distinguish pending from success, preserve input on failure, prevent duplicate submissions, and retain visible keyboard focus. Specify empty, loading, error, disabled, success and interrupted states where applicable. Use content-driven layouts and real copy. Preserve native links, controls, browser history and touch scrolling.
+Read DESIGN-SPEC.md, MOTION-SPECS.md, MOTION-MAP.md and the module specifications linked in README.md. Every enabled control must navigate to its declared destination or perform its stated action. Start feedback at input, distinguish pending from success, preserve input on failure, prevent duplicate submissions, and retain visible keyboard focus. Specify empty, loading, error, disabled, success and interrupted states where applicable. Use content-driven layouts and real copy. Preserve native links, controls, browser history and touch scrolling.
 
 Map every Ixx contract to an operated scenario and evidence. Test normal, pending, failure, duplicate, unauthorized, stale version, empty and recovery paths relevant to that action. Verify desktop/phone, focus, keyboard, reduced motion and rapid reversal; drag/settle evidence is separate from screenshots. Run npm test, npm run build and production HTTP route checks; verify database/session restart where affected. Record PASS/FAIL/NOT_RUN, actual command/exit, source revision and limits. Retain failed attempts and repairs. Physical devices, frame-rate certification and other agent hosts are NOT_RUN unless actually tested.
 

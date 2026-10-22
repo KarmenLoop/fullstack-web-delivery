@@ -2,7 +2,7 @@
 
 Discovery is complete when the agent can explain the audience, core task, content, roles, data, visual direction, scope and acceptance. Forty questions are a pool, not a quota. Existing answers remain authoritative until corrected. Inspect source and tools for technical facts; ask only for business decisions that change the outcome.
 
-The next handoff is a complete plan plus concrete implementation contracts. The [SENSU input](specification-inputs/sensu.json) and [16-file output](generated/sensu/README.md) show this using the owner's existing answers. The original Chinese trial and later English-publication instruction are both retained as decisions; the renderer does not silently change the client's language.
+The next handoff is a complete plan plus concrete implementation contracts. The [SENSU input](specification-inputs/sensu.json) and [17-file output](generated/sensu/README.md) show this using the owner's existing answers. The original Chinese trial and later English-publication instruction are both retained as decisions; the renderer does not silently change the client's language.
 
 ## What gets written
 
@@ -12,6 +12,7 @@ The next handoff is a complete plan plus concrete implementation contracts. The 
 | DESIGN-SPEC.md | Typography, colors, composition, spacing, components, navigation, feedback, assets and accessibility |
 | PAGE-SPECS.md | Who sees each route, their task, section content, action, hierarchy and phone behavior |
 | INTERACTION-SPECS.md | Actor, trigger, destination, state, feedback, motion, recovery and verification |
+| MOTION-MAP.md | Page/action placement, exact term, purpose, trigger, driver, timing, interruption, alternatives and verification |
 | MOTION-SPECS.md | Choreography, timing/physics, interruption, alternatives and acceptance |
 | FRONTEND-SPEC.md | Rendering, routes, component boundaries, layout, state and semantics |
 | BACKEND-SPEC.md | API methods/paths, callers, validation, errors, idempotency and business writes |
@@ -38,7 +39,7 @@ python3 scripts/test_specifications.py -v
 
 Choose a new output directory. A second run to an existing directory stops with exit 2, preserving authored changes. Compare revisions rather than replacing edited documents. Validation and complete rendering precede output writes. Unique routes/page IDs, non-empty tasks, declared actors, valid page references and declared route targets are checked. API/local targets remain explicit contracts; the helper does not inspect or execute them.
 
-The input object contains project, purpose, audience, language, brand, research, authorization, decisions, assumptions, pages, roles, design, interactions, motion and modules. Each module has `status: required` or `not_applicable` plus a concrete specification or omission reason. A static site should not acquire login, storage or API scaffolding. The tests exercise that difference. Extend a relevant module specification for commerce, files or integrations only when those are actually in scope.
+The input object contains project, purpose, audience, language, brand, research, authorization, decisions, assumptions, pages, roles, design, interactions, motion, optional motion_map and modules. Motion placements validate their page/action relationship and non-empty driver/recovery fields. Each module has `status: required` or `not_applicable` plus a concrete specification or omission reason. A static site should not acquire login, storage or API scaffolding. The tests exercise that difference. Extend a relevant module specification for commerce, files or integrations only when those are actually in scope.
 
 This helper renders English documents from supplied facts. The host agent remains responsible for discovery, source research, project decisions, requested-language writing, implementation and actual acceptance. Hosts without Python can write the same contracts directly. The example's authorization is a historical project fact, never portable permission to publish or alter another project.
 

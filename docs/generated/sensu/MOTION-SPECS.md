@@ -1,6 +1,6 @@
 # Motion choreography
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 Every adopted motion needs a purpose, trigger, linked state, duration/curve, interruption, keyboard/touch path, reduced-motion path and observable acceptance. Do not add all six studies to every project.
 
@@ -14,7 +14,7 @@ Short progress/success transition; focus the result after form replacement; no o
 
 ## I03
 
-Restrained button press; error appears without layout jump; reduced-motion instant. Keep email; do not expose secret or stack trace; allow retry after limit. Acceptance: Operate valid/invalid login and logout; anonymous admin API is rejected.
+Pending real login morphs the surface into a bounded orb; nodes form a check only after the server confirms. Reduced motion keeps immediate written feedback and removes the transition wait. Invalid credentials restore the full button and focus the error. Pending begins at submit; the confirmed beat is bounded to 420ms, zero extra delay under reduced motion. Invalidate late responses and clear timers on unmount. Acceptance: Operate valid/invalid login and logout; anonymous admin API is rejected.
 
 ## I04
 
@@ -43,3 +43,23 @@ Native scroll snap; prefer scrollend. Quiet fallback is only for browsers withou
 ## I10
 
 Circle begins at input coordinates or keyboard trigger center; radius covers farthest corner; 380ms ease; reduced-motion instant. Keep the actual origin even when the tab is below the panel; remove clipping after settlement so resizing remains safe. Last navigation wins; old layer inert and hidden from accessibility; no hidden focus targets. Acceptance: Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.
+
+## I11
+
+Command opening is immediate. Source selection triggers the map sequence separately. Recovery: Abort replaced queries, preserve entered text on error, bound input and never turn a lookup into an access mutation. Publish a successful result into the workspace model, clear its prior load error and invalidate older initial responses before offering department navigation. Acceptance: Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department.
+
+## I12
+
+Bounded path drawing and a single root-to-node trace; local heatmap stagger; layout transforms let neighboring cards move. Recovery: Rapid selection replaces the prior trace; reduced motion resolves directly; stable native buttons retain focus. Acceptance: Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents.
+
+## I13
+
+Shared layout identity with bounded spring; immediate placement with reduced motion. Recovery: Reverse during movement; retain the logical target and keep the action operable. Acceptance: Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status.
+
+## I14
+
+Immediate color/surface update, no required sweeping transition. Recovery: Storage unavailable keeps the selected appearance for the current visit; no credentials or query content are persisted. Acceptance: Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast.
+
+## I15
+
+Threshold reveal differs from position-linked progress. Small decorative parallax; native sticky and proximity snap; no vertical-wheel hijacking. Recovery: Resize/reduced motion retains readability, stops active reveal transforms and removes parallax; final rail item remains reachable. Acceptance: Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths.

@@ -1,5 +1,28 @@
 # Verification and evidence boundaries
 
+## Motion placement and connected feedback 0.7.0
+
+The owner's existing answers and local-development/publication authority were reused. The extension follows a complete [upgrade plan](upgrade-v0.7-plan.md), [scoped design brief](motion-atlas-brief.md) and [motion tutorial](motion-guide.md). It preserves the earlier business site and six studies; real authentication feedback is extended and a separate fictional read-only policy route is added. The original video was inspected locally, with coarse and dense frame samples. It and its frames are excluded from distribution.
+
+| Check | Executed scope | Evidence |
+| --- | --- | --- |
+| Application suite | 17/17, exit 0; new declared-policy, unsupported-scope, query/write-boundary and search cases plus existing business/maintenance tests | [Raw output](../evidence/v0.7-logs/node-tests.txt) |
+| Specification renderer | 7/7, exit 0; includes valid page/action/driver placement and invalid-reference rejection; 17 owned files regenerated after prior-manifest verification | [Raw output](../evidence/v0.7-logs/specification-tests.txt) |
+| Production build | Client and SSR, exit 0; 565.69 kB / 179.32 kB gzip client chunk with size advisory | [Build output](../evidence/v0.7-logs/production-build.txt) |
+| Production HTTP | 14 routes including 404; metadata, landmarks, status and CSP | [Route output](../evidence/v0.7-logs/production-routes.txt), [readback](../evidence/v0.7-production-routes.json) |
+| Restart | Same isolated admin session and Done reference, version 3/two audit events survive owned production restart; logout returns 401 | [Before](../evidence/v0.7-production-before.json), [after](../evidence/v0.7-production-after.json) |
+| Browser | Real failed/pending/confirmed login, command scope/recovery/source focus, selected-state coordination, live reduced preference, native scroll progress/reversal/sticky, rail endpoint/keyboard, continuity and appearance | [Observed checks and limits](../evidence/v0.7-browser.json) |
+| Captures | Four valid actual JPEGs, measured 1440/390 CSS widths, embedded origin and exact file hashes | [Capture manifest](../evidence/v0.7-captures.json) |
+| Independent finish review | Initial fix disposition; two material source findings repaired; scoped ship verdict | [Preserved review and verdict](../evidence/motion-finish-review.md) |
+| Design documentation | Source-derived component, token, state, motion and adaptation record | [Scoped documenter report](../evidence/motion-design-documentation.md) |
+| Installed skill | Verified prior 0.6 files, recoverable backup, 22 current files byte-identical to portable source | [Parity record](../evidence/v0.7-installed-skill.json) |
+
+Observed repairs include command autofocus, rail tail alignment, permission-query overmatching and command recovery after failed initial loading. The latter now publishes a shared model and invalidates obsolete initial responses. The independent reviewer scored those two source findings and affected captures; it did not independently operate the whole website. The one manual detector pass returned no findings and was not rerun.
+
+The first skill-validator startup lacked PyYAML in the available environments; no validation ran at that point. A local isolated validation environment supplied PyYAML 6.0.3, after which the unchanged official validator passed. Browser targeting errors, an overly broad simulated URL block, a dev server retaining its old policy module, blank raw-CDP imagery and stale/scrolled screenshots are retained as failed probes/excluded captures, not passing media or hidden product failures. See the [command record](../evidence/v0.7-command-checks.json).
+
+Physical touch, measured FPS, comprehensive accessibility/security/performance acceptance, real IAM writes and other agent-host runtime behavior remain NOT_RUN. Still frames do not prove temporal quality; the login check frame was not captured, while the actual pending, failure and authenticated destination were observed. The existing three-layout workflow was not newly executed for this explicitly requested extension. No public website deployment or new dependency is claimed. Hosted CI reports its own automated scope for the final commit.
+
 ## Visual decision workflow 0.6.0
 
 This release adds the owner's three-layout and visual-question workflow to the portable skill, generated UI/UX prompt, public tutorial and workflow graphic. It preserves already chosen layouts, targets independent work while feedback is pending, and distinguishes actual user selection from explicitly delegated agent choice. The owned generated example is refreshed from the same answered input after verifying its previous manifest; this updates instructions, not business facts or approval history.

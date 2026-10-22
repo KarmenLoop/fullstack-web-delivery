@@ -26,11 +26,11 @@ class SpecificationTests(unittest.TestCase):
         self.assertIn('Preserve entered data on error',prompt)
         self.assertIn(self.brief['authorization'],prompt)
         self.assertIn('I10,P12,visitor,local:radial-route',files['TRACEABILITY.csv'])
-        self.assertEqual(10,files['TRACEABILITY.csv'].count('NOT_RUN'))
+        self.assertEqual(len(self.brief['interactions']),files['TRACEABILITY.csv'].count('NOT_RUN'))
 
     def test_static_project_does_not_receive_an_account_or_api_system(self):
         brief=copy.deepcopy(self.brief)
-        brief.update(project='Three-page studio',roles=['visitor'],pages=self.brief['pages'][:2],interactions=self.brief['interactions'][:1],motion=[])
+        brief.update(project='Three-page studio',roles=['visitor'],pages=self.brief['pages'][:2],interactions=self.brief['interactions'][:1],motion=[],motion_map=[])
         for key in ('backend','auth','data'):
             brief['modules'][key]={'status':'not_applicable','spec':'Static content and ordinary links; no submitted data or accounts in scope.'}
         files=renderer.render(brief)
@@ -63,5 +63,17 @@ class SpecificationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             output=Path(folder)/'specs';renderer.generate(self.brief,output)
             self.assertEqual(files,{p.name:p.read_text() for p in output.iterdir()} | {'TRACEABILITY.csv':(output/'TRACEABILITY.csv').read_bytes().decode()})
+
+    def test_motion_placements_keep_page_action_and_driver_boundaries(self):
+        for key,value in [('page','P01'),('action','missing-action'),('driver','')]:
+            with self.subTest(key=key),tempfile.TemporaryDirectory() as folder:
+                brief=copy.deepcopy(self.brief)
+                brief['motion_map'][0][key]=value
+                output=Path(folder)/'specs'
+                with self.assertRaises(ValueError):renderer.generate(brief,output)
+                self.assertFalse(output.exists())
+        files=renderer.render(self.brief)
+        self.assertIn('POST /api/login starts',files['MOTION-MAP.md'])
+        self.assertIn('Confirmed response only',files['MOTION-MAP.md'])
 
 if __name__=='__main__':unittest.main()

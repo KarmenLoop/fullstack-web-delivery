@@ -39,6 +39,9 @@ import {
 } from "motion/react";
 import { services, statuses, pageMeta } from "./content.js";
 import InteractionLab from "./InteractionLab.jsx";
+import MotionAtlas from "./MotionAtlas.jsx";
+import { AuthSubmit } from "./MotionPrimitives.jsx";
+import { useMotionPreference } from "./useMotionPreference.js";
 import { request, getSession } from "./api.js";
 
 const Session = createContext(null);
@@ -1091,10 +1094,30 @@ function Privacy() {
 function Login() {
   const { user, ready, setUser } = useContext(Session);
   const navigate = useNavigate();
+  const reduced = useMotionPreference();
   const [email, setEmail] = useState(""),
     [password, setPassword] = useState(""),
     [busy, setBusy] = useState(false),
     [error, setError] = useState("");
+  const [confirmedUser, setConfirmedUser] = useState(null);
+  const live = useRef(true);
+  useEffect(() => {
+    live.current = true;
+    return () => {
+      live.current = false;
+    };
+  }, []);
+  useEffect(() => {
+    if (!confirmedUser) return;
+    const timer = setTimeout(
+      () => {
+        setUser(confirmedUser);
+        navigate("/admin");
+      },
+      reduced ? 0 : 420,
+    );
+    return () => clearTimeout(timer);
+  }, [confirmedUser, reduced, setUser, navigate]);
   const loginErrorTarget = useRef(null);
   useEffect(() => {
     if (error && !busy) loginErrorTarget.current?.focus();
@@ -1104,6 +1127,7 @@ function Login() {
   }, [ready, user, navigate]);
   async function submit(event) {
     event.preventDefault();
+    if (busy) return;
     setBusy(true);
     setError("");
     try {
@@ -1111,12 +1135,12 @@ function Login() {
         method: "POST",
         body: { email, password },
       });
-      setUser(data.user);
-      navigate("/admin");
+      if (live.current) setConfirmedUser(data.user);
     } catch (error) {
-      setError(error.message);
-    } finally {
-      setBusy(false);
+      if (live.current) {
+        setError(error.message);
+        setBusy(false);
+      }
     }
   }
   return (
@@ -1184,10 +1208,9 @@ function Login() {
                 {error}
               </p>
             )}
-            <button className="button submit-button" type="submit">
-              {busy ? "Signing in…" : "Sign in"}
-              <Arrow />
-            </button>
+            <AuthSubmit
+              phase={confirmedUser ? "success" : busy ? "pending" : "idle"}
+            />
           </fieldset>
           <p className="login-note">
             For authorized staff. Access is limited by administrator and
@@ -1774,6 +1797,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/interaction-lab" element={<InteractionLab />} />
+          <Route path="/motion-atlas" element={<MotionAtlas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MotionConfig>

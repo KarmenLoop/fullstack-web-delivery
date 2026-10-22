@@ -17,6 +17,7 @@ import {
   passwordHash,
   SQLiteSessionStore,
 } from "./database.mjs";
+import { accessDemo } from "./access-demo.mjs";
 
 const inquiryInput = z
   .object({
@@ -147,6 +148,20 @@ export function createApplication({
       : null;
     res.json({ user: user || null, csrfToken: req.session.csrfToken });
   });
+  app.get("/api/demo/access-map", (req, res) => {
+    const parsed = z
+      .object({ q: z.string().trim().max(160).default("") })
+      .strict()
+      .safeParse(req.query);
+    if (!parsed.success)
+      return res
+        .status(422)
+        .json({
+          code: "INPUT_INVALID",
+          message: "Use one search question of 160 characters or fewer.",
+        });
+    res.json(accessDemo(parsed.data.q));
+  });
   const limiter = (limit, message) =>
     rateLimit({
       windowMs: 900000,
@@ -162,12 +177,10 @@ export function createApplication({
     (req, res, next) => {
       const parsed = loginInput.safeParse(req.body);
       if (!parsed.success)
-        return res
-          .status(422)
-          .json({
-            code: "INPUT_INVALID",
-            message: "Check the email and password format.",
-          });
+        return res.status(422).json({
+          code: "INPUT_INVALID",
+          message: "Check the email and password format.",
+        });
       const { email, password } = parsed.data;
       const user = db
         .prepare("SELECT * FROM users WHERE email=?")
@@ -177,12 +190,10 @@ export function createApplication({
         user?.password_hash || invalidHash,
       );
       if (!user || !valid)
-        return res
-          .status(401)
-          .json({
-            code: "LOGIN_FAILED",
-            message: "The email or password is incorrect.",
-          });
+        return res.status(401).json({
+          code: "LOGIN_FAILED",
+          message: "The email or password is incorrect.",
+        });
       req.session.regenerate((error) => {
         if (error) return next(error);
         req.session.userId = user.id;
@@ -260,24 +271,20 @@ export function createApplication({
           .get(req.session.userId)
       : null;
     if (!user)
-      return res
-        .status(401)
-        .json({
-          code: "LOGIN_REQUIRED",
-          message: "Sign in to the workspace first.",
-        });
+      return res.status(401).json({
+        code: "LOGIN_REQUIRED",
+        message: "Sign in to the workspace first.",
+      });
     req.user = user;
     next();
   });
   app.get("/api/admin/inquiries", (req, res) => {
     const parsed = listInput.safeParse(req.query);
     if (!parsed.success)
-      return res
-        .status(422)
-        .json({
-          code: "INPUT_INVALID",
-          message: "The search parameters are invalid.",
-        });
+      return res.status(422).json({
+        code: "INPUT_INVALID",
+        message: "The search parameters are invalid.",
+      });
     const { q, status, page } = parsed.data,
       conditions = [],
       params = [];
@@ -327,20 +334,16 @@ export function createApplication({
   });
   app.patch("/api/admin/inquiries/:id", (req, res) => {
     if (req.user.role !== "admin")
-      return res
-        .status(403)
-        .json({
-          code: "FORBIDDEN",
-          message: "Read-only staff cannot change inquiry status.",
-        });
+      return res.status(403).json({
+        code: "FORBIDDEN",
+        message: "Read-only staff cannot change inquiry status.",
+      });
     const parsed = transitionInput.safeParse(req.body);
     if (!parsed.success)
-      return res
-        .status(422)
-        .json({
-          code: "INPUT_INVALID",
-          message: "The status or version is invalid.",
-        });
+      return res.status(422).json({
+        code: "INPUT_INVALID",
+        message: "The status or version is invalid.",
+      });
     db.exec("BEGIN IMMEDIATE");
     try {
       const row = db

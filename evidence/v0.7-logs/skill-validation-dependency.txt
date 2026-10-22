@@ -1,0 +1,1 @@
+NOT_RUN: validator import failed before validation because PyYAML was absent in both available Python environments.

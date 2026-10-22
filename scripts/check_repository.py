@@ -6,7 +6,7 @@ import json,re,sys,hashlib
 root=Path(__file__).resolve().parents[1]
 problems=[];checked_links=0;authored=[]
 for p in sorted(root.rglob('*')):
-    if not p.is_file() or any(x in {'.git','node_modules','dist','.local','release-artifacts','__pycache__'} for x in p.relative_to(root).parts):continue
+    if not p.is_file() or any(x in {'.git','node_modules','dist','.local','release-artifacts','__pycache__'} for x in p.relative_to(root).parts) or p.relative_to(root).parts[:2]==('.impeccable','review'):continue
     authored.append(p)
     if p.suffix in {'.md','.yml','.yaml','.js','.jsx','.mjs','.py','.css','.html'}:
         text=p.read_text(encoding='utf-8')

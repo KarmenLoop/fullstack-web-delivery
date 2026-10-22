@@ -1,0 +1,80 @@
+{
+  "version": "0.7.0",
+  "status": "PASS",
+  "environment": {
+    "node": "22.23.2",
+    "npm": "10.9.8",
+    "specification_python": "3.9.6",
+    "platform": "macOS"
+  },
+  "checks": [
+    {
+      "command": "npm test",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/node-tests.txt"
+    },
+    {
+      "command": "python3 scripts/test_specifications.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/specification-tests.txt"
+    },
+    {
+      "command": "npm run build",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/production-build.txt"
+    },
+    {
+      "command": "npm run verify:http",
+      "cwd": "examples/sensu-enterprise",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/production-routes.txt"
+    },
+    {
+      "command": "isolated Python / official quick_validate.py skills/fullstack-web-delivery",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/skill-validation.txt"
+    },
+    {
+      "command": "python3 scripts/check_repository.py",
+      "cwd": ".",
+      "exit_code": 0,
+      "log": "evidence/v0.7-logs/repository.txt"
+    },
+    {
+      "command": "git diff --check",
+      "cwd": ".",
+      "exit_code": 0
+    }
+  ],
+  "official_validator_sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+  "validator_dependency": "PyYAML 6.0.3 in ignored local isolated environment; no application dependency added",
+  "retained_failures": [
+    {
+      "stage": "validator startup",
+      "result": "NOT_RUN",
+      "reason": "PyYAML absent before isolated dependency setup; import failed before validation",
+      "log": "evidence/v0.7-logs/skill-validation-dependency.txt"
+    }
+  ],
+  "manual_detector": {
+    "runs": 1,
+    "exit_code": 0,
+    "findings": [],
+    "scope": "Changed UI targets; mechanical result only"
+  },
+  "build_advisory": "Client chunk exceeds 500 kB; no comprehensive performance certification",
+  "generated_pack": {
+    "files": 17,
+    "placements": 16,
+    "pages": 13,
+    "actions": 15,
+    "prior_manifest_verified_before_regeneration": true,
+    "results_remain": "NOT_RUN until separately operated"
+  },
+  "review_scope": "Independent source/capture reviewer resolved two material findings; no independent whole-product runtime acceptance",
+  "runtime_boundaries": "See v0.7-browser.json and docs/verification.md"
+}

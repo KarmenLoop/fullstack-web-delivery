@@ -16,6 +16,7 @@ const paths = [
   "/login",
   "/admin",
   "/interaction-lab",
+  "/motion-atlas",
   "/no-such-page",
 ];
 const results = [];

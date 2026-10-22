@@ -1,6 +1,6 @@
 # Decisions, assumptions and authority
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 ## Reused decisions
 
@@ -14,6 +14,7 @@ Project: SENSU Digital — enterprise site and interaction studies. Output langu
 - Owner: desktop, phone, keyboard and reduced motion; fine springs and progressive presentation.
 - Owner: add six named advanced patterns and automatically generated UI/UX plus module specifications.
 - Later publication instruction: English public materials, retained copyright and no-modification source-available terms.
+- Owner: inspect the supplied reference clip locally; implement purposeful scroll mechanisms, real login feedback, a read-only sourced permission query, linked graph/activity/inline detail, card transfer and dark appearance; update the full skill package.
 
 ## Assumptions and pending facts
 

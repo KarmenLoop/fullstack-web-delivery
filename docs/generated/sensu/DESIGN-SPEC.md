@@ -1,6 +1,6 @@
 # Design system and UX rules
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 ## Composition
 

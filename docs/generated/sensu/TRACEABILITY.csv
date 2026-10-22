@@ -9,3 +9,8 @@ I07,P12,visitor,local:stack,"Rapidly open/gather; verify stable order, labels an
 I08,P12,visitor,local:snap,Scroll and use Next/End/Home; confirm centered card and timeline agree after settle.,NOT_RUN
 I09,P12,visitor,local:wheel,"Flick both ways and over bounds; interrupt settling; compare spinbutton, native select and selected-time text.",NOT_RUN
 I10,P12,visitor,local:radial-route,"Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.",NOT_RUN
+I11,P13,visitor,api:GET /api/demo/access-map,"Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department.",NOT_RUN
+I12,P13,visitor,local:department-selection,"Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents.",NOT_RUN
+I13,P13,visitor,local:card-transfer,"Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status.",NOT_RUN
+I14,P13,visitor,local:appearance,"Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast.",NOT_RUN
+I15,P13,visitor,local:scroll-study,"Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths.",NOT_RUN

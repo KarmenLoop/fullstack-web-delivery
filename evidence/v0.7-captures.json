@@ -1,0 +1,55 @@
+{
+  "version": "0.7.0",
+  "status": "PASS",
+  "source": "Author-operated local browser, recreated interface; no source-video pixels",
+  "captures": [
+    {
+      "path": "docs/images/motion-atlas-desktop.jpg",
+      "width": 1440,
+      "height": 3287,
+      "cssViewportWidth": 1440,
+      "format": "JPEG",
+      "bytes": 233510,
+      "sha256": "b7d5a540cbea4f8f5d9bceb0b867f19231c83361380d0826ea09f7281c90e9d0",
+      "provenance": "impeccable:prompt\u0000Origin: actual browser capture of the locally implemented SENSU motion atlas. Fictional read-only policy; no generated or copied reference-video artwork. Captured during the 0.7.0 local verification.",
+      "scope": "Actual full-page settled browser state"
+    },
+    {
+      "path": "docs/images/motion-atlas-dark.jpg",
+      "width": 1440,
+      "height": 3315,
+      "cssViewportWidth": 1440,
+      "format": "JPEG",
+      "bytes": 227906,
+      "sha256": "2517a7906b638540f5a51e775e585866b5e0c86c4e519888d727704d6971b9e2",
+      "provenance": "impeccable:prompt\u0000Origin: actual browser capture of the locally implemented SENSU motion atlas. Fictional read-only policy; no generated or copied reference-video artwork. Captured during the 0.7.0 local verification.",
+      "scope": "Actual full-page settled browser state"
+    },
+    {
+      "path": "docs/images/motion-atlas-mobile.jpg",
+      "width": 390,
+      "height": 4596,
+      "cssViewportWidth": 390,
+      "format": "JPEG",
+      "bytes": 181708,
+      "sha256": "18582f78972fce588abeb66d42cdaefd86e40bd40b318fec4f54edbe6909c864",
+      "provenance": "impeccable:prompt\u0000Origin: actual browser capture of the locally implemented SENSU motion atlas. Fictional read-only policy; no generated or copied reference-video artwork. Captured during the 0.7.0 local verification.",
+      "scope": "Actual full-page settled browser state"
+    },
+    {
+      "path": "docs/images/motion-command-dark.jpg",
+      "width": 1440,
+      "height": 3315,
+      "cssViewportWidth": 1440,
+      "format": "JPEG",
+      "bytes": 221270,
+      "sha256": "6f2e31961b6a00ef803ba7165e06e128a9558b9a5b312eb4e49085c37091542f",
+      "provenance": "impeccable:prompt\u0000Origin: actual browser capture of the locally implemented SENSU motion atlas. Fictional read-only policy; no generated or copied reference-video artwork. Captured during the 0.7.0 local verification.",
+      "scope": "Settled dialog-state capture, not whole-site acceptance"
+    }
+  ],
+  "limits": [
+    "Stills do not prove temporal smoothness, frame rate or physical-device operation",
+    "Invalid/stale/private captures excluded"
+  ]
+}

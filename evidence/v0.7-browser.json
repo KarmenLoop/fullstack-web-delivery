@@ -1,0 +1,103 @@
+{
+  "version": "0.7.0",
+  "status": "PASS",
+  "scope": "Scoped local browser observations; not independent whole-product acceptance.",
+  "checks": [
+    {
+      "id": "rail-last-item-reduced",
+      "status": "PASS",
+      "observed": {
+        "alignment": 0.1875,
+        "index": "6 / 6",
+        "nextDisabled": true,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    },
+    {
+      "id": "login-failure-focus-and-recovery",
+      "status": "PASS",
+      "observed": {
+        "button": "Sign in",
+        "emailRetained": true,
+        "error": "The email or password is incorrect.",
+        "focusIsAlert": true
+      }
+    },
+    {
+      "id": "real-login-pending-under-network-latency",
+      "status": "PASS",
+      "observed": {
+        "button": "Signing in…",
+        "disabled": true,
+        "orb": true,
+        "status": "Signing in…"
+      }
+    },
+    {
+      "id": "real-login-confirmed-navigation",
+      "status": "PASS",
+      "observed": {
+        "route": "/admin",
+        "controlledLatencyRestored": true
+      }
+    },
+    {
+      "id": "dark-preference-reload",
+      "status": "PASS",
+      "observed": {
+        "theme": "dark",
+        "route": "/motion-atlas"
+      }
+    },
+    {
+      "id": "command-recovers-initial-policy-load-error",
+      "result": "PASS",
+      "observed": "Blocked initial GET caused Failed to fetch; unblocked Search returned server rule; selecting Security owner rendered the workspace, selected Security and focused ma-node-security."
+    },
+    {
+      "id": "unsupported-permission-query",
+      "result": "PASS",
+      "observed": "Audit-permission question returned explicit unsupported-query and no result roles after server restart."
+    },
+    {
+      "id": "actual-scroll-driver-and-sticky",
+      "result": "PASS",
+      "observed": "At y953 progress=.430303 and decorative offset=2.2303px; y1383 progress=1 and offset=-16px, sticky top28px; native reverse wheel restored earlier progress. Labels remained stationary within the depth scene."
+    },
+    {
+      "id": "live-reduced-motion-and-rail-keyboard",
+      "result": "PASS",
+      "observed": "Live reduced preference removes decorative parallax (transform none); focused native rail accepts ArrowRight and scrolls locally."
+    },
+    {
+      "id": "production-chinese-question-and-source-focus",
+      "status": "PASS",
+      "observed": "Production 4319 accepts the owner Chinese revocation question, returns the two declared roles; selecting Security focuses ma-node-security and selects it."
+    },
+    {
+      "id": "department-and-continuity-states",
+      "status": "PASS",
+      "observed": "Author operated department selection and inline expansion at desktop/390px and reversible DEMO-01 transfer under reduced motion. One card, written destination, matching role counts and no page overflow were observed."
+    }
+  ],
+  "limits": [
+    "No physical-touch or device test",
+    "No measured FPS, latency benchmark or comprehensive performance/a11y/security audit",
+    "Fictional policy is read-only; no real user-access mutation",
+    "Login check frame not captured; real pending/failure/navigation observed"
+  ],
+  "excludedObservations": [
+    "Blank raw-CDP pending screenshot and stale/scroll-offset captures excluded from passing media",
+    "One guessed textbox name and a non-focusable heading key action failed before corrected semantic targeting",
+    "A broad CDP URL block also blocked the command request; unblock then retry verified recovery",
+    "A dev server retained the old policy module until owned restart; post-restart unsupported question verified"
+  ],
+  "finalPreview": {
+    "path": "/motion-atlas",
+    "port": 4319,
+    "mode": "production",
+    "deliverableMarked": true,
+    "emulationOverridesCleared": true
+  }
+}

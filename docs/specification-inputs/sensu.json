@@ -1,5 +1,5 @@
 {
-  "project": "SENSU Digital \u2014 enterprise site and interaction studies",
+  "project": "SENSU Digital \u2014 enterprise site, interaction studies and motion atlas",
   "purpose": "Help SME buyers choose a service and submit an inquiry; let authorized staff process it; demonstrate six purposeful feedback patterns.",
   "audience": "SME business visitors, administrator, read-only staff, and developers evaluating the isolated lab.",
   "language": "English public example; use the client-requested language for new projects.",
@@ -16,7 +16,8 @@
     "Owner: new \u2192 in_progress \u2192 done; local data; explicit cleanup command.",
     "Owner: desktop, phone, keyboard and reduced motion; fine springs and progressive presentation.",
     "Owner: add six named advanced patterns and automatically generated UI/UX plus module specifications.",
-    "Later publication instruction: English public materials, retained copyright and no-modification source-available terms."
+    "Later publication instruction: English public materials, retained copyright and no-modification source-available terms.",
+    "Owner: inspect the supplied reference clip locally; implement purposeful scroll mechanisms, real login feedback, a read-only sourced permission query, linked graph/activity/inline detail, card transfer and dark appearance; update the full skill package."
   ],
   "assumptions": [
     "No real company identity, endorsements, production service credentials, transactions or deployment target is supplied. They remain outside this fictional local trial.",
@@ -142,6 +143,16 @@
       "primary_action": "Choose a pattern via URL query; operate its live controls.",
       "hierarchy": "Operate/Experience workbench. Index supports one focal mechanism, followed by its contract.",
       "responsive": "Two-column compact study index then one canvas on phones; no hidden primary actions or page overflow."
+    },
+    {
+      "id": "P13",
+      "route": "/motion-atlas",
+      "audience": "Developers and operators exploring the declared demonstration policy and motion mechanisms.",
+      "task": "Ask an access question, inspect its source, trace a department and compare purposeful scroll/continuity mechanisms.",
+      "content": "Field-guide title; read-only policy workspace with command search, relationship paths, illustrative heatmap, role count and expanding department cards; scroll story with sticky context and native comparison rail; reversible card transfer; link to actual staff login.",
+      "primary_action": "Ask about access, follow a sourced result to a department, then operate the motion studies.",
+      "hierarchy": "Workspace first; named scroll mechanisms and continuity lessons below; appearance and route navigation remain available.",
+      "responsive": "Stack graph/activity and cards at phone width; retain 44px department controls, native horizontal rail, input text at 16px, in-flow detail and a bounded command dialog. Sticky context returns to normal flow on narrow screens."
     }
   ],
   "roles": [
@@ -183,7 +194,7 @@
       "target": "api:POST /api/login",
       "states": "editing / signing in / invalid / limited / authenticated",
       "feedback": "Disable duplicate submission; show specific recovery; navigate only after session acknowledgment.",
-      "motion": "Restrained button press; error appears without layout jump; reduced-motion instant.",
+      "motion": "Pending real login morphs the surface into a bounded orb; nodes form a check only after the server confirms. Reduced motion keeps immediate written feedback and removes the transition wait. Invalid credentials restore the full button and focus the error.",
       "recovery": "Keep email; do not expose secret or stack trace; allow retry after limit.",
       "verify": "Operate valid/invalid login and logout; anonymous admin API is rejected."
     },
@@ -270,6 +281,66 @@
       "motion": "Circle begins at input coordinates or keyboard trigger center; radius covers farthest corner; 380ms ease; reduced-motion instant. Keep the actual origin even when the tab is below the panel; remove clipping after settlement so resizing remains safe.",
       "recovery": "Last navigation wins; old layer inert and hidden from accessibility; no hidden focus targets.",
       "verify": "Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion."
+    },
+    {
+      "id": "I11",
+      "page": "P13",
+      "role": "visitor",
+      "trigger": "Open Command+K or the visible command control, then submit a question or team.",
+      "target": "api:GET /api/demo/access-map",
+      "states": "Idle, pending, sourced matches, no match, unsupported question, error/retry, closed.",
+      "feedback": "Return matching role IDs and the policy version/rule. Focus input on open, source department on selection, and the prior valid control on Escape.",
+      "motion": "Command opening is immediate. Source selection triggers the map sequence separately.",
+      "recovery": "Abort replaced queries, preserve entered text on error, bound input and never turn a lookup into an access mutation. Publish a successful result into the workspace model, clear its prior load error and invalidate older initial responses before offering department navigation.",
+      "verify": "Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department."
+    },
+    {
+      "id": "I12",
+      "page": "P13",
+      "role": "visitor",
+      "trigger": "Select a department node or expand its role card.",
+      "target": "local:department-selection",
+      "states": "Operations, Security or Delivery; one optional expanded detail; trace revision.",
+      "feedback": "One selected department drives the path, trace, sample activity, role count and inline detail.",
+      "motion": "Bounded path drawing and a single root-to-node trace; local heatmap stagger; layout transforms let neighboring cards move.",
+      "recovery": "Rapid selection replaces the prior trace; reduced motion resolves directly; stable native buttons retain focus.",
+      "verify": "Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents."
+    },
+    {
+      "id": "I13",
+      "page": "P13",
+      "role": "visitor",
+      "trigger": "Assign or return the same example card.",
+      "target": "local:card-transfer",
+      "states": "Available or assigned; stable DEMO-01 identity.",
+      "feedback": "The same card and reference appear at the destination; status states the local demonstration boundary.",
+      "motion": "Shared layout identity with bounded spring; immediate placement with reduced motion.",
+      "recovery": "Reverse during movement; retain the logical target and keep the action operable.",
+      "verify": "Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status."
+    },
+    {
+      "id": "I14",
+      "page": "P13",
+      "role": "visitor",
+      "trigger": "Activate the appearance control.",
+      "target": "local:appearance",
+      "states": "Light or dark; local preference if storage is available.",
+      "feedback": "All atlas and command surfaces use semantic theme tokens and a visible toggle label.",
+      "motion": "Immediate color/surface update, no required sweeping transition.",
+      "recovery": "Storage unavailable keeps the selected appearance for the current visit; no credentials or query content are persisted.",
+      "verify": "Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast."
+    },
+    {
+      "id": "I15",
+      "page": "P13",
+      "role": "visitor",
+      "trigger": "Scroll the lesson or operate the comparison rail controls/keys.",
+      "target": "local:scroll-study",
+      "states": "Section progress, one-time reveals, bounded decorative offset, native sticky range and actual rail position.",
+      "feedback": "Different mechanisms use distinct triggers; native scrolling and written content remain usable.",
+      "motion": "Threshold reveal differs from position-linked progress. Small decorative parallax; native sticky and proximity snap; no vertical-wheel hijacking.",
+      "recovery": "Resize/reduced motion retains readability, stops active reveal transforms and removes parallax; final rail item remains reachable.",
+      "verify": "Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths."
     }
   ],
   "motion": [
@@ -283,7 +354,7 @@
     },
     {
       "id": "I03",
-      "spec": "Restrained button press; error appears without layout jump; reduced-motion instant. Keep email; do not expose secret or stack trace; allow retry after limit. Acceptance: Operate valid/invalid login and logout; anonymous admin API is rejected."
+      "spec": "Pending real login morphs the surface into a bounded orb; nodes form a check only after the server confirms. Reduced motion keeps immediate written feedback and removes the transition wait. Invalid credentials restore the full button and focus the error. Pending begins at submit; the confirmed beat is bounded to 420ms, zero extra delay under reduced motion. Invalidate late responses and clear timers on unmount. Acceptance: Operate valid/invalid login and logout; anonymous admin API is rejected."
     },
     {
       "id": "I04",
@@ -312,16 +383,36 @@
     {
       "id": "I10",
       "spec": "Circle begins at input coordinates or keyboard trigger center; radius covers farthest corner; 380ms ease; reduced-motion instant. Keep the actual origin even when the tab is below the panel; remove clipping after settlement so resizing remains safe. Last navigation wins; old layer inert and hidden from accessibility; no hidden focus targets. Acceptance: Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion."
+    },
+    {
+      "id": "I11",
+      "spec": "Command opening is immediate. Source selection triggers the map sequence separately. Recovery: Abort replaced queries, preserve entered text on error, bound input and never turn a lookup into an access mutation. Publish a successful result into the workspace model, clear its prior load error and invalidate older initial responses before offering department navigation. Acceptance: Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department."
+    },
+    {
+      "id": "I12",
+      "spec": "Bounded path drawing and a single root-to-node trace; local heatmap stagger; layout transforms let neighboring cards move. Recovery: Rapid selection replaces the prior trace; reduced motion resolves directly; stable native buttons retain focus. Acceptance: Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents."
+    },
+    {
+      "id": "I13",
+      "spec": "Shared layout identity with bounded spring; immediate placement with reduced motion. Recovery: Reverse during movement; retain the logical target and keep the action operable. Acceptance: Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status."
+    },
+    {
+      "id": "I14",
+      "spec": "Immediate color/surface update, no required sweeping transition. Recovery: Storage unavailable keeps the selected appearance for the current visit; no credentials or query content are persisted. Acceptance: Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast."
+    },
+    {
+      "id": "I15",
+      "spec": "Threshold reveal differs from position-linked progress. Small decorative parallax; native sticky and proximity snap; no vertical-wheel hijacking. Recovery: Resize/reduced motion retains readability, stops active reveal transforms and removes parallax; final rail item remains reachable. Acceptance: Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths."
     }
   ],
   "modules": {
     "frontend": {
       "status": "required",
-      "spec": "Use the existing React SSR, React Router and Vite modules. Keep public templates and admin components separate by responsibility. The lab is an isolated route with query-driven study/view selection. Every enabled control has the target defined in INTERACTION-SPECS. Preserve semantic links, headings, labels, native validation, keyboard order and focus after asynchronous replacements. Inherit src/tokens.css and use scoped lab CSS. Design at real content lengths; inspect desktop 1440px and phone 390px plus the actual preview viewport."
+      "spec": "Use the existing React SSR, React Router and Vite modules. Keep public templates and admin components separate by responsibility. The lab is an isolated route with query-driven study/view selection. Every enabled control has the target defined in INTERACTION-SPECS. Preserve semantic links, headings, labels, native validation, keyboard order and focus after asynchronous replacements. Inherit src/tokens.css and use scoped lab CSS. Design at real content lengths; inspect desktop 1440px and phone 390px plus the actual preview viewport. The motion atlas is a separate inherited-identity route with scoped appearance tokens, a named native rail, inline disclosures and one selected department ID. Successful command queries recover the shared model and invalidate stale initial loading errors."
     },
     "backend": {
       "status": "required",
-      "spec": "Same-origin Express API: GET /api/health, GET /api/session, POST /api/login, POST /api/logout, POST /api/inquiries, GET /api/admin/inquiries, GET /api/admin/inquiries/:id, PATCH /api/admin/inquiries/:id. Public inquiries accept strict validated fields, consent, honeypot and idempotency. Staff queries support search/status/pagination. Update includes expected version, legal transition and transactional audit. Return structured validation, 401, 403, conflict and rate-limit errors; inspect actual server schemas before implementing consumers. Lab completion is local simulation and must never call the inquiry write endpoint."
+      "spec": "Same-origin Express API: GET /api/health, GET /api/session, POST /api/login, POST /api/logout, POST /api/inquiries, GET /api/admin/inquiries, GET /api/admin/inquiries/:id, PATCH /api/admin/inquiries/:id. Public inquiries accept strict validated fields, consent, honeypot and idempotency. Staff queries support search/status/pagination. Update includes expected version, legal transition and transactional audit. Return structured validation, 401, 403, conflict and rate-limit errors; inspect actual server schemas before implementing consumers. Lab completion is local simulation and must never call the inquiry write endpoint. GET /api/demo/access-map accepts one optional q string, at most 160 characters; duplicate/unknown fields return 422. Its server-owned fictional policy supports exact English/Chinese user-access revocation questions and role/team search. Other permission subjects return unsupported-query, null permission and no role IDs. POST is unsupported. It is separate from actual staff authorization."
     },
     "auth": {
       "status": "required",
@@ -329,7 +420,7 @@
     },
     "data": {
       "status": "required",
-      "spec": "SQLite local file .local/sensu.sqlite stores users, persistent sessions, inquiries and status audit. Inquiry fields include reference, name, company, email, service, description, status, version and timestamps. Status is new \u2192 in_progress \u2192 done. Save status and audit atomically. Keep test data isolated. Check persistence across restart. The explicit data:clear command requires a named scope and preserves staff accounts unless separately authorized. Do not publish database, runtime secret, sessions or local credentials."
+      "spec": "SQLite local file .local/sensu.sqlite stores users, persistent sessions, inquiries and status audit. Inquiry fields include reference, name, company, email, service, description, status, version and timestamps. Status is new \u2192 in_progress \u2192 done. Save status and audit atomically. Keep test data isolated. Check persistence across restart. The explicit data:clear command requires a named scope and preserves staff accounts unless separately authorized. Do not publish database, runtime secret, sessions or local credentials. The atlas policy/activity are deterministic illustrative server data, not real membership or analytics. Card transfer is local state. Persist only the atlas appearance preference in local storage; never treat it as authority."
     },
     "content": {
       "status": "required",
@@ -355,5 +446,247 @@
     "accessibility": "Semantic landmarks/headings; meaningful labels; visible keyboard focus; stable focus after async form replacement and dialog exit; native alternatives for gestures; written final state; aria-live only for useful results. Respect live prefers-reduced-motion changes, touch scrolling outside contained gestures and zoom. Browser operation is not a full assistive-technology audit.",
     "responsive": "Inspect 1440px desktop, 390px phone and the actual in-app width. Phone layouts expose action and state without hover; admin record details remain operable. Lab index becomes two columns above one canvas. Prevent page overflow and clipped copy, but verify task completion separately. Resizing a completed radial view must not leave a stale pixel clip.",
     "assets": "Fictional brand and authored mechanism scenes; existing architectural illustration is labeled synthetic. Do not invent client logos, awards, portraits, recordings or customer outcomes. Verify rights/provenance before adding real assets. No third-party skill content or brand skin is copied."
-  }
+  },
+  "motion_map": [
+    {
+      "id": "M01",
+      "page": "P13",
+      "action": "I15",
+      "element": "Lesson rows and mechanism cards",
+      "term": "scroll reveal",
+      "purpose": "Introduce grouped explanatory content once.",
+      "trigger": "First viewport intersection",
+      "driver": "IntersectionObserver threshold, with visible default content.",
+      "timing": "300ms ease-out; local stagger bounded to 160ms.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M02",
+      "page": "P13",
+      "action": "I15",
+      "element": "Lesson progress track",
+      "term": "scroll-linked animation",
+      "purpose": "Explain progress through the business sequence.",
+      "trigger": "Section scroll position",
+      "driver": "Actual normalized section progress, reversible with scroll.",
+      "timing": "Direct position mapping; no time-based lag.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M03",
+      "page": "P13",
+      "action": "I15",
+      "element": "Decorative plane behind the three step labels",
+      "term": "parallax",
+      "purpose": "Separate decorative depth from stable reading content.",
+      "trigger": "Section scroll position",
+      "driver": "Transform only the isolated decorative plane.",
+      "timing": "Bounded +16px to -16px; no content movement.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M04",
+      "page": "P13",
+      "action": "I15",
+      "element": "Lesson explanation aside",
+      "term": "sticky",
+      "purpose": "Keep context beside the longer sequence.",
+      "trigger": "Native vertical scroll within the lesson",
+      "driver": "CSS position:sticky and its containing section.",
+      "timing": "Native placement; no animated fake pinning.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M05",
+      "page": "P13",
+      "action": "I15",
+      "element": "Mechanism comparison rail",
+      "term": "scroll snap",
+      "purpose": "Settle an overflowing collection at a readable item.",
+      "trigger": "Native scroll or explicit navigation",
+      "driver": "CSS proximity snap and actual scroll position, with measured trailing space.",
+      "timing": "Browser-owned settlement; reduced motion uses instant explicit navigation.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M06",
+      "page": "P13",
+      "action": "I15",
+      "element": "Mechanism comparison rail",
+      "term": "horizontal scroll",
+      "purpose": "Compare related mechanisms without redirecting the page.",
+      "trigger": "Scrollbar, keys or Previous/Next",
+      "driver": "Native overflow-x with controls and endpoint feedback.",
+      "timing": "Native scroll; explicit smooth only when motion is allowed.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M07",
+      "page": "P10",
+      "action": "I03",
+      "element": "Actual staff sign-in submit surface",
+      "term": "morph",
+      "purpose": "Acknowledge an in-flight credential request.",
+      "trigger": "POST /api/login starts",
+      "driver": "Actual pending state; no artificial success clock.",
+      "timing": "Bounded layout spring, 0.5s perceptual duration, bounce 0.2.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M08",
+      "page": "P10",
+      "action": "I03",
+      "element": "Actual sign-in orb",
+      "term": "node check / path drawing",
+      "purpose": "Confirm successful session establishment.",
+      "trigger": "Login API confirms a user",
+      "driver": "Confirmed response only; nodes form the check before navigation.",
+      "timing": "250ms node/path change; normal navigation after a bounded 420ms confirmation, reduced motion immediate.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M09",
+      "page": "P13",
+      "action": "I13",
+      "element": "DEMO-01 transfer card",
+      "term": "shared element transition",
+      "purpose": "Preserve identity across a change of placement.",
+      "trigger": "Assign or return control",
+      "driver": "Single local target state and stable layout ID.",
+      "timing": "0.5s spring, bounce 0.2; rapid input retargets.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M10",
+      "page": "P13",
+      "action": "I12",
+      "element": "Selected role permission count",
+      "term": "number ticker",
+      "purpose": "Make a changed known count legible without shifting the row.",
+      "trigger": "Selected role changes",
+      "driver": "Loaded policy role.permissions.length; never fabricated analytics.",
+      "timing": "250ms digit transform; tabular figures and stable accessible value.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M11",
+      "page": "P13",
+      "action": "I12",
+      "element": "Workspace-to-department relationship edges",
+      "term": "path drawing",
+      "purpose": "Make the declared hierarchy visible.",
+      "trigger": "Map mounts or selection changes",
+      "driver": "Versioned server model and selected department ID.",
+      "timing": "500ms bounded line draw; no infinite graph animation.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M12",
+      "page": "P13",
+      "action": "I12",
+      "element": "Workspace-to-selected-department light point",
+      "term": "route tracing",
+      "purpose": "Show the actual root path for the selection.",
+      "trigger": "Department selection revision",
+      "driver": "The selected root/trunk/branch coordinates.",
+      "timing": "650ms single explanatory trace; replaced by the next selection.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M13",
+      "page": "P13",
+      "action": "I12",
+      "element": "Four sample weeks beside the map",
+      "term": "heatmap wave",
+      "purpose": "Link the same selection to its illustrative activity.",
+      "trigger": "Selected department/revision changes",
+      "driver": "Declared synthetic values from the same demo model.",
+      "timing": "200ms local cell response; stagger remains below 150ms.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M14",
+      "page": "P13",
+      "action": "I12",
+      "element": "Department role cards",
+      "term": "layout animation / inline disclosure",
+      "purpose": "Reveal details at their source while neighbors yield.",
+      "trigger": "Role toggle or sourced department selection",
+      "driver": "Stable IDs, native disclosure button, in-flow hidden region.",
+      "timing": "Bounded layout spring, no overlay or focus theft.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M15",
+      "page": "P13",
+      "action": "I14",
+      "element": "Atlas and command appearance",
+      "term": "theme change",
+      "purpose": "Support the requested light/dark reading context.",
+      "trigger": "Appearance control",
+      "driver": "Semantic tokens and a local-only preference.",
+      "timing": "Immediate surface/text update; no spatial reveal required.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    },
+    {
+      "id": "M16",
+      "page": "P13",
+      "action": "I11",
+      "element": "Command+K palette",
+      "term": "instant command feedback",
+      "purpose": "Support a frequent keyboard task without added latency.",
+      "trigger": "Keyboard shortcut or visible trigger",
+      "driver": "Focus-managed dialog with a real bounded policy query.",
+      "timing": "Immediate open/close; animation deliberately omitted.",
+      "interruption": "A newer input/selection replaces the previous target; async responses are cancelled or ignored after replacement/unmount. Keep logical state immediate.",
+      "reduced": "Remove nonessential translation, parallax, orbit and path travel. Keep written status, direct progress, selected values and native control behavior.",
+      "fallback": "Readable visible content, native links/buttons/scrolling and direct state change. Keep unsupported branches explicitly unverified.",
+      "verify": "Operate the mapped action and compare its page, selected IDs, state, focus, normal/reduced behavior and actual viewport; keep temporal and physical-device evidence separate."
+    }
+  ]
 }

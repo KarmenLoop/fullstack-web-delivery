@@ -1,6 +1,6 @@
 # Action and state contracts
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 ## I01 · P01
 
@@ -50,7 +50,7 @@ Project: SENSU Digital — enterprise site and interaction studies. Output langu
 
 **Feedback:** Disable duplicate submission; show specific recovery; navigate only after session acknowledgment.
 
-**Motion:** Restrained button press; error appears without layout jump; reduced-motion instant.
+**Motion:** Pending real login morphs the surface into a bounded orb; nodes form a check only after the server confirms. Reduced motion keeps immediate written feedback and removes the transition wait. Invalid credentials restore the full button and focus the error.
 
 **Recovery:** Keep email; do not expose secret or stack trace; allow retry after limit.
 
@@ -181,3 +181,93 @@ Project: SENSU Digital — enterprise site and interaction studies. Output langu
 **Recovery:** Last navigation wins; old layer inert and hidden from accessibility; no hidden focus targets.
 
 **Verify:** Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.
+
+## I11 · P13
+
+**Role:** visitor
+
+**Trigger:** Open Command+K or the visible command control, then submit a question or team.
+
+**Target:** api:GET /api/demo/access-map
+
+**States:** Idle, pending, sourced matches, no match, unsupported question, error/retry, closed.
+
+**Feedback:** Return matching role IDs and the policy version/rule. Focus input on open, source department on selection, and the prior valid control on Escape.
+
+**Motion:** Command opening is immediate. Source selection triggers the map sequence separately.
+
+**Recovery:** Abort replaced queries, preserve entered text on error, bound input and never turn a lookup into an access mutation. Publish a successful result into the workspace model, clear its prior load error and invalidate older initial responses before offering department navigation.
+
+**Verify:** Ask the stated permission question in English and Chinese; compare role IDs to the policy, inspect no-match and role-source focus; verify invalid query/write boundaries. Audit, billing, ambiguous and multi-scope questions must not inherit user-access answers. Reproduce initial loading failure, then recover through a successful query and focus its rendered department.
+
+## I12 · P13
+
+**Role:** visitor
+
+**Trigger:** Select a department node or expand its role card.
+
+**Target:** local:department-selection
+
+**States:** Operations, Security or Delivery; one optional expanded detail; trace revision.
+
+**Feedback:** One selected department drives the path, trace, sample activity, role count and inline detail.
+
+**Motion:** Bounded path drawing and a single root-to-node trace; local heatmap stagger; layout transforms let neighboring cards move.
+
+**Recovery:** Rapid selection replaces the prior trace; reduced motion resolves directly; stable native buttons retain focus.
+
+**Verify:** Select/reverse departments, verify matching IDs/counts, in-flow expansion, native focus and reduced-motion equivalents.
+
+## I13 · P13
+
+**Role:** visitor
+
+**Trigger:** Assign or return the same example card.
+
+**Target:** local:card-transfer
+
+**States:** Available or assigned; stable DEMO-01 identity.
+
+**Feedback:** The same card and reference appear at the destination; status states the local demonstration boundary.
+
+**Motion:** Shared layout identity with bounded spring; immediate placement with reduced motion.
+
+**Recovery:** Reverse during movement; retain the logical target and keep the action operable.
+
+**Verify:** Assign, reverse and repeat at desktop/phone widths; confirm a single card and matching status.
+
+## I14 · P13
+
+**Role:** visitor
+
+**Trigger:** Activate the appearance control.
+
+**Target:** local:appearance
+
+**States:** Light or dark; local preference if storage is available.
+
+**Feedback:** All atlas and command surfaces use semantic theme tokens and a visible toggle label.
+
+**Motion:** Immediate color/surface update, no required sweeping transition.
+
+**Recovery:** Storage unavailable keeps the selected appearance for the current visit; no credentials or query content are persisted.
+
+**Verify:** Switch both ways, reopen the command surface, reload for preference persistence, and inspect text/focus contrast.
+
+## I15 · P13
+
+**Role:** visitor
+
+**Trigger:** Scroll the lesson or operate the comparison rail controls/keys.
+
+**Target:** local:scroll-study
+
+**States:** Section progress, one-time reveals, bounded decorative offset, native sticky range and actual rail position.
+
+**Feedback:** Different mechanisms use distinct triggers; native scrolling and written content remain usable.
+
+**Motion:** Threshold reveal differs from position-linked progress. Small decorative parallax; native sticky and proximity snap; no vertical-wheel hijacking.
+
+**Recovery:** Resize/reduced motion retains readability, stops active reveal transforms and removes parallax; final rail item remains reachable.
+
+**Verify:** Measure actual progress at two positions, sticky containment, horizontal endpoints and key navigation; inspect desktop/phone and reduced-motion paths.

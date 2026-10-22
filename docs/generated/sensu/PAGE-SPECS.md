@@ -1,6 +1,6 @@
 # Page contracts
 
-Project: SENSU Digital — enterprise site and interaction studies. Output language: English public example; use the client-requested language for new projects.
+Project: SENSU Digital — enterprise site, interaction studies and motion atlas. Output language: English public example; use the client-requested language for new projects.
 
 ## P01 · /
 
@@ -169,3 +169,17 @@ Project: SENSU Digital — enterprise site and interaction studies. Output langu
 **Hierarchy:** Operate/Experience workbench. Index supports one focal mechanism, followed by its contract.
 
 **Responsive:** Two-column compact study index then one canvas on phones; no hidden primary actions or page overflow.
+
+## P13 · /motion-atlas
+
+**Audience:** Developers and operators exploring the declared demonstration policy and motion mechanisms.
+
+**Task:** Ask an access question, inspect its source, trace a department and compare purposeful scroll/continuity mechanisms.
+
+**Content:** Field-guide title; read-only policy workspace with command search, relationship paths, illustrative heatmap, role count and expanding department cards; scroll story with sticky context and native comparison rail; reversible card transfer; link to actual staff login.
+
+**Primary Action:** Ask about access, follow a sourced result to a department, then operate the motion studies.
+
+**Hierarchy:** Workspace first; named scroll mechanisms and continuity lessons below; appearance and route navigation remain available.
+
+**Responsive:** Stack graph/activity and cards at phone width; retain 44px department controls, native horizontal rail, input text at 16px, in-flow detail and a bounded command dialog. Sticky context returns to normal flow on narrow screens.

@@ -2,7 +2,7 @@
 
 A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
 
-**Version 0.6.0 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.7.0 · English publication · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
@@ -12,7 +12,7 @@ A workflow skill for turning a website brief into a complete plan, a running imp
 
 *An actual browser capture of the included fictional enterprise example. The interface and documentation are in English. This is an illustrative project, not a customer case or a hosted business service.*
 
-[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
+[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Motion guide](docs/motion-guide.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
 
 ## What it delivers
 
@@ -99,7 +99,7 @@ Users can select, combine, revise or reject the options. A pending preference bl
 
 ## From answers to concrete design instructions
 
-After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 16 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
+After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 17 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, a placement map, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
 
 The optional standard-library renderer consumes a populated JSON brief. It does not invent business facts, interview the user or grant authority. The host agent can write the same contracts directly in the client's language. The bundled renderer is English. Existing output directories are protected; revised designs go into a new directory for comparison.
 
@@ -119,6 +119,14 @@ The example adds `/interaction-lab`, an isolated workbench with one live study a
 
 The studies include explicit state feedback, failure/retry where applicable, keyboard paths and reduced-motion behavior. Completion is labeled as a local simulation; the real inquiry API is separate. [Operate the studies](docs/interaction-studies.md) and inspect their [portable contracts](skills/fullstack-web-delivery/references/interaction-patterns.md).
 
+## Connected motion, with a source and a recovery path
+
+Version 0.7.0 adds a working motion atlas: real-login orb/check feedback, rolling digits, a bounded Command+K permission query, selected department paths, illustrative activity waves, inline disclosure, yielding neighbors, reversible card continuity, light/dark appearance and six distinct scroll mechanisms. These are task-specific capabilities; the skill maps them to pages/actions before implementation rather than applying every effect everywhere.
+
+![Actual dark motion atlas: one selected department connects its path, activity, count and detail](docs/images/motion-atlas-dark.jpg)
+
+[Operate the atlas and read the tutorial](docs/motion-guide.md). The permission model is explicitly fictional and read-only, while staff authentication and the inquiry workflow remain real local API/database flows. A supplied video informed the mechanisms; its clip, extracted frames and reference branding are not redistributed. The new [MOTION-MAP](docs/generated/sensu/MOTION-MAP.md) records 16 placements, actual drivers, interruption, alternatives and verification.
+
 ## Run the complete example
 
 The included example is **SENSU Digital**, a fictional SME services company. It contains nine public content pages, staff sign-in, and an inquiry workspace. Visitors submit without an account. Read-only staff can inspect; administrators advance New -> In progress -> Done with version checks and an audit history.
@@ -133,7 +141,7 @@ npm run build
 npm start
 ```
 
-Open `http://127.0.0.1:4319/`, `http://127.0.0.1:4319/login`, and `http://127.0.0.1:4319/interaction-lab`. Read `.local/demo-access.json` on your own machine for freshly generated administrator and read-only passwords. No universal demo password is published. The server binds loopback, and no email is sent.
+Open `http://127.0.0.1:4319/`, `http://127.0.0.1:4319/login`, `http://127.0.0.1:4319/interaction-lab`, and `http://127.0.0.1:4319/motion-atlas`. Read `.local/demo-access.json` on your own machine for freshly generated administrator and read-only passwords. No universal demo password is published. The server binds loopback, and no email is sent.
 
 ```sh
 npm test
@@ -150,6 +158,8 @@ Versioned bodies of evidence are kept separate:
 
 - The earlier 0.3.0 local rerun recorded 11 formal tests,8 live API checks,18 public viewport checks,12 production routes, and session/data persistence across restarts. Its independent design verdict covered five screenshot/source corrections only.
 - The 0.4.1 English publication has fresh source, documentation, test, build, route, and browser checks in [the verification record](docs/verification.md). Historic counts are not silently reassigned to a localized interface. Hosted CI reports its own actual status above.
+
+The 0.7.0 extension records 17 passing application tests, seven specification tests, client/SSR production builds, 14 HTTP routes, same-record/session restart readback and scoped browser checks. Independent review resolved two source-level findings; its ship verdict covers those fixes, not independent whole-product runtime acceptance. See [versioned evidence](docs/verification.md).
 
 The 0.5.0 extension has its own [verification scope](docs/verification.md), including specification tests and interaction observations.
 

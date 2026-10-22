@@ -1,0 +1,14 @@
+{
+  "version": "0.7.0",
+  "phase": "before",
+  "status": "PASS",
+  "inquiry": {
+    "id": "SX-6500EBF3BDED",
+    "status": "done",
+    "version": 3,
+    "auditEvents": 2
+  },
+  "sessionRole": "admin",
+  "declaredPolicyRead": true,
+  "unsupportedPolicyBounded": true
+}

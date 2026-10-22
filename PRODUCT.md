@@ -8,11 +8,11 @@ web
 
 ## Users
 
-Website-building agents and their operators use the skill to plan and deliver a client-specific site. Developers/designers use the interaction lab to understand and verify six requested feedback patterns. The SENSU example serves fictional business visitors and isolated administrator/read-only staff.
+Website-building agents and their operators use the skill to plan and deliver a client-specific site. Developers/designers use the interaction lab and motion atlas to understand and verify task-specific feedback and scroll mechanisms. The SENSU example serves fictional business visitors and isolated administrator/read-only staff.
 
 ## Product Purpose
 
-Turn answered requirements into a complete project plan, project-specific prompt/specification documents, runnable business increments, and inspectable acceptance evidence. The interaction lab demonstrates the requested state/motion contracts without changing the existing business API.
+Turn answered requirements into a complete project plan, project-specific prompt/specification documents, runnable business increments, and inspectable acceptance evidence. The interaction lab demonstrates requested state/motion contracts; the motion atlas adds a server-owned fictional read-only policy and the login feedback follows real authentication.
 
 ## Operating Context
 
@@ -20,7 +20,7 @@ An existing English React SSR / Express / SQLite example, optional Python standa
 
 ## Capabilities and Constraints
 
-The specification generator and six-pattern lab are implemented under docs/upgrade-v0.5-plan.md; actual checks and remaining limits are recorded in docs/verification.md. Existing authentication, roles, inquiries and audit remain separate real business flows. Simulated lab actions must be labeled. Other hosts and physical devices require separate acceptance.
+The generator and six-pattern lab are implemented under docs/upgrade-v0.5-plan.md. The 0.7 extension follows docs/upgrade-v0.7-plan.md and docs/motion-atlas-brief.md; actual checks and remaining limits are recorded in docs/verification.md. Existing authentication, roles, inquiries and audit remain separate real business flows. Simulated lab actions must be labeled. Other hosts and physical devices require separate acceptance.
 
 ## Brand Commitments
 
@@ -28,7 +28,7 @@ Preserve the confirmed cream/forest, restrained editorial language and existing 
 
 ## Evidence on Hand
 
-Existing source, public 0.4.1 release, local/hosted automated records, actual example screenshots, and the owner's explicit six-pattern description. SENSU is fictional; there are no real customers, commercial results or human design approval claims to add.
+Existing source, immutable earlier releases, local/hosted automated records, actual example screenshots, the owner's effect descriptions and a privately inspected 50-second video reference. The original clip and extracted frames are not distributed. SENSU is fictional; there are no real customers, commercial results or human design approval claims to add.
 
 ## Product Principles
 

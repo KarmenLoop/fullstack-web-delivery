@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0 - 2026-10-22
+
+- Assign motion terminology to page/action/task contracts with a 16-placement map, two portable implementation references and 17 generated specification files.
+- Add a working motion atlas: distinct scroll drivers, command search, server-owned fictional policy, department path/activity/count/detail coordination, inline layout, reversible continuity and dark appearance.
+- Connect the login orb and node-check feedback to actual authentication confirmation; preserve failure focus, input, cleanup and reduced-motion behavior.
+- Repair query-scope overmatching, failed-load command recovery, command autofocus and unreachable rail-end alignment; retain original review findings and affected checks.
+- Add four actual browser images, a complete motion tutorial, scoped design documentation, seven renderer tests and 17 application tests; preserve immutable prior releases and honest device/performance limits.
+
 ## 0.6.0 - 2026-10-22
 
 - Compare three structurally distinct representative layouts before expanding new sites or substantial visual redesigns.

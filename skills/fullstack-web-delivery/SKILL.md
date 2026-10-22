@@ -5,7 +5,7 @@ description: "Plan and deliver complete websites with adaptive discovery, indust
 
 # Fullstack Web Delivery
 
-Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.6.0.
+Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.7.0.
 
 ## 1. Establish the scope
 
@@ -38,6 +38,8 @@ For a new site or substantial visual redesign, follow [visual decisions](referen
 Record the actual selection source and update the UI/UX prompt and design contracts. Check visual quality and task usability separately. Verify that promised content is rendered and phone users can discover key states and actions. Record triggers, states, feedback, failure recovery, keyboard/touch behavior, APIs, and motion for each applicable control.
 
 Every enabled control must act and every link must reach a supported destination. Start feedback at input; show success only after the actual operation confirms it. Derive linked responses from one state. Make animation interruptible and retain keyboard, touch, focus and reduced-motion paths. Select [advanced patterns](references/interaction-patterns.md) by purpose; do not add all six effects to every site. Learn reference principles within their scope: marketing composition, operational usability and a client's existing brand are different constraints.
+
+For scroll effects, video references or coordinated feedback, use [motion placement](references/motion-placement.md) to name the actual driver and assign it to a page/action/task. Persist MOTION-MAP.md with interruption, reduced-motion and verification contracts. Read [mechanism recipes](references/motion-recipes.md) for scroll, authenticated morphs, counts, command search, relationship paths, inline layout and appearance. Select relevant effects; preserve source-backed business state and a complete recovery path.
 
 ## 5. Build complete business increments
 
