@@ -15,6 +15,7 @@ jobs:
           python-version: '3.12'
       - run: python scripts/test_specifications.py -v
       - run: python scripts/check_repository.py
+      - run: python scripts/check_publication.py
   example:
     runs-on: ubuntu-latest
     defaults:

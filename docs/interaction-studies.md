@@ -1,5 +1,7 @@
 # Operate the interaction studies
 
+Historical study/capture record: **0.5.0**. The current release is **0.9.1**; its new browser capture is on the [project page](../README.md). The captures below retain their original scope and are not fresh acceptance of every feature.
+
 Start the [complete example](example-guide.md), then open `http://127.0.0.1:4319/interaction-lab`. If startup uses a different PORT, use that port here too. The study index changes `?pattern=`; the sixth study adds `&view=`. These links can be opened directly and navigated with browser history.
 
 The workbench extends the existing cream/forest brand and uses existing Motion, Radix icons and native browser controls. It adds no dependency. Only one study is active at a time. Completion and preferences are explicitly local demonstrations; they do not write a consultation, send a message or change staff permissions.

@@ -5,7 +5,7 @@ description: "Plan and deliver complete websites with adaptive discovery, indust
 
 # Fullstack Web Delivery
 
-Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.9.0.
+Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.9.1.
 
 ## 1. Establish the scope
 

@@ -1,0 +1,42 @@
+{
+  "version": "0.9.1",
+  "kind": "actual browser viewport capture",
+  "data": "synthetic example",
+  "image": "docs/images/sensu-desktop-v0.9.1.png",
+  "sha256": "a1156dd3d0c17c02a15413351642509e0e4b30b5642127838e8e77215e7314e9",
+  "pixels": [
+    65536,
+    4292542531
+  ],
+  "edits": "none",
+  "source_files": {
+    "examples/sensu-enterprise/server/access-demo.mjs": "fd8d402914080af9dead8b7a9114c8f14d21bc0d2cc06e117f70cf7dab13d6d2",
+    "examples/sensu-enterprise/server/api.mjs": "868a8444a9b9a2be6fffc3a4757b046596c1295537ca88e220ebf778c8dfb571",
+    "examples/sensu-enterprise/server/database.mjs": "668d9f0a7888bae0f9e063df9b1f2a1a619e871b974393a2c3ae9b3f05766c85",
+    "examples/sensu-enterprise/server/start.mjs": "1db96cff5778135cb0386e0993be21f4737adc65cff5082a5f1a04c462af3290",
+    "examples/sensu-enterprise/src/App.jsx": "d929fada6df6d05912ac238f7fe59253527d2f0e9fa595cb2089f77ca64f0155",
+    "examples/sensu-enterprise/src/InteractionLab.jsx": "f6faff2f659f69cae49ff5b123d9acb63472236ac2d9871661025322ccf5d39f",
+    "examples/sensu-enterprise/src/MetalCard.jsx": "4459007dee74612e1aade6dd84bf48803a4f46d8327fbcf47dc4721459c8b94d",
+    "examples/sensu-enterprise/src/MotionAtlas.jsx": "e9e2960ecdca86d3b6e7d317cf482af2273a2324dddd31958e6f5d0bab4dbac1",
+    "examples/sensu-enterprise/src/MotionPrimitives.jsx": "acff81a3ff9eeb69579318636fc76193c8bebdeef783b943900aa900b8723cdb",
+    "examples/sensu-enterprise/src/api.js": "15cd4d21c158763b358bfd33a39986dd4a66dbde1edd711c084031e1fa872056",
+    "examples/sensu-enterprise/src/content.js": "bfeb379e5e4cdb483de6effe29bfe10f48d4e0eadea0d50d5db8b407289c3157",
+    "examples/sensu-enterprise/src/entry-client.jsx": "887b763de67912804ae30e3a2c63cc50fb9fd6af712ce9f6c0b9bbc5b3d0b33d",
+    "examples/sensu-enterprise/src/entry-server.jsx": "5eec190d16e171ee815b563eea987823b0aabb5e0808f59e4987850d7d493f60",
+    "examples/sensu-enterprise/src/interaction-lab.css": "026775ce03a64384c34c87dd2a569a2531221dafd242a42ae4bf00b435349d90",
+    "examples/sensu-enterprise/src/interaction-math.mjs": "540d5cbcc3e3c310240e10001e266c5dfdb6eabe34e1daf6e567751581252575",
+    "examples/sensu-enterprise/src/metal-card.css": "0b45ec581241fa792c9dfd39ff313e7c4383ef08b6bae6d749cb0271faee0825",
+    "examples/sensu-enterprise/src/metal/blur.frag.glsl": "a031f366128c1faeaeaa0797434f772e479c708f6b25f0fef0b72928191b2447",
+    "examples/sensu-enterprise/src/metal/material.frag.glsl": "e99c399845b9da05ed20b8b0369c19ff74a452be0e088fd06ad50f19e315cbc4",
+    "examples/sensu-enterprise/src/metal/math.mjs": "d8c7d1285e5d5e053c9f8fdd254fb2bb62efa63cd9d0ee4d7dbbd5bbef6a157b",
+    "examples/sensu-enterprise/src/metal/quad.vert.glsl": "84da9eb48834a350f71715a4c77a7bfd042daa5cc8a11dafacc4fc7f674f2452",
+    "examples/sensu-enterprise/src/metal/renderer.js": "38908ea6af960a1d4244ef0ea8fd6367b474ed9a2e6ba32b2c620afe0206a36f",
+    "examples/sensu-enterprise/src/motion-atlas.css": "8f5bb119b92484b70dbb0a948816e1d222b294e0dd96909abfac501ab3fecaa8",
+    "examples/sensu-enterprise/src/motion-primitives.css": "d3d5cf68650e2d75758275efc1082496017ad7bc4b334dcabcdb74b3cb7f463f",
+    "examples/sensu-enterprise/src/styles.css": "ae10de579b7ee312248c021e73f9fcd82147594574c2ce5c51ea4d1b392271bc",
+    "examples/sensu-enterprise/src/tokens.css": "99f16009746bd91c64ba8b7a67de2038bee64c429b5038e7b2fe73a178d83827",
+    "examples/sensu-enterprise/src/useMotionPreference.js": "be97f9f809d87ba72d437710c6e99002c7a5760d991b8379650fec5391ed8d00",
+    "examples/sensu-enterprise/package.json": "6116e2105f11e1ab6e4305c4ea539a6713277bb555df4bfa72c6b56617ce32ac",
+    "examples/sensu-enterprise/package-lock.json": "fa164c0f962e1b6f2bb0c7afe66e1522bea7e9e98991e40335b8e178a1cda380"
+  }
+}

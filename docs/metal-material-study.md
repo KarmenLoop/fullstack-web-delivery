@@ -1,5 +1,7 @@
 # Operate the reflective material study
 
+Historical study/capture record: **0.9.0**. The current release is **0.9.1**; its new browser capture is on the [project page](../README.md). The captures below retain their original scope and are not fresh acceptance of every feature.
+
 Version 0.9.0 extends the existing SENSU motion atlas. It implements the previously deferred material specimen without changing the enterprise inquiry, authentication or permission model. The original 0.8 specification remains a historical design snapshot; this [implementation brief](metal-card-brief.md) records the later request and scope.
 
 ## Open and operate

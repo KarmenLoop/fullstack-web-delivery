@@ -1,5 +1,7 @@
 # Motion from task to implementation
 
+Historical study/capture record: **0.7.0**. The current release is **0.9.1**; its new browser capture is on the [project page](../README.md). The captures below retain their original scope and are not fresh acceptance of every feature.
+
 Version 0.7.0 adds a running `/motion-atlas` and two portable references: [placement decisions](../skills/fullstack-web-delivery/references/motion-placement.md) and [implementation recipes](../skills/fullstack-web-delivery/references/motion-recipes.md). It reuses the confirmed business brief and existing visual identity. It adds no runtime dependency and does not replace the six earlier [interaction studies](interaction-studies.md).
 
 ![Actual light desktop motion atlas](images/motion-atlas-desktop.jpg)
