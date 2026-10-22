@@ -7,7 +7,7 @@ flowchart TD
   A[Inspect brief, rules, source, capabilities, and authorization] --> B[Reuse answers; resolve consequential decision gaps]
   B --> C[Industry references, design principles, and GitHub research]
   C -. Material business gap .-> B
-  C --> D[Deliver complete project and site plan]
+  C --> D[Deliver complete plan and project specification pack]
   D --> E{Agreed continuation}
   E -->|Planning only| P[Deliver implementation handover]
   E -->|Explicit review gate| Q[Wait for the requested decision]
@@ -26,7 +26,11 @@ flowchart TD
   M -->|Yes| N[Deliver source, commands, entry points, evidence, and limits]
 ```
 
-# # Information routing
+## Specification handoff
+
+The plan includes a project-specific [UI/UX prompt and module specifications](specifications.md). Audience, actual content, primary action, target, state, recovery and motion are written before page expansion. Stable IDs connect each action to its acceptance scenario. Reuse existing answers; technical facts are inspected, not converted into interview questions. Scope and authority remain project-specific.
+
+## Information routing
 
 | Missing information | Action |
 | --- | --- |
@@ -38,7 +42,7 @@ flowchart TD
 
 An inaccessible mandatory branch cannot be counted as accepted. Continue unrelated work when possible. Stop blind retries after two attempts without new evidence or a plausible repair; retain reproduction and the next dependency. For a result that may already have been committed, inspect it or use the agreed idempotency mechanism before retrying.
 
-# # Dependency order in the inquiry example
+## Dependency order in the inquiry example
 
 | Increment | What runs | Exit evidence |
 | --- | --- | --- |
@@ -51,7 +55,7 @@ An inaccessible mandatory branch cannot be counted as accepted. Continue unrelat
 
 Record why this task is next, its prerequisites, completion rule, actual result, and next action. A status label such as active or completed is not evidence that a process ran or a workflow passed.
 
-# # Request architecture
+## Request architecture
 
 ```mermaid
 flowchart LR
@@ -68,6 +72,6 @@ flowchart LR
 
 These layers share one server in the example. The diagram does not require microservices. Public content rendering is distinct from anonymous submission. Protected operations pass server checks before business work. A saved inquiry does not imply an email was sent.
 
-# # Interruption and handover
+## Interruption and handover
 
 Persist facts, decisions, source revision, owned process, evidence, current failure, dependency, and next action. Resume by checking current files, processes, tools, and authorization. A previous localhost address may no longer be running. Scheduling and external communication require their actual platform capabilities and the relevant authorization.

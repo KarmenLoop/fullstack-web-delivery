@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python scripts/test_specifications.py -v
       - run: python scripts/check_repository.py
   example:
     runs-on: ubuntu-latest

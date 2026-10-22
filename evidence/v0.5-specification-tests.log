@@ -1,0 +1,11 @@
+test_existing_authored_documents_are_preserved (__main__.SpecificationTests) ... ok
+test_generation_is_deterministic_and_manifest_matches_every_document (__main__.SpecificationTests) ... ok
+test_invalid_page_role_and_target_are_rejected_before_any_output (__main__.SpecificationTests) ... ok
+test_missing_task_is_not_filled_with_an_invented_assumption (__main__.SpecificationTests) ... ok
+test_real_brief_carries_audiences_targets_recovery_and_authority (__main__.SpecificationTests) ... ok
+test_static_project_does_not_receive_an_account_or_api_system (__main__.SpecificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.989s
+
+OK

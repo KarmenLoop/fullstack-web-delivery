@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 - 2026-10-22
+
+- Turn answered requirements into a project-specific UI/UX prompt, page/action/motion contracts and seven module specifications before implementation.
+- Add an optional dependency-free English specification renderer, populated input/output, traceability and six meaningful behavior tests.
+- Add six operable interaction studies, real query/history navigation, failure injection, keyboard alternatives and reduced-motion behavior using existing dependencies.
+- Repair observed scroll-coordinate, final clip-path and inherited checkbox-sizing defects; preserve failed observations separately from verification.
+- Repair malformed first-party Markdown headings and add a repository regression check.
+- Update tutorials, media, local evidence and distribution packages; keep prior release evidence scoped to its original version.
+
 ## 0.4.1 - 2026-10-22
 
 - Publish an English skill, forty-question pool, detailed tutorials, workflow/design guides, example, and public media.

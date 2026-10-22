@@ -1,0 +1,33 @@
+{
+  "version": "0.5.0",
+  "status": "PASS",
+  "scope": "Official user-level skill files match the public portable source; prior install preserved outside the repository",
+  "files": 19,
+  "updated": [
+    "references/field-trial.md",
+    "references/behavior-evals.md",
+    "references/specification-pack.md",
+    "scripts/generate_project_specs.py"
+  ],
+  "sha256": {
+    "LICENSE": "766ddcc28af256c520d87321e633ce3780bc0e227a08d737a2544f1364d7082c",
+    "NOTICE": "04a9808e01d05ead68468081c22d21769485e2795efad0145295572db7e44753",
+    "SKILL.md": "80b1056f279a45f19a994fdf0d1138075f5a18a951235f1796b1cb2347851c9d",
+    "agents/openai.yaml": "f4ebbfc38bd7a00d286aa6f69a11d10ffc6bf8cb6d8f47ac8628b0f552330103",
+    "references/behavior-evals.md": "49df5893efb115c1c6e2940b01e1e8938d43004a34ac3b2db4c29a3ca695ba31",
+    "references/content-commerce.md": "3d6f328f03f84b97cad027c2c9dce563a7dc138532b6806be3c6ccfc50ecfb92",
+    "references/custom-design.md": "1efa9b0fcf8dc262b2e0c6bc5cdddd7e9054024072dc78712842d7b7c8493318",
+    "references/delivery.md": "6d10e8540e4bd4e8b12668781fc11b9dc171a9d63e4e717781c4fe17e9fca557",
+    "references/design-motion.md": "7609ef4fa2d218f1395e65800ba37c2525c1d7b16bec58a2afc115761da395a5",
+    "references/development-workflow.md": "67368f4b28208a41eadf00976595f68c3d9f4a4410a7a4c24be66168a48cada9",
+    "references/discovery.md": "c154733b69fe9dbf87cef6d138f1caf1ac18919bb80953cfc96e75ccbbc5af6b",
+    "references/field-trial.md": "6f10ad1555fa90e1b5ec0dac5f54245123fc781993e19941e87b069abffeda70",
+    "references/implementation.md": "c5024f2a3d2da1ee05f743f560be614a2ec9ec27e48c5000ef883605b1334c86",
+    "references/interaction-patterns.md": "206ee193e38e88939ebb93fd4fc58774ff1cecd84085b3af5b338996a111baa3",
+    "references/platforms.md": "1a4d248df67d2b750f531987e528e72452ff11e92956908d7990df41ee7cdc7c",
+    "references/research.md": "910724e97d282945f96f869c9266d6fe2f7048d96f4f80d36010e215c6653ff8",
+    "references/site-planning.md": "0bd3e0bd993e1b9831fd2fb319d5e7e6d787da40aa1ee5307d5d14c51a76b2c1",
+    "references/specification-pack.md": "7748cb46519f83e529452efaad475841eba4e61c42c9661eebc100429650d6f0",
+    "scripts/generate_project_specs.py": "45da60f5f00e02b6a7bb2910afef35dcbc672eb321e7e6850109257c6ad0e23f"
+  }
+}

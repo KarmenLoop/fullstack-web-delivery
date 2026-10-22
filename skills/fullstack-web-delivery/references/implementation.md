@@ -10,7 +10,7 @@ Validate inputs on the server; provide timely client feedback, required guidance
 
 Apply legal state transitions server-side and commit audits with state. Document schema, migration, indexes, ownership, retention, backup, deletion, and applicable upload controls. External integrations need actual credentials, contracts, timeout/retry, verification, and sandbox/real evidence. Do not send real messages or payments without the user's relevant authorization.
 
-# # Local preview
+## Local preview
 
 Use the repository's actual install, setup, migration, dev, build, production, and check commands. Isolate data and random test accounts. Verify a free port; do not terminate unknown services. Bind loopback unless broader exposure is authorized. Record process ownership and address, then operate the real pages. A ready log is startup evidence only.
 

@@ -2,7 +2,7 @@
 
 A workflow skill for turning a website brief into a complete plan, a running implementation, and evidence you can inspect.
 
-**Version 0.4.1 · English publication · Copyright 2026 KarmenLoop**
+**Version 0.5.0 · English publication · Copyright 2026 KarmenLoop**
 
 [![Verification](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml/badge.svg)](https://github.com/KarmenLoop/fullstack-web-delivery/actions/workflows/verify.yml)
 
@@ -12,9 +12,9 @@ A workflow skill for turning a website brief into a complete plan, a running imp
 
 *An actual browser capture of the included fictional enterprise example. The interface and documentation are in English. This is an illustrative project, not a customer case or a hosted business service.*
 
-[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
+[Downloads](https://github.com/KarmenLoop/fullstack-web-delivery/releases) · [Start here](docs/quickstart.md) · [Workflow](docs/workflow.md) · [Design method](docs/design-method.md) · [Full project plan](docs/project-plan.md) · [Generated specifications](docs/generated/sensu/README.md) · [Interaction studies](docs/interaction-studies.md) · [Example walkthrough](docs/example-guide.md) · [Verification](docs/verification.md) · [License](docs/licensing.md)
 
-# # What it delivers
+## What it delivers
 
 The skill helps an agent build brand websites, administration interfaces, and web applications according to the actual project. It covers discovery, research, architecture, content, UI/UX, frontend, APIs, authentication, persistent data, administration, preview, repair, and handover. It selects the relevant modules; a three-page portfolio does not automatically receive an account system.
 
@@ -25,13 +25,14 @@ It is a set of instructions and references, not a model, framework, hosting serv
 | Adaptive discovery | Existing answers reused; four to six consequential questions per round only where decisions are missing |
 | Research | Relevant industry references, design principles, and GitHub candidates with adoption/rejection reasons |
 | Complete plan | Sitemap, menus, page templates, content, architecture, roles, states, APIs, data, delivery, and acceptance |
+| Project specification pack | Filled UI/UX prompt, page audiences/content/actions, linked states, motion and relevant module contracts with traceability |
 | Client-specific design | One coherent visual system and representative page checked for both visual quality and task usability |
 | Business increments | A complete flow through UI, API boundaries, permissions, storage, and feedback |
 | Continuous preview | An actual reachable preview and checks immediately after each increment |
 | Repair and acceptance | Reproductions, corrections, affected-scope rechecks, production regression, and agreed persistence checks |
 | Handover | Runnable source, commands, entry points, records, known limits, and release conditions |
 
-# # Install the skill
+## Install the skill
 
 Release downloads provide a standalone skill archive and a complete source/documentation/example archive. You can also clone the repository into a location you control:
 
@@ -60,14 +61,14 @@ Use fictional data and keep the preview local.
 
 The forty-question discovery pool is not a forty-question obligation. The agent should inspect technical facts itself, reuse supplied answers, and ask only for consequential decisions. See [installation and invocation](docs/quickstart.md) for fresh versus existing installations and a manual file-reading route.
 
-# # How the agent chooses the next step
+## How the agent chooses the next step
 
 ![Workflow: inspect the brief, plan the project, resolve design, build a complete flow, preview and repair, then regress and hand over](docs/images/workflow.svg)
 
 1. Read project rules, source, existing decisions, and authorization.
 2. Separate business decisions from facts it can inspect and reversible choices it can make.
 3. Research the client's industry and actual user tasks before choosing a visual direction or dependency.
-4. Deliver the complete plan before implementation. Continue when development is already authorized; wait only at a review gate the user requested.
+4. Deliver the complete plan and project-specific specification pack before implementation. Continue when development is already authorized; wait only at a review gate the user requested.
 5. Establish a running representative page. Check appearance and the primary task separately.
 6. Select the next flow with satisfied dependencies, high business value, or a consequential uncertainty to resolve.
 7. Operate it, inspect its data and access boundaries, repair observed defects, and verify affected scope.
@@ -75,7 +76,7 @@ The forty-question discovery pool is not a forty-question obligation. The agent 
 
 An unavailable credential blocks its integration branch, not unrelated public content. A failed probe is inspected before blaming the product. An uncertain save is not automatically repeated. A screenshot, build, or author statement is not a complete end-to-end result. The [workflow guide](docs/workflow.md) explains these decisions and recovery rules.
 
-# # Design for the client, not the template
+## Design for the client, not the template
 
 The design process starts with the client's field, audience, content, and task. It studies relevant mature businesses, extracts specific principles, and translates them into a project-specific composition. GitHub libraries supply implementation mechanisms, not a reason to mix several branded skins.
 
@@ -87,7 +88,29 @@ The resulting interface uses a cream/forest palette, an explicit business propos
 
 *Phone usability is checked by finding and completing the task, not merely by eliminating page overflow.*
 
-# # Run the complete example
+## From answers to concrete design instructions
+
+After discovery, the agent produces documents that say who each page serves, what it contains, where each control goes, which state confirms an operation, how elements move together, and how failures recover. The [actual generated SENSU pack](docs/generated/sensu/README.md) contains 16 files, including a [copyable UI/UX prompt](docs/generated/sensu/UI-UX-PROMPT.md), page/action/motion contracts, seven engineering specifications, decisions, traceability and a SHA-256 manifest.
+
+The optional standard-library renderer consumes a populated JSON brief. It does not invent business facts, interview the user or grant authority. The host agent can write the same contracts directly in the client's language. The bundled renderer is English. Existing output directories are protected; revised designs go into a new directory for comparison.
+
+```sh
+python3 skills/fullstack-web-delivery/scripts/generate_project_specs.py \
+  --brief docs/specification-inputs/sensu.json --out /tmp/sensu-specs-v1
+python3 scripts/test_specifications.py -v
+```
+
+See [the specification tutorial](docs/specifications.md) for input structure, module selection and safe revision. Generated traceability starts at NOT_RUN, because generation does not prove implementation.
+
+## Six interaction studies
+
+The example adds `/interaction-lab`, an isolated workbench with one live study at a time: a completion morph/check/particle sequence; linked checklist/ring/count/surface; reversible stacked cards; native snapping cards with a settled timeline; a bounded inertial wheel; and click-origin circular navigation with real URL/history state. These are optional patterns selected by task, not effects to scatter across a client's website.
+
+![Actual desktop interaction workbench](docs/images/interaction-lab-desktop.jpg)
+
+The studies include explicit state feedback, failure/retry where applicable, keyboard paths and reduced-motion behavior. Completion is labeled as a local simulation; the real inquiry API is separate. [Operate the studies](docs/interaction-studies.md) and inspect their [portable contracts](skills/fullstack-web-delivery/references/interaction-patterns.md).
+
+## Run the complete example
 
 The included example is **SENSU Digital**, a fictional SME services company. It contains nine public content pages, staff sign-in, and an inquiry workspace. Visitors submit without an account. Read-only staff can inspect; administrators advance New -> In progress -> Done with version checks and an audit history.
 
@@ -101,7 +124,7 @@ npm run build
 npm start
 ```
 
-Open `http://127.0.0.1:4319/` and `http://127.0.0.1:4319/login`. Read `.local/demo-access.json` on your own machine for freshly generated administrator and read-only passwords. No universal demo password is published. The server binds loopback, and no email is sent.
+Open `http://127.0.0.1:4319/`, `http://127.0.0.1:4319/login`, and `http://127.0.0.1:4319/interaction-lab`. Read `.local/demo-access.json` on your own machine for freshly generated administrator and read-only passwords. No universal demo password is published. The server binds loopback, and no email is sent.
 
 ```sh
 npm test
@@ -112,16 +135,18 @@ The HTTP check requires the production server. For a different free port, set `P
 
 ![Administrator workspace showing real local demonstration inquiries and their processing states](docs/images/admin-desktop.png)
 
-# # Verification and honest limits
+## Verification and honest limits
 
-Two bodies of evidence are kept separate:
+Versioned bodies of evidence are kept separate:
 
-- The earlier 0.3.0 local rerun recorded11 formal tests,8 live API checks,18 public viewport checks,12 production routes, and session/data persistence across restarts. Its independent design verdict covered five screenshot/source corrections only.
-- This0.4.1 English publication has fresh source, documentation, test, build, route, and browser checks in [the verification record](docs/verification.md). Historic counts are not silently reassigned to a localized interface. Hosted CI reports its own actual status above.
+- The earlier 0.3.0 local rerun recorded 11 formal tests,8 live API checks,18 public viewport checks,12 production routes, and session/data persistence across restarts. Its independent design verdict covered five screenshot/source corrections only.
+- The 0.4.1 English publication has fresh source, documentation, test, build, route, and browser checks in [the verification record](docs/verification.md). Historic counts are not silently reassigned to a localized interface. Hosted CI reports its own actual status above.
+
+The 0.5.0 extension has its own [verification scope](docs/verification.md), including specification tests and interaction observations.
 
 Other agent platforms, physical phones, independent complete runtime QA, a full accessibility/performance audit, transaction flows, external messaging, and public deployment of the website remain unverified unless the evidence explicitly says otherwise. No production-readiness or certification claim is made.
 
-# # Repository map
+## Repository map
 
 ```text
 skills/fullstack-web-delivery/  Portable skill and conditional references
@@ -139,7 +164,7 @@ NOTICE                        Copyright, attribution, and affiliation boundaries
 THIRD_PARTY_NOTICES.md         Dependency and research distinctions
 ```
 
-# # Reporting an issue and licensing
+## Reporting an issue and licensing
 
 Use [the issue guidance](CONTRIBUTING.md) for reproducible reports. See [SECURITY.md](SECURITY.md) for sensitive findings and [SUPPORT.md](SUPPORT.md) for scope. Modified forks, translations, patches, rebranding, and derivative distributions require prior written permission. GitHub's own viewing/forking rights and third-party licenses remain intact. Contact `info@karmenloop.com` for additional rights.
 

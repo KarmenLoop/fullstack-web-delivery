@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "scope": "File integrity and measured capture dimensions; no motion certification",
+  "captures": [
+    {
+      "path": "docs/images/interaction-lab-desktop.jpg",
+      "width": 1440,
+      "height": 1007,
+      "bytes": 76957,
+      "sha256": "ecaa32b6b558cc34a4ff798206c745fc0fbd6081701c57910ac400d910ef2fae",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-lab-mobile.jpg",
+      "width": 390,
+      "height": 1204,
+      "bytes": 52492,
+      "sha256": "6eb1b94858d28940408f53686c0a68566dd154373d56cb183a152a517fb4401d",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-linked-desktop.jpg",
+      "width": 1440,
+      "height": 1025,
+      "bytes": 80899,
+      "sha256": "27745418af771d3811a73d6efa45934378d00b211811b75157818ea0110cf020",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-linked-mobile.jpg",
+      "width": 390,
+      "height": 1204,
+      "bytes": 51729,
+      "sha256": "f60e3df8a1f3fff0347ab3511db827e2aa408b1b270ff41c3f521b6d1f0fe3a8",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-radial-desktop.jpg",
+      "width": 1440,
+      "height": 1005,
+      "bytes": 77747,
+      "sha256": "5779f0965a4e5dc263f275f9956d89d6d03e17bb301e74817a31400a7fc7c779",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-radial-mobile.jpg",
+      "width": 390,
+      "height": 1272,
+      "bytes": 51341,
+      "sha256": "02b027405717c65a4749d4ce11346c564aa5c982aaceb89e761bdad06f1e6a4a",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-snap-desktop.jpg",
+      "width": 1440,
+      "height": 1028,
+      "bytes": 77276,
+      "sha256": "6acc7ec27b2cd3fc59a6471aee6ef888ea16001394ef41f6b1479a0f6eeff12e",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-snap-mobile.jpg",
+      "width": 390,
+      "height": 1242,
+      "bytes": 49482,
+      "sha256": "5c916c7cc01347d9e422c4008f57f5ab2fc64c9d7c4be5f5900fcf7b3550c9b7",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-stack-desktop.jpg",
+      "width": 1440,
+      "height": 1060,
+      "bytes": 83201,
+      "sha256": "e1f2cc9fcdc2978f0c8c3199620e41fbe931943c03a75b89d0aa783f902a3d76",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-stack-mobile.jpg",
+      "width": 390,
+      "height": 1325,
+      "bytes": 54989,
+      "sha256": "63b3cd43c4a0f2056879fa0679934d3e81ca7f7b08595cd6bf799966ecdb8e47",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-user-1280.jpg",
+      "width": 1280,
+      "height": 991,
+      "bytes": 71880,
+      "sha256": "0860f496f78c48a6cb82c5ca816b2ef713295380b24df411cb0453d331deaa07",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-wheel-desktop.jpg",
+      "width": 1440,
+      "height": 1000,
+      "bytes": 73971,
+      "sha256": "bdb9c5a47c52fd95937743be555c473012e95ebb3091aeeac0e8f93047fcd875",
+      "phase": "production after five review corrections"
+    },
+    {
+      "path": "docs/images/interaction-wheel-mobile.jpg",
+      "width": 390,
+      "height": 1225,
+      "bytes": 50890,
+      "sha256": "3400a39337080f0c04a34b15e941aed4a8b72921933854c3645baa497b0fe0e8",
+      "phase": "production after five review corrections"
+    }
+  ]
+}

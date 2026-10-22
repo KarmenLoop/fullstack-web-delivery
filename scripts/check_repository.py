@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: LicenseRef-KarmenLoop-Source-Available-No-Modification-1.0
 """Check the public distribution boundary without installing a website runtime."""
 from pathlib import Path
-import json,re,sys
+import json,re,sys,hashlib
 root=Path(__file__).resolve().parents[1]
 problems=[];checked_links=0;authored=[]
 for p in sorted(root.rglob('*')):
@@ -13,6 +13,7 @@ for p in sorted(root.rglob('*')):
         if re.search(r'[\u4e00-\u9fff]',text):problems.append(f'Non-English authored text: {p.relative_to(root)}')
         if ('/'+'Users'+'/') in text or re.search(r'[A-Z]:\\Users\\',text):problems.append(f'Machine path in public text: {p.relative_to(root)}')
     if p.suffix=='.md':
+        if re.search(r'^#(?: #)+ ', p.read_text(), re.M):problems.append(f'Malformed heading: {p.relative_to(root)}')
         for m in re.finditer(r'!?\[[^\]]*\]\(([^)]+)\)',p.read_text()):
             d=m.group(1).split(' "')[0].strip('<>')
             if re.match(r'\w+://',d) or d.startswith('#'):continue
@@ -33,5 +34,13 @@ for name in ['publication-browser.json','publication-checks.json']:
     p=root/'evidence'/name
     if not p.is_file():problems.append(f'Missing release evidence: {name}')
     elif json.loads(p.read_text()).get('status')!='PASS':problems.append(f'Evidence is not PASS: {name}')
+pack=root/'docs/generated/sensu'
+manifest=json.loads((pack/'spec-manifest.json').read_text())
+brief=json.loads((root/'docs/specification-inputs/sensu.json').read_text())
+canonical=json.dumps(brief,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()
+if manifest['input_sha256']!=hashlib.sha256(canonical).hexdigest():problems.append('Generated pack input fingerprint drift')
+for name,digest in manifest['files'].items():
+    p=pack/name
+    if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=digest:problems.append(f'Generated specification drift: {name}')
 print(json.dumps({'status':'FAIL' if problems else 'PASS','authored_files':len(authored),'relative_links':checked_links,'questions':len(q),'problems':problems},indent=2))
 sys.exit(bool(problems))

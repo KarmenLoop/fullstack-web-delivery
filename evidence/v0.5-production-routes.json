@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Clear websites, connected work | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/services",
+    "status": 200,
+    "title": "Services | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/services/website",
+    "status": 200,
+    "title": "Websites | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/services/systems",
+    "status": 200,
+    "title": "Business systems | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/services/automation",
+    "status": 200,
+    "title": "Automation | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/method",
+    "status": 200,
+    "title": "Approach | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/about",
+    "status": 200,
+    "title": "About SENSU | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/contact",
+    "status": 200,
+    "title": "Start an inquiry | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/privacy",
+    "status": 200,
+    "title": "local demo privacy notice | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "title": "Staff sign-in | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/admin",
+    "status": 200,
+    "title": "Inquiries | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/interaction-lab",
+    "status": 200,
+    "title": "Interaction studies | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  },
+  {
+    "path": "/no-such-page",
+    "status": 404,
+    "title": "Page not found | SENSU Digital",
+    "hasMain": true,
+    "hasDescription": true,
+    "csp": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' 'unsafe-inline';connect-src 'self'"
+  }
+]

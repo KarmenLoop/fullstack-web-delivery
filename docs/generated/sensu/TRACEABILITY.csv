@@ -1,0 +1,11 @@
+requirement,page,role,target,verification,result
+I01,P01,visitor,route:/services,"Open services using pointer and keyboard; verify URL, heading and Back.",NOT_RUN
+I02,P08,visitor,api:POST /api/inquiries,"Submit, match reference in staff details and audit; test invalid fields, repeat, timeout uncertainty and reset focus.",NOT_RUN
+I03,P10,staff,api:POST /api/login,Operate valid/invalid login and logout; anonymous admin API is rejected.,NOT_RUN
+I04,P11,admin,api:PATCH /api/admin/inquiries/:id,"Check two legal transitions, version conflict, audit actor/time, read-only 403 and dialog Escape/focus.",NOT_RUN
+I05,P12,visitor,local:completion,"Observe pending before success; inject failure, retry, reset and keyboard completion.",NOT_RUN
+I06,P12,visitor,local:linked-progress,Check/uncheck including rapid reversal; verify ring/count/text and zero/full states.,NOT_RUN
+I07,P12,visitor,local:stack,"Rapidly open/gather; verify stable order, labels and no clipped text at phone width.",NOT_RUN
+I08,P12,visitor,local:snap,Scroll and use Next/End/Home; confirm centered card and timeline agree after settle.,NOT_RUN
+I09,P12,visitor,local:wheel,"Flick both ways and over bounds; interrupt settling; compare spinbutton, native select and selected-time text.",NOT_RUN
+I10,P12,visitor,local:radial-route,"Operate all views, preference checkbox, rapid switch, keyboard Enter, Back/Forward and reduced motion.",NOT_RUN

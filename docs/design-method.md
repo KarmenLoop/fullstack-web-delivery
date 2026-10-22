@@ -1,12 +1,12 @@
 # Designing for the client's field and task
 
-# # Start with a design brief
+## Start with a design brief
 
 Capture the industry and segment, primary audience, task, decision concerns, content scale, evidence, brand voice, material, device priorities, and constraints. Reuse existing decisions. A client who already selected a restrained cream/forest direction should not be asked to choose it again.
 
 A manufacturing site may prioritize specification, compatibility, selection, and quotation. A professional-services site may prioritize problem, scope, method, proof, and consultation. An operational app may prioritize finding, judging, and changing a record. These are different content responsibilities even if the colors match.
 
-# # Research in three layers
+## Research in three layers
 
 1. **Field references.** Select relevant mature businesses and explain the specific reason for each. A company's popularity does not make every part of its interface appropriate. Objective 'number one' claims require a defensible basis.
 2. **Design principles.** Apply hierarchy, grouping, alignment, progressive disclosure, feedback, and motion continuity. [Apple layout](https://developer.apple.com/design/human-interface-guidelines/layout) and [motion](https://developer.apple.com/design/human-interface-guidelines/motion) are useful principle sources; they do not prescribe one skin for all websites.
@@ -14,13 +14,13 @@ A manufacturing site may prioritize specification, compatibility, selection, and
 
 Keep source URL/date, observed pages/devices, relevant task, adopted principle, rejected feature, project translation, and permission/dependency decision. State when only text or screenshots were available. See [the actual research record](reference-research.md).
 
-# # Translate into a project system
+## Translate into a project system
 
 Specify content sequence, container/grid, type/line height, spacing, colors/contrast, density, corners, imagery, states, breakpoints, and motion. Explain a few consequential choices through the brief. A generic hero photo cannot substitute for explaining what the company does. With no authentic case studies, use truthful process material or a clearly labeled original demonstration.
 
 The example uses an explicit business proposition above a labeled service canvas. Website expression, team work, and automation have distinct mechanisms. Services share a template while retaining their own steps/outputs. Marketing and staff work share colors but use different density and actions. Phone staff work has a dedicated record list so state and the detail action remain visible.
 
-# # Accept the representative page twice
+## Accept the representative page twice
 
 Visual acceptance checks reading order, recognizable business, typography, spacing, imagery, responsiveness, and the next action. Task acceptance operates the key flow and inspects feedback, errors, data, and recovery. A page with no overflow can still make a phone user hunt for a hidden action.
 

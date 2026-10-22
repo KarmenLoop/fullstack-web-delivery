@@ -1,0 +1,242 @@
+{
+  "version": "0.5.0",
+  "scope": "Author-operated local browser, not independent runtime QA",
+  "origin": "http://127.0.0.1:4319",
+  "studies": [
+    {
+      "pattern": "completion",
+      "pendingObserved": true,
+      "success": true
+    },
+    {
+      "pattern": "completion",
+      "failure": "Could not complete. Your review is preserved; retry when ready."
+    },
+    {
+      "pattern": "linked",
+      "count": "2 of 4 tasks complete. Every choice updates the same progress state."
+    },
+    {
+      "pattern": "stack",
+      "reversal": "Cards gathered. Open to read all three."
+    },
+    {
+      "pattern": "snap",
+      "initialFailure": "Next and End did not change settled card; offset coordinate spaces differ."
+    },
+    {
+      "pattern": "radial",
+      "repair": "Final view remains revealed; clip retains the completed circle.",
+      "after": "Current view: activity. Back and Forward restore the selected view."
+    },
+    {
+      "pattern": "wheel",
+      "pointerFlick": true,
+      "settled": "Selected 12:00."
+    },
+    {
+      "pattern": "snap",
+      "repair": "Settled on verify. The timeline follows the resting card."
+    }
+  ],
+  "checks": [
+    {
+      "name": "Reduced-motion preference recognized",
+      "status": "FAIL"
+    },
+    {
+      "name": "Reduced preference recognized after native subscription repair",
+      "status": "FAIL"
+    },
+    {
+      "name": "Reduced preference recognized after reload",
+      "status": "PASS",
+      "actual": "Native media subscription is active."
+    },
+    {
+      "name": "Completion pending is explicit",
+      "status": "PASS",
+      "actual": "Waiting for the simulated response…"
+    },
+    {
+      "name": "Reduced completion omits particles",
+      "status": "PASS",
+      "actual": "Review completed. You can reset and try again."
+    },
+    {
+      "name": "Injected error offers retry",
+      "status": "PASS",
+      "actual": "Could not complete. Your review is preserved; retry when ready."
+    },
+    {
+      "name": "Keyboard retry reaches success",
+      "status": "PASS",
+      "actual": "Review completed. You can reset and try again."
+    },
+    {
+      "name": "Live reduced preference active",
+      "status": "PASS",
+      "actual": "Recognized after full reload."
+    },
+    {
+      "name": "Reduced linked checklist reverses coherently",
+      "status": "PASS",
+      "actual": "1 of 4 tasks complete. Every choice updates the same progress state."
+    },
+    {
+      "name": "Reduced stack keyboard reversal",
+      "status": "PASS",
+      "actual": "Cards gathered. Open to read all three."
+    },
+    {
+      "name": "Reduced snap reaches final card",
+      "status": "PASS",
+      "actual": "Settled on verify. The timeline follows the resting card."
+    },
+    {
+      "name": "Reduced snap returns to first card",
+      "status": "PASS",
+      "actual": "Settled on discover. The timeline follows the resting card."
+    },
+    {
+      "name": "In-flight wheel stops for live reduced preference",
+      "status": "PASS",
+      "actual": {
+        "during": "Settling… Selection commits at rest.",
+        "value": "12:00",
+        "selected": "6"
+      }
+    },
+    {
+      "name": "Reduced wheel native alternative matches ARIA",
+      "status": "PASS",
+      "actual": "Selected 09:00."
+    },
+    {
+      "name": "Reduced radial navigation is revealed",
+      "status": "PASS",
+      "actual": "Current view: activity. Back and Forward restore the selected view."
+    },
+    {
+      "name": "Radial keeps the actual below-panel origin",
+      "status": "PASS",
+      "actual": {
+        "clip": "circle(585.366px at 488px 323.328px)",
+        "height": 288,
+        "old": true
+      }
+    },
+    {
+      "name": "Latest radial destination wins",
+      "status": "PASS",
+      "actual": "Current view: activity. Back and Forward restore the selected view."
+    },
+    {
+      "name": "Production snap Next reaches centered design card",
+      "status": "PASS",
+      "actual": "Settled on design. The timeline follows the resting card."
+    }
+  ],
+  "initialViewportChecks": [
+    {
+      "pattern": "completion",
+      "width": 1440,
+      "state": "Review completed. You can reset and try again.",
+      "overflow": false
+    },
+    {
+      "pattern": "linked",
+      "width": 1440,
+      "state": "2 of 4 tasks complete. Every choice updates the same progress state.",
+      "overflow": false
+    },
+    {
+      "pattern": "stack",
+      "width": 1440,
+      "state": "All three cards are open.",
+      "overflow": false
+    },
+    {
+      "pattern": "snap",
+      "width": 1440,
+      "state": "Settled on verify. The timeline follows the resting card.",
+      "overflow": false
+    },
+    {
+      "pattern": "wheel",
+      "width": 1440,
+      "state": "Selected 10:00.",
+      "overflow": false
+    },
+    {
+      "pattern": "radial",
+      "width": 1440,
+      "state": "Current view: activity. Back and Forward restore the selected view.",
+      "overflow": false
+    },
+    {
+      "pattern": "completion",
+      "width": 390,
+      "state": "Ready when you are.",
+      "overflow": false
+    },
+    {
+      "pattern": "linked",
+      "width": 390,
+      "state": "0 of 4 tasks complete. Every choice updates the same progress state.",
+      "overflow": false
+    },
+    {
+      "pattern": "stack",
+      "width": 390,
+      "state": "All three cards are open.",
+      "overflow": false
+    },
+    {
+      "pattern": "snap",
+      "width": 390,
+      "state": "Settled on discover. The timeline follows the resting card.",
+      "overflow": false
+    },
+    {
+      "pattern": "wheel",
+      "width": 390,
+      "state": "Selected 10:00.",
+      "overflow": false
+    },
+    {
+      "pattern": "radial",
+      "width": 390,
+      "state": "Current view: activity. Back and Forward restore the selected view.",
+      "overflow": false
+    }
+  ],
+  "repairs": [
+    "Snap coordinate spaces corrected. The earliest Next/End note preceded settlement; a later read reached Design rather than the requested final card.",
+    "Completed radial clip removed so resized destination stays fully visible.",
+    "Inherited checkbox min-height and padding reset.",
+    "Live reduced-motion subscription added; an HMR hook-order mismatch required a full reload.",
+    "Five independent source/screenshot findings corrected in one batch."
+  ],
+  "capture": {
+    "format": "JPEG",
+    "cssWidths": [
+      1440,
+      390,
+      1280
+    ],
+    "scale": 1,
+    "method": "Supported full-page screenshot API; dimensions checked against DOM",
+    "source": "Production build after review corrections"
+  },
+  "unverified": [
+    "Physical touch devices and paused native touch gestures: Input.dispatchTouchEvent unsupported in this browser.",
+    "Held-pointer instrumentation after a browser paused-document response was unavailable.",
+    "Frame-rate certification, full assistive-technology audit and other agent hosts."
+  ],
+  "toolNotes": [
+    "Raw CDP became unavailable during a paused document response. Native supported full-page capture recovered after making the browser visible.",
+    "One navigation and one pointer click timed out; fresh DOM state was inspected before continuation. Keyboard navigation supplied phone correction captures.",
+    "A hidden recovery tab failed to attach; inventory confirmed no extra tab was created."
+  ]
+}

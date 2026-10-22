@@ -1,6 +1,6 @@
 # License and copyright guide
 
-# # Public source with a no-modification condition
+## Public source with a no-modification condition
 
 Copyright (c) 2026 KarmenLoop. First-party material is offered under the [KarmenLoop Source-Available No-Modification License1.0](../LICENSE). Preserve its copyright, source attribution, license, and notices in permitted copies.
 
@@ -8,7 +8,7 @@ You may inspect, download, install, run, and redistribute exact unchanged copies
 
 This is source-available, not OSI-approved open source: the [Open Source Definition](https://opensource.org/osd) requires permission for modifications and derived works. [GitHub's licensing documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) also distinguishes source visibility from open-source rights. GitHub's platform viewing/forking rights remain intact; a public repository cannot technically disable every copy or prevent all unauthorized use.
 
-# # Skill outputs versus the supplied example
+## Skill outputs versus the supplied example
 
 | Activity | Position under this license |
 | --- | --- |

@@ -1,4 +1,4 @@
 interface:
   display_name: "Fullstack Web Delivery"
   short_description: "Plan, build, preview, and verify complete websites"
-  default_prompt: "Use $fullstack-web-delivery to reuse my brief, deliver a complete plan, and continue authorized local development through verified delivery."
+  default_prompt: "Use $fullstack-web-delivery to reuse my brief, deliver a complete plan and project-specific UI/UX and module specifications, and continue authorized local development through verified delivery."

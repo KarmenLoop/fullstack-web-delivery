@@ -1,0 +1,96 @@
+
+> fullstack-web-delivery-sensu-example@0.5.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# (node:59452) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: anonymous access, login failure, session rotation and logout are enforced
+ok 1 - anonymous access, login failure, session rotation and logout are enforced
+  ---
+  duration_ms: 22756.018458
+  type: 'test'
+  ...
+# Subtest: form validation, consent, honeypot and strict fields reject invalid input
+ok 2 - form validation, consent, honeypot and strict fields reject invalid input
+  ---
+  duration_ms: 6984.9315
+  type: 'test'
+  ...
+# Subtest: a submitted inquiry is durable and idempotency detects changed payloads
+ok 3 - a submitted inquiry is durable and idempotency detects changed payloads
+  ---
+  duration_ms: 11261.593334
+  type: 'test'
+  ...
+# Subtest: same-origin and CSRF checks reject untrusted mutations
+ok 4 - same-origin and CSRF checks reject untrusted mutations
+  ---
+  duration_ms: 6671.081291
+  type: 'test'
+  ...
+# Subtest: viewer can read a real inquiry but cannot change its status
+ok 5 - viewer can read a real inquiry but cannot change its status
+  ---
+  duration_ms: 7513.438292
+  type: 'test'
+  ...
+# Subtest: state changes, optimistic conflict and actor audit are consistent
+ok 6 - state changes, optimistic conflict and actor audit are consistent
+  ---
+  duration_ms: 13347.055916
+  type: 'test'
+  ...
+# Subtest: search, filters, pagination and special characters use real stored data
+ok 7 - search, filters, pagination and special characters use real stored data
+  ---
+  duration_ms: 11340.384625
+  type: 'test'
+  ...
+# Subtest: sessions survive server restart, expire, and carry HttpOnly and SameSite cookies
+ok 8 - sessions survive server restart, expire, and carry HttpOnly and SameSite cookies
+  ---
+  duration_ms: 9904.544291
+  type: 'test'
+  ...
+# Subtest: login and form rate limits return explicit recoverable errors
+ok 9 - login and form rate limits return explicit recoverable errors
+  ---
+  duration_ms: 13620.241916
+  type: 'test'
+  ...
+# Subtest: wheel projects velocity, rounds to a tick and contains overshoot at both bounds
+ok 10 - wheel projects velocity, rounds to a tick and contains overshoot at both bounds
+  ---
+  duration_ms: 17.649208
+  type: 'test'
+  ...
+# Subtest: radial reveal covers the farthest corner from edge and center origins
+ok 11 - radial reveal covers the farthest corner from edge and center origins
+  ---
+  duration_ms: 1.341916
+  type: 'test'
+  ...
+# (node:59454) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: the cleanup command requires an explicit scope and preserves staff accounts
+ok 12 - the cleanup command requires an explicit scope and preserves staff accounts
+  ---
+  duration_ms: 14200.80975
+  type: 'test'
+  ...
+# Subtest: setup creates local random credentials and preserves them until explicit rotation
+ok 13 - setup creates local random credentials and preserves them until explicit rotation
+  ---
+  duration_ms: 22912.996583
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 129203.003042

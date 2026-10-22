@@ -1,0 +1,8 @@
+{
+  "version": "0.5.0",
+  "origin": "http://127.0.0.1:4319",
+  "mode": "production",
+  "owned_development_process_stop_requested": true,
+  "credential_retrieval": ".local/demo-access.json (local only; excluded from distribution)",
+  "scope": "Loopback local preview. No public website deployment."
+}

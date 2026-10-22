@@ -4,7 +4,7 @@ Use existing answers first. Ask four to six high-impact questions per round and 
 
 Prioritize core value, consequential rework, and current dependencies. The user supplies business decisions and facts; inspect source, scripts, tools, and technical feasibility yourself. If the user delegates reversible choices, record the reasoned default and proceed. Commercial commitments and access authorization still need a real basis.
 
-# # Question pool
+## Question pool
 
 1. Q01 Is this a brand site, content site, store, booking service, admin interface, or web application? Is it new work or a redesign?
 2. Q02 Who are the most important users, and what do they need to accomplish first?
@@ -47,6 +47,6 @@ Prioritize core value, consequential rework, and current dependencies. The user 
 39. Q39 Which three end-to-end flows must work, and who confirms visual direction and acceptance?
 40. Q40 Which source, archive, deployment preparation, publication, maintenance, and rollback deliverables are required?
 
-# # Exit and persistence
+## Exit and persistence
 
 Record each fact as user_decision, verified_fact, assumption, or pending, with its source. Stop general discovery when the plan and acceptance scenarios are actionable. Revisit a precise missing decision when its branch becomes relevant. Keep credentials out of interview and progress records.

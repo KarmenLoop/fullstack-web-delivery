@@ -149,6 +149,7 @@ export const routes = [
   "/privacy",
   "/login",
   "/admin",
+  "/interaction-lab",
 ];
 export function pageMeta(path) {
   const service = services.find((s) => path === `/services/${s.id}`);
@@ -163,6 +164,7 @@ export function pageMeta(path) {
       "/privacy": "local demo privacy notice",
       "/login": "Staff sign-in",
       "/admin": "Inquiries",
+      "/interaction-lab": "Interaction studies",
     }[path] ||
     "Page not found";
   return {

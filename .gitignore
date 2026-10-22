@@ -8,3 +8,5 @@
 .env.*
 !.env.example
 release-artifacts/
+
+.impeccable/review/

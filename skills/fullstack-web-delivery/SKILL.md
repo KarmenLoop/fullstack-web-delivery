@@ -5,41 +5,45 @@ description: "Plan and deliver complete websites with adaptive discovery, indust
 
 # Fullstack Web Delivery
 
-Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.4.1.
+Turn a project brief into a runnable, reviewable website. Select only the modules the project needs. Communicate in the user's language. Version: 0.5.0.
 
-# # 1. Establish the scope
+## 1. Establish the scope
 
 Read applicable project rules, current source, supplied material, and existing authorization. Reuse answered requirements. Verify available file, terminal, search, browser, screenshot, and service capabilities. The skill adds workflow instructions, not execution privileges.
 
 Distinguish planning, visual prototyping, and complete implementation. Deliver the complete plan before implementation. Continue authorized local development after that delivery unless the user requested a specific approval gate. Follow [platform setup](references/platforms.md) for installation and capability limits.
 
-# # 2. Ask only for decisions that are missing
+## 2. Ask only for decisions that are missing
 
 Use the [discovery pool](references/discovery.md). Ask four to six consequential questions per round, within the host tool's limits. Forty questions form a candidate pool; they are not a quota. Skip answered questions. Inspect technical facts yourself. Use reversible, reasoned defaults when authorized; ask for business facts and material preferences.
 
 Begin with who needs to accomplish what and what success looks like. Record user decisions, verified facts, assumptions, and pending dependencies. Pause only the branch that needs a missing decision. Stop general discovery once a complete plan and acceptance scenarios are possible.
 
-# # 3. Research and deliver the complete plan
+## 3. Research and deliver the complete plan
 
 Read [research](references/research.md) and [client-specific design](references/custom-design.md). Start with the client's industry, audience, and tasks; study relevant mature businesses, then design principles, then GitHub implementation candidates. Record sources, observed scope, adoption, rejection, licenses, and integration cost. Mark unavailable research honestly.
 
 Before implementation, deliver the complete [site plan](references/site-planning.md): layer responsibilities, sitemap, page-count basis, menus, page templates, copy logic, company facts, form-to-admin flow, APIs, roles, data, milestones, delivery, and acceptance. Apply [content and commercial boundaries](references/content-commerce.md) when relevant.
 
+Automatically turn the answered brief into the [project specification pack](references/specification-pack.md) in the same handoff. Include a filled UI/UX implementation prompt, page audiences/content/actions, state and motion contracts, relevant engineering/module specifications and requirement-to-acceptance traceability. Use concrete project decisions, not empty templates. The optional Python renderer is a convenience; hosts can write the same documents directly. Preserve authored revisions and mark unexecuted acceptance NOT_RUN.
+
 Map each requirement to a task and a verification method. Define legal business states and access boundaries before interfaces and screens. Order work with [business-flow decisions](references/development-workflow.md); revise the plan when evidence changes the route.
 
-# # 4. Resolve the client's design
+## 4. Resolve the client's design
 
 Read [client-specific design](references/custom-design.md) and [design and motion](references/design-motion.md). Derive composition from the brief, real content, user tasks, and brand constraints. Translate references into one coherent system, with concrete adoption and rejection decisions.
 
 Build a representative page and critical interaction using realistic content. Check visual quality and task usability separately before expanding templates. Verify that promised content is rendered and phone users can discover key states and actions. Record triggers, states, feedback, failure recovery, keyboard/touch behavior, APIs, and motion for each applicable control.
 
-# # 5. Build complete business increments
+Every enabled control must act and every link must reach a supported destination. Start feedback at input; show success only after the actual operation confirms it. Derive linked responses from one state. Make animation interruptible and retain keyboard, touch, focus and reduced-motion paths. Select [advanced patterns](references/interaction-patterns.md) by purpose; do not add all six effects to every site. Learn reference principles within their scope: marketing composition, operational usability and a client's existing brand are different constraints.
+
+## 5. Build complete business increments
 
 Read [implementation and preview](references/implementation.md). Preserve an appropriate existing stack. Establish a runnable baseline, then select a flow whose dependencies are satisfied. Prioritize blocking dependencies, business value, and consequential uncertainty. Connect UI, API boundaries, business rules, authorization, storage, and feedback in that increment.
 
 Use real authentication, server-side authorization, and persistent data where required. Commit state and its audit event together. Isolate test accounts and data. Keep mock, sandbox, and real integrations distinct. Preview and verify each flow before expanding the next one.
 
-# # 6. Verify, repair, and hand over
+## 6. Verify, repair, and hand over
 
 Read [delivery](references/delivery.md). Verify normal, failure, access, data, mobile, and interaction scenarios per flow, then regress the site, production build, and agreed restart persistence. Use the same business identifier to match the receipt, database, admin details, and history.
 
@@ -49,7 +53,7 @@ After two attempts without new evidence or a plausible repair, stop blind retrie
 
 Deliver source, startup, preview/admin entry points, plan, API/data notes, credentials retrieval method, acceptance evidence, known limits, and release conditions. Use PASS, FAIL, NOT_RUN, BLOCKED, and NOT_APPLICABLE. Apply the user's existing authorization to publication, external messages, payments, and production changes; prepare reviewable work before any required final approval.
 
-# # Continuity
+## Continuity
 
 Maintain a durable task/decision/evidence record and one accountable integration path. Work sequentially unless the user or applicable instructions authorize delegation. Before resuming, verify current source, process ownership, tools, and authorization. Scheduling requires the user's request and a real scheduling capability.
 

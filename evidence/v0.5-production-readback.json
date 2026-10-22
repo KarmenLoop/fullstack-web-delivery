@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "Read existing fictional inquiry after new production startup; no inquiry mutation; no cookies or credentials retained",
+  "checks": [
+    {
+      "check": "Anonymous admin API denied",
+      "status": 401
+    },
+    {
+      "check": "Fresh isolated administrator login",
+      "status": 200
+    },
+    {
+      "check": "Existing completed inquiry survives new production process",
+      "status": 200,
+      "reference": "SX-6500EBF3BDED",
+      "businessStatus": "done",
+      "version": 3,
+      "auditEvents": 2
+    },
+    {
+      "check": "Logout invalidates the new session",
+      "status": 401
+    }
+  ]
+}

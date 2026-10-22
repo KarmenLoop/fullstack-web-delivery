@@ -38,6 +38,7 @@ import {
   useReducedMotion,
 } from "motion/react";
 import { services, statuses, pageMeta } from "./content.js";
+import InteractionLab from "./InteractionLab.jsx";
 import { request, getSession } from "./api.js";
 
 const Session = createContext(null);
@@ -1772,6 +1773,7 @@ export default function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/interaction-lab" element={<InteractionLab />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MotionConfig>

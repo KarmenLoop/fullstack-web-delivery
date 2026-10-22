@@ -15,6 +15,7 @@ const paths = [
   "/privacy",
   "/login",
   "/admin",
+  "/interaction-lab",
   "/no-such-page",
 ];
 const results = [];
